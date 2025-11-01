@@ -1,0 +1,111 @@
+Welcome to Tech Studio 
+Empower Your Digital Journy With Us
+Digital Solutions That Scale With Your Vision
+Creative studio solutions — web, apps, AI automations, interactive tools and more. Clear pricing, concise deliverables, and full documentation.
+
+Web Design & Hosting
+Website Design — Basic
+Perfect for small businesses or personal brands
+
+5 responsive pages (Home, About, Services, Contact, Gallery)
+SEO setup + mobile optimization
+Contact form integration
+Basic on-page speed optimization
+₹7,500
+Website Design — Premium
+Tailored for growing brands & agencies
+
+Custom UI/UX design & CMS/blog
+Multilanguage support, animations
+Admin dashboard (optional)
+₹15,000 – ₹25,000
+Landing Page (Promo/Product)
+High-conversion pages for marketing
+
+CTA, analytics tracking, optimized visuals
+₹4,000 – ₹6,000
+Domain + Hosting Setup
+Get your brand online, securely
+
+SSL, DNS, VPS setup, branded email
+₹2,000 – ₹3,500
+App Development
+React Native App — Basic
+Lightweight cross-platform apps
+
+3–5 screens, API integration
+₹12,000 – ₹18,000
+React Native App — Advanced
+Production-ready mobile apps
+
+Push notifications, auth, analytics
+₹25,000 – ₹40,000
+Progressive Web App (PWA)
+Installable web apps with offline support
+
+₹10,000 – ₹15,000
+AI Automations & Agents
+n8n Automation Setup
+Automate workflows without coding
+
+₹5,000 – ₹8,000
+AI Agent (Chatbot/Assistant)
+Custom-trained assistant integrated into your product
+
+₹12,000 – ₹20,000
+Quantalyze Audit Engine
+Automated analytics and audit reports
+
+₹8,000 – ₹15,000
+Games & Interactive Tools
+Mini Game (Web)
+HTML5/Canvas games for engagement
+
+₹6,000 – ₹10,000
+Mobile Game (React Native)
+Ad-enabled, lightweight mobile games
+
+₹15,000 – ₹25,000
+Dashboards & Exports
+Analytics Dashboard
+Charts, filters, exports (PDF/DOCX)
+
+₹10,000 – ₹18,000
+Export Engine
+Markdown to PDF/DOCX templates
+
+₹4,000 – ₹7,000
+DevOps & Workflow Setup
+Dockerized VPS Setup
+Full-stack Docker deployment with SSL
+
+₹5,000 – ₹8,000
+CI/CD Pipeline
+GitHub Actions, versioning & rollback
+
+₹3,000 – ₹5,000
+Licensing, Policy & Support
+Privacy Policy (Hindi/Eng)
+Custom multilingual privacy documents
+
+₹1,500 – ₹3,000
+License & Attribution
+Copyright statements & attribution setup
+
+₹1,000 – ₹2,000
+Monthly Maintenance Plan
+Updates, backups, security patches
+
+₹2,000 – ₹4,000 / month
+One-Time Fix/Update
+Minor fixes or optimizations
+
+₹1,000 – ₹2,500
+Ready to start?
+Contact TechStudio to get a tailored quote and project timeline. All projects include documentation, transfer of ownership, and optional training.
+
+Email - info@techstudio.co.in
+Phone - +91 8319775876
+Website - www.techstudio.co.in
+
+    - Shubham Tiwari (Founder TechStudio)
