@@ -17,7 +17,7 @@ interface Template {
 }
 
 // All 10 categories with 5 subcategories each = 50 unique templates
-const templates: Template[] = [
+const templateData: Template[] = [
   // ==================== E-COMMERCE (5) ====================
   {
     id: "ecom-fashion-boutique",
@@ -560,6 +560,42 @@ const templates: Template[] = [
     previewImage: "https://images.pexels.com/photos/8613312/pexels-photo-8613312.jpeg?auto=compress&cs=tinysrgb&w=800",
   }
 ];
+
+const previewUrlMap: Record<string, string> = {
+  "food-food-truck": "/web-ocean/templates/WO-FR-03/index.html",
+  "food-meal-prep": "/web-ocean/templates/WO-FR-04/index.html",
+  "food-specialty-cuisine": "/web-ocean/templates/WO-FR-05/index.html",
+  "fitness-spa": "/web-ocean/templates/WO-FW-03/index.html",
+  "fitness-personal-trainer": "/web-ocean/templates/WO-FW-04/index.html",
+  "fitness-nutritionist": "/web-ocean/templates/WO-FW-05/index.html",
+  "portfolio-writer": "/web-ocean/templates/WO-PF-03/index.html",
+  "portfolio-web-developer": "/web-ocean/templates/WO-PF-04/index.html",
+  "portfolio-consultant": "/web-ocean/templates/WO-PF-05/index.html",
+  "edu-language-learning": "/web-ocean/templates/WO-ED-03/index.html",
+  "edu-professional-dev": "/web-ocean/templates/WO-ED-04/index.html",
+  "edu-art-workshops": "/web-ocean/templates/WO-ED-05/index.html",
+  "blog-personal": "/web-ocean/templates/WO-BL-03/index.html",
+  "blog-tech": "/web-ocean/templates/WO-BL-04/index.html",
+  "blog-parenting": "/web-ocean/templates/WO-BL-05/index.html",
+  "consulting-marketing": "/web-ocean/templates/WO-CS-03/index.html",
+  "consulting-legal": "/web-ocean/templates/WO-CS-04/index.html",
+  "consulting-creative-agency": "/web-ocean/templates/WO-CS-05/index.html",
+  "realestate-commercial": "/web-ocean/templates/WO-RE-03/index.html",
+  "realestate-vacation": "/web-ocean/templates/WO-RE-04/index.html",
+  "realestate-property-mgmt": "/web-ocean/templates/WO-RE-05/index.html",
+  "events-event-management": "/web-ocean/templates/WO-EV-03/index.html",
+  "events-party-planning": "/web-ocean/templates/WO-EV-04/index.html",
+  "events-conference": "/web-ocean/templates/WO-EV-05/index.html",
+  "ngo-environmental": "/web-ocean/templates/WO-NG-02/index.html",
+  "ngo-community": "/web-ocean/templates/WO-NG-03/index.html",
+  "ngo-healthcare": "/web-ocean/templates/WO-NG-04/index.html",
+  "ngo-education": "/web-ocean/templates/WO-NG-05/index.html"
+};
+
+const templates: Template[] = templateData.map(template => ({
+  ...template,
+  previewUrl: template.previewUrl ?? previewUrlMap[template.id]
+}));
 
 // Get unique categories
 const categories = [...new Set(templates.map(t => t.category))];
