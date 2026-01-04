@@ -1,0 +1,24 @@
+/* Legal Services Template (WO-CS-04) */
+
+:root {
+  --primary: #1e40af;
+  --secondary: #991b1b;
+  --accent: #d97706;
+  --background: #f9fafb;
+  --text: #1e293b;
+  --text-light: #64748b;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+/* Add more styles as needed */

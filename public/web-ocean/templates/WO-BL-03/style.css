@@ -1,0 +1,28 @@
+/* Tech Blog Template (WO-BL-03) */
+
+:root {
+  --primary: #2563eb;
+  --secondary: #1e293b;
+  --accent: #f59e0b;
+  --background: #f8fafc;
+  --text: #1e293b;
+  --text-light: #64748b;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+}
+
+/* Add more styles as needed */

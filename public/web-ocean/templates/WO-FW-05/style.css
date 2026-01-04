@@ -1,0 +1,24 @@
+/* Nutritionist Template (WO-FW-05) */
+
+:root {
+  --primary: #16a34a;
+  --secondary: #2563eb;
+  --accent: #f59e0b;
+  --background: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+}
+
+/* Add more styles as needed */
