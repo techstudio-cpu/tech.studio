@@ -687,14 +687,14 @@ export default function WebOceanPage() {
                     <div className="template-image">
                       <img src={template.previewImage} alt={template.name} loading="lazy" />
                       <div className="template-overlay">
-                        <Link
+                        <a
                           href={template.previewUrl || '#'}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="btn btn-secondary btn-small"
                         >
                           Live Preview
-                        </Link>
+                        </a>
                         <button 
                           className="btn btn-primary btn-small"
                           onClick={() => { console.log('View Details clicked for template:', template.name); setSelectedTemplate(template); }}
@@ -762,14 +762,14 @@ export default function WebOceanPage() {
               <div className="modal-footer">
                 <div className="modal-actions">
                   {selectedTemplate.previewUrl && (
-                    <Link
+                    <a
                       href={selectedTemplate.previewUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-secondary"
                     >
                       Live Preview
-                    </Link>
+                    </a>
                   )}
                   <Link href={`/contact?template=${selectedTemplate.id}`} className="btn btn-primary">
                     Get This Template
