@@ -1,0 +1,54 @@
+name: Deploy to ServerByt
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Export (optional, for static sites)
+        run: |
+          # If your project uses `next export` or another export script
+          if grep -q "\"export\"" package.json 2>/dev/null; then
+            npm run export || true
+          fi
+
+      - name: Set deploy source directory
+        run: |
+          if [ -d out ]; then echo "OUT_DIR=out" >> $GITHUB_ENV; else echo "OUT_DIR=." >> $GITHUB_ENV; fi
+
+      - name: Deploy files via SCP
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          port: ${{ secrets.DEPLOY_PORT }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          source: "${{ env.OUT_DIR }}/"
+          target: ${{ secrets.DEPLOY_PATH }}
+
+      - name: Run post-deploy remote commands (optional)
+        if: ${{ secrets.REMOTE_POST_DEPLOY_COMMANDS != '' }}
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          port: ${{ secrets.DEPLOY_PORT }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: ${{ secrets.REMOTE_POST_DEPLOY_COMMANDS }}
