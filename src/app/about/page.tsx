@@ -99,21 +99,18 @@ export default function About() {
       </section>
 
       {/* Founder Section */}
-      <section className="section section-alt">
+      <section className="section section-alt founder-spotlight-section">
         <div className="container">
-          <div className="founder-section-new">
-            <div className="founder-content">
-              <h2 className="section-title">Meet the Founder</h2>
-              <div className="founder-card">
-                <div className="founder-avatar">ST</div>
-                <div className="founder-details">
-                  <h3 className="founder-name">Shubham Tiwari</h3>
-                  <p className="founder-role">Founder & Lead Developer</p>
-                  <p className="founder-bio">
-                    With a passion for clean code and user-centered design, Shubham founded Tech Studio to bridge the gap between complex technology and accessible solutions for businesses. His hands-on approach ensures every project receives personal attention and meets the highest standards of quality.
-                  </p>
-                </div>
+          <div className="founder-spotlight">
+            <div className="founder-spotlight-content">
+              <div className="founder-spotlight-intro">
+                <p className="founder-spotlight-eyebrow">Founder Spotlight</p>
+                <h2 className="founder-spotlight-name">Shubham Tiwari</h2>
+                <p className="founder-spotlight-role">Founder &amp; Lead Developer</p>
               </div>
+              <p className="founder-spotlight-body">
+                With a passion for clean code and user-centered design, Shubham founded Tech Studio to bridge the gap between complex technology and accessible solutions for businesses. His hands-on approach ensures every project receives personal attention and meets the highest standards of quality.
+              </p>
             </div>
           </div>
         </div>

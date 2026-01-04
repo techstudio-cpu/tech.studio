@@ -593,3 +593,251 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top:hover {
   transform: translateY(-5px);
 }
+
+/* Hero Inner */
+.hero-inner {
+  min-height: 60vh;
+  padding-top: 160px;
+  padding-bottom: 120px;
+}
+
+.hero-inner .hero-content {
+  text-align: left;
+}
+
+/* Services Detail Grid */
+.services-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.service-detail-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 32px;
+  border: 1px solid #f0e6e3;
+  box-shadow: 0 20px 40px rgba(212, 165, 165, 0.12);
+}
+
+.service-detail-card ul {
+  padding-left: 18px;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Process Timeline */
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.process-step {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid #f0e6e3;
+}
+
+.process-step .step-number {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(212, 165, 165, 0.2);
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Signature Addons */
+.signature-addons,
+.addons-grid {
+  width: 100%;
+}
+
+.addons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.addon-card {
+  background: var(--white);
+  padding: 24px;
+  border-radius: 18px;
+  border: 1px solid #f0e6e3;
+}
+
+/* Portfolio Gallery */
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card.large {
+  grid-column: span 2;
+  min-height: 420px;
+}
+
+.portfolio-card.wide {
+  grid-column: span 2;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8));
+  color: var(--white);
+}
+
+/* Highlights & Vendors */
+.highlight-grid,
+.vendors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.highlight-card,
+.vendor-card {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 24px;
+  border: 1px solid #f0e6e3;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* Comparison Table */
+.comparison-table {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #f0e6e3;
+}
+
+.comparison-row {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  padding: 16px 24px;
+  border-bottom: 1px solid #f5e6e0;
+  background: var(--white);
+}
+
+.comparison-row.header {
+  background: var(--bg-blush);
+  font-weight: 600;
+}
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+}
+
+.contact-card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 20px;
+  border: 1px solid #f0e6e3;
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #e5d2cd;
+  font-family: inherit;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 28px;
+  box-shadow: 0 50px 70px rgba(0, 0, 0, 0.2);
+}
+
+.about-badge {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  background: var(--white);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1024px) {
+  .services-detail-grid,
+  .process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-detail-grid,
+  .process-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .portfolio-card.large,
+  .portfolio-card.wide {
+    grid-column: span 1;
+  }
+}
