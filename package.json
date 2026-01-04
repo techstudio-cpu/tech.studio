@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node scripts/copy-web-ocean.js",
     "export": "next build",
     "start": "serve out",
     "lint": "next lint"
