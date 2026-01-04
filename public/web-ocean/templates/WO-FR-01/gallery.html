@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Brew & Bake's visual gallery featuring our space, handcrafted beverages, and seasonal pastries.">
+  <title>Gallery | Brew & Bake Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Brew<span>&</span>Bake</a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="menu.html" class="navbar-link">Menu</a></li>
+        <li><a href="gallery.html" class="navbar-link active">Gallery</a></li>
+        <li><a href="about.html" class="navbar-link">Our Story</a></li>
+        <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm navbar-cta">Reserve Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header page-header-dark">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-item active">Gallery</span>
+      </nav>
+      <h1 class="page-title">Moments at Brew & Bake</h1>
+      <p class="page-subtitle">Take a peek at our cozy corners, latte art, and fresh-from-the-oven pastries.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Filters -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Visual Diary</span>
+        <h2 class="section-title">Highlights</h2>
+        <p class="section-subtitle">Captured by our team and community</p>
+      </div>
+
+      <div class="gallery-filter-bar" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="space">Café Space</button>
+        <button class="filter-btn" data-filter="coffee">Coffee Art</button>
+        <button class="filter-btn" data-filter="pastry">Bakery</button>
+        <button class="filter-btn" data-filter="community">Community</button>
+      </div>
+
+      <div class="gallery-masonry">
+        <figure class="gallery-card" data-category="space" data-aos="fade-up" data-aos-delay="50">
+          <img src="https://images.pexels.com/photos/4050914/pexels-photo-4050914.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sunlit café seating">
+          <figcaption>Morning light in our window nook</figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="coffee" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.pexels.com/photos/302902/pexels-photo-302902.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Latte art">
+          <figcaption>Signature latte swirls by Rahul</figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="pastry" data-aos="fade-up" data-aos-delay="150">
+          <img src="https://images.pexels.com/photos/4109743/pexels-photo-4109743.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Assorted pastries">
+          <figcaption>Fresh bakes from our pastry team</figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="community" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.pexels.com/photos/3326819/pexels-photo-3326819.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Friends enjoying coffee">
+          <figcaption>Weekend book club meetup</figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="coffee" data-aos="fade-up" data-aos-delay="250">
+          <img src="https://images.pexels.com/photos/302896/pexels-photo-302896.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Pour over">
+          <figcaption>Slow pour perfection</figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="space" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://images.pexels.com/photos/3887983/pexels-photo-3887983.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Outdoor patio">
+          <figcaption>Patio seating for breezy evenings</figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="pastry" data-aos="fade-up" data-aos-delay="350">
+          <img src="https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Cinnamon rolls">
+          <figcaption>Weekend cinnamon roll drop</figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="community" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://images.pexels.com/photos/2887713/pexels-photo-2887713.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Live music">
+          <figcaption>Friday jazz night vibes</figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="coffee" data-aos="fade-up" data-aos-delay="450">
+          <img src="https://images.pexels.com/photos/4040655/pexels-photo-4040655.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Espresso shot">
+          <figcaption>Double ristretto in the making</figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="space" data-aos="fade-up" data-aos-delay="500">
+          <img src="https://images.pexels.com/photos/3779776/pexels-photo-3779776.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Bar counter">
+          <figcaption>Our bar counter at golden hour</figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="pastry" data-aos="fade-up" data-aos-delay="550">
+          <img src="https://images.pexels.com/photos/1460877/pexels-photo-1460877.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Macarons">
+          <figcaption>Seasonal macaron flight</figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="community" data-aos="fade-up" data-aos-delay="600">
+          <img src="https://images.pexels.com/photos/4083585/pexels-photo-4083585.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Coffee workshop">
+          <figcaption>Hands-on brewing workshop</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Behind the Scenes -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="btw-grid">
+        <div class="btw-content" data-aos="fade-right">
+          <span class="section-badge">Behind the Bean</span>
+          <h2>Crafting Every Experience</h2>
+          <p>We collaborate with photographers, local artists, and our guests to capture the spirit of Brew & Bake. Want your photos featured? Tag us on Instagram @brewandbakecafe.</p>
+          <a href="contact.html" class="btn btn-primary">Book a Photoshoot</a>
+        </div>
+        <div class="btw-image" data-aos="fade-left">
+          <img src="https://images.pexels.com/photos/4350171/pexels-photo-4350171.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Barista filming latte">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Brew<span>&</span>Bake</a>
+          <p class="footer-description">Your neighborhood café serving artisan coffee and fresh pastries since 2015.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube">📺</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Gallery</h4>
+          <ul class="footer-links">
+            <li><a href="gallery.html" class="footer-link">Space</a></li>
+            <li><a href="gallery.html" class="footer-link">Coffee</a></li>
+            <li><a href="gallery.html" class="footer-link">Pastries</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Visit</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link">Mon-Sun: 7am - 10pm</span></li>
+            <li><span class="footer-link">123 Coffee Lane, Bandra</span></li>
+            <li><span class="footer-link">Mumbai 400050</span></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+919876543210" class="footer-link">+91 98765 43210</a></li>
+            <li><a href="mailto:hello@brewandbake.com" class="footer-link">hello@brewandbake.com</a></li>
+            <li><a href="contact.html" class="footer-link">Reserve a Table</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Brew & Bake. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

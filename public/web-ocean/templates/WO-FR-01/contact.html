@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Brew & Bake Café for reservations, catering, or general inquiries.">
+  <title>Contact | Brew & Bake Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Brew<span>&</span>Bake</a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="menu.html" class="navbar-link">Menu</a></li>
+        <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+        <li><a href="about.html" class="navbar-link">Our Story</a></li>
+        <li><a href="contact.html" class="navbar-link active">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm navbar-cta">Reserve Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header page-header-dark">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-item active">Contact</span>
+      </nav>
+      <h1 class="page-title">Let's Connect</h1>
+      <p class="page-subtitle">Reservations, catering, collaborations, or a friendly hello—we're here.</p>
+    </div>
+  </section>
+
+  <!-- Contact Info + Form -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <span class="section-badge">Visit Us</span>
+          <h2>Our Café</h2>
+          <p>123 Coffee Lane, Bandra West<br>Mumbai 400050</p>
+          <ul class="contact-list">
+            <li>
+              <strong>Hours</strong>
+              <span>Mon-Sun: 7:00 am - 10:00 pm</span>
+            </li>
+            <li>
+              <strong>Phone</strong>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:hello@brewandbake.com">hello@brewandbake.com</a>
+            </li>
+            <li>
+              <strong>Instagram</strong>
+              <a href="#">@brewandbakecafe</a>
+            </li>
+          </ul>
+          <div class="contact-badges">
+            <div>
+              <h3>2 hrs</h3>
+              <p>Average response time</p>
+            </div>
+            <div>
+              <h3>24 hrs</h3>
+              <p>Catering notice</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card" data-aos="fade-left">
+          <h3>Send a Message</h3>
+          <form class="contact-form">
+            <label>
+              Full Name
+              <input type="text" placeholder="Your name" required>
+            </label>
+            <label>
+              Email Address
+              <input type="email" placeholder="you@email.com" required>
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" placeholder="+91 9XXXXXXXXX" required>
+            </label>
+            <label>
+              Inquiry Type
+              <select required>
+                <option value="" selected disabled>Select an option</option>
+                <option>Table Reservation</option>
+                <option>Catering Request</option>
+                <option>Partnership / Collaboration</option>
+                <option>General Question</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea rows="4" placeholder="Tell us more" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-lg">Submit Inquiry</button>
+          </form>
+          <p class="form-note">We reply within 2 business hours. Prefer phone? Call us anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservations CTA -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="reservation-grid">
+        <div class="reservation-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="reservation-icon">🍽️</div>
+          <h3>Table Booking</h3>
+          <p>Reserve for brunch, a coffee date, or a team meetup. Walk-ins welcome based on availability.</p>
+          <a href="tel:+919876543210" class="btn btn-secondary">Call to Book</a>
+        </div>
+        <div class="reservation-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="reservation-icon">🎉</div>
+          <h3>Private Events</h3>
+          <p>Host workshops, launches, or birthday gatherings (up to 40 guests) with custom menus.</p>
+          <a href="contact.html" class="btn btn-secondary">Request Proposal</a>
+        </div>
+        <div class="reservation-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="reservation-icon">🥐</div>
+          <h3>Catering</h3>
+          <p>Corporate breakfasts, gifting boxes, or pop-up espresso bars delivered to your venue.</p>
+          <a href="menu.html" class="btn btn-secondary">See Menu Ideas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="map-section" aria-label="Map to Brew & Bake">
+    <iframe title="Brew & Bake Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.668291629812!2d72.8277!3d19.0670!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c925fddf0001%3A0xabc123!2sBandra!5e0!3m2!1sen!2sin!4v1679999999999" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Brew<span>&</span>Bake</a>
+          <p class="footer-description">Your neighborhood café serving artisan coffee and fresh pastries since 2015.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube">📺</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Visit</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link">Mon-Sun: 7am - 10pm</span></li>
+            <li><span class="footer-link">123 Coffee Lane, Bandra</span></li>
+            <li><span class="footer-link">Mumbai 400050</span></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+919876543210" class="footer-link">+91 98765 43210</a></li>
+            <li><a href="mailto:hello@brewandbake.com" class="footer-link">hello@brewandbake.com</a></li>
+            <li><a href="contact.html" class="footer-link">Reserve a Table</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Instagram</a></li>
+            <li><a href="#" class="footer-link">Newsletter</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Brew & Bake. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

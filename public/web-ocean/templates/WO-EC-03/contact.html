@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact TechVault - Get in touch with our customer support team. Visit our stores, call us, or send a message for electronics assistance.">
+    <title>Contact Us | TechVault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../core/css/base.css">
+    <link rel="stylesheet" href="../../core/css/components.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Tech<span>Vault</span></a>
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="products.html" class="navbar-link">Products</a></li>
+                <li><a href="categories.html" class="navbar-link">Categories</a></li>
+                <li><a href="deals.html" class="navbar-link">Deals</a></li>
+                <li><a href="support.html" class="navbar-link">Support</a></li>
+                <li><a href="#" class="btn btn-primary btn-sm navbar-cta">🛒 Cart (0)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">Get in touch with our team for any questions or support</p>
+        </div>
+    </section>
+
+    <!-- Contact Info & Form -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Have a question about our products or need assistance with your order? We're here to help! Reach
+                        out to us through any of the channels below.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div>
+                                <h4>Visit Our Store</h4>
+                                <p>TechVault Flagship Store<br>
+                                    123 Tech Street, Bandra West<br>
+                                    Mumbai, Maharashtra 400050<br>
+                                    India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>Customer Support: 1-800-TECH-HELP<br>
+                                    Sales: +91 98765 43210<br>
+                                    Mon-Fri: 9AM-8PM IST<br>
+                                    Sat: 10AM-6PM IST</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>General: hello@techvault.com<br>
+                                    Support: support@techvault.com<br>
+                                    Sales: sales@techvault.com<br>
+                                    We respond within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div>
+                                <h4>Live Chat</h4>
+                                <p>Available 24/7 on our website<br>
+                                    Average response time: 2 minutes<br>
+                                    For instant assistance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="business-hours">
+                        <h4>Business Hours</h4>
+                        <div class="hours-grid">
+                            <div class="hour-item">
+                                <span>Monday - Friday</span>
+                                <span>9:00 AM - 8:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Saturday</span>
+                                <span>10:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Public Holidays</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Send us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="sales">Sales Inquiry</option>
+                                <option value="warranty">Warranty Claim</option>
+                                <option value="returns">Returns & Exchanges</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderNumber">Order Number (if applicable)</label>
+                            <input type="text" id="orderNumber" name="orderNumber" placeholder="TV-XXXXXXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="Please describe your inquiry in detail..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for updates and exclusive offers
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Find Us</h2>
+                <p class="section-subtitle">Visit our flagship store in Mumbai</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-icon">📍</div>
+                    <h3>TechVault Flagship Store</h3>
+                    <p>123 Tech Street, Bandra West<br>Mumbai, Maharashtra 400050</p>
+                    <p>Experience our premium electronics showroom with expert staff ready to assist you.</p>
+                    <div class="map-features">
+                        <span>🅿️ Free Parking</span>
+                        <span>☕ Coffee Lounge</span>
+                        <span>🔧 Tech Support Desk</span>
+                        <span>🎧 Demo Zone</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How can I track my order?</h4>
+                    <p>Use the tracking link sent to your email/SMS, or log into your account to check order status.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is your return policy?</h4>
+                    <p>We offer 30-day returns on most products. Items must be unused and in original packaging.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer installation services?</h4>
+                    <p>Yes, we provide installation services for select products. Additional charges may apply.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long do warranties last?</h4>
+                    <p>Most products come with 1-2 year manufacturer warranty. Extended warranty available for purchase.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I change my shipping address?</h4>
+                    <p>Address changes are possible within 24 hours of order placement. Contact support immediately.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you ship internationally?</h4>
+                    <p>Yes, we ship to select international destinations. Additional duties and taxes may apply.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Stay Connected</h2>
+            <p>Subscribe to our newsletter for the latest product updates and exclusive offers</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechVault</h3>
+                    <p>Your trusted source for premium electronics and gadgets. Quality products, exceptional service.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support.html">Help Center</a></li>
+                        <li><a href="support.html#warranty">Warranty</a></li>
+                        <li><a href="support.html#returns">Returns</a></li>
+                        <li><a href="support.html#shipping">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 1-800-TECH-HELP</li>
+                        <li>📧 support@techvault.com</li>
+                        <li>📍 Mumbai, India</li>
+                        <li>🕒 Mon-Sat: 10AM-8PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVault. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../core/js/main.js"></script>
+    <script>
+        // Form validation and submission
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Basic validation
+            const requiredFields = ['firstName', 'lastName', 'email', 'subject', 'message'];
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                const element = document.getElementById(field);
+                if (!element.value.trim()) {
+                    element.style.borderColor = '#ef4444';
+                    isValid = false;
+                } else {
+                    element.style.borderColor = '#e5e7eb';
+                }
+            });
+
+            if (!isValid) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Email validation
+            const email = document.getElementById('email').value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('email').style.borderColor = '#ef4444';
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // If all validations pass
+            alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+            this.reset();
+        });
+
+        // Real-time validation
+        document.querySelectorAll('input, select, textarea').forEach(field => {
+            field.addEventListener('blur', function () {
+                if (this.hasAttribute('required') && !this.value.trim()) {
+                    this.style.borderColor = '#ef4444';
+                } else {
+                    this.style.borderColor = '#e5e7eb';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

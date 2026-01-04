@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flexible membership plans at Serenity Yoga. Choose the perfect option for your practice and budget.">
+  <title>Membership | Serenity Yoga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Serenity<span>Yoga</span></a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="classes.html" class="navbar-link">Classes</a></li>
+        <li><a href="instructors.html" class="navbar-link">Instructors</a></li>
+        <li><a href="membership.html" class="navbar-link active">Membership</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm navbar-cta">Book Class</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-item active">Membership</span>
+      </nav>
+      <h1 class="page-title">Membership Plans</h1>
+      <p class="page-subtitle">Flexible options to fit your lifestyle and budget</p>
+    </div>
+  </section>
+
+  <!-- Pricing Toggle -->
+  <section class="section">
+    <div class="container">
+      <div class="pricing-toggle" data-aos="fade-up">
+        <span>Monthly</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="pricing-toggle">
+          <span class="toggle-slider"></span>
+        </label>
+        <span>Annual <span class="save-badge">Save 20%</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Plans -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="pricing-grid">
+        <!-- Drop-In -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="pricing-header">
+            <h3>Drop-In</h3>
+            <p class="pricing-subtitle">Perfect for trying us out</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-amount">$25</span>
+            <span class="price-period">per class</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Single class access</li>
+            <li>✓ All class types</li>
+            <li>✓ No commitment</li>
+            <li>✓ Mat rental included</li>
+            <li>✗ No advance booking</li>
+            <li>✗ Subject to availability</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Book Drop-In</a>
+        </div>
+
+        <!-- Class Pack -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="pricing-header">
+            <h3>Class Pack</h3>
+            <p class="pricing-subtitle">Flexibility with savings</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-amount">$180</span>
+            <span class="price-period">10 classes</span>
+            <span class="price-note">$18 per class</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ 10 class credits</li>
+            <li>✓ Valid for 3 months</li>
+            <li>✓ All class types</li>
+            <li>✓ Advance booking</li>
+            <li>✓ Share with family</li>
+            <li>✓ Mat rental included</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Buy Pack</a>
+        </div>
+
+        <!-- Monthly Unlimited -->
+        <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="150">
+          <span class="pricing-badge">Most Popular</span>
+          <div class="pricing-header">
+            <h3>Unlimited</h3>
+            <p class="pricing-subtitle">Practice as much as you want</p>
+          </div>
+          <div class="pricing-price monthly-price">
+            <span class="price-amount">$129</span>
+            <span class="price-period">per month</span>
+          </div>
+          <div class="pricing-price annual-price" style="display: none;">
+            <span class="price-amount">$103</span>
+            <span class="price-period">per month</span>
+            <span class="price-note">Billed annually at $1,239</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Unlimited classes</li>
+            <li>✓ All class types</li>
+            <li>✓ Priority booking</li>
+            <li>✓ Free workshops (2/month)</li>
+            <li>✓ Guest passes (2/month)</li>
+            <li>✓ 10% retail discount</li>
+            <li>✓ Mat storage</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Start Unlimited</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <p class="pricing-subtitle">The ultimate yoga experience</p>
+          </div>
+          <div class="pricing-price monthly-price">
+            <span class="price-amount">$189</span>
+            <span class="price-period">per month</span>
+          </div>
+          <div class="pricing-price annual-price" style="display: none;">
+            <span class="price-amount">$151</span>
+            <span class="price-period">per month</span>
+            <span class="price-note">Billed annually at $1,812</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Everything in Unlimited</li>
+            <li>✓ Private session (1/month)</li>
+            <li>✓ All workshops included</li>
+            <li>✓ Guest passes (4/month)</li>
+            <li>✓ 20% retail discount</li>
+            <li>✓ Wellness consultations</li>
+            <li>✓ VIP events access</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Go Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Special Offers</span>
+        <h2 class="section-title">Limited Time Promotions</h2>
+        <p class="section-subtitle">Take advantage of these exclusive deals</p>
+      </div>
+      <div class="offers-grid">
+        <div class="offer-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="offer-badge">New Student</div>
+          <h3>30 Days for $30</h3>
+          <p>New to Serenity Yoga? Try unlimited classes for 30 days at an incredible introductory rate.</p>
+          <div class="offer-details">
+            <span>✓ Unlimited classes</span>
+            <span>✓ All levels welcome</span>
+            <span>✓ No long-term commitment</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Claim Offer</a>
+        </div>
+        <div class="offer-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="offer-badge">Student/Senior</div>
+          <h3>20% Discount</h3>
+          <p>We offer special pricing for students and seniors (65+) on all membership plans.</p>
+          <div class="offer-details">
+            <span>✓ Valid ID required</span>
+            <span>✓ All memberships</span>
+            <span>✓ Ongoing discount</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="offer-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="offer-badge">Refer a Friend</div>
+          <h3>Free Month</h3>
+          <p>Refer a friend who signs up for unlimited membership and you both get a free month!</p>
+          <div class="offer-details">
+            <span>✓ Unlimited referrals</span>
+            <span>✓ Both receive reward</span>
+            <span>✓ Easy to share</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Refer Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add-Ons -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Enhance Your Practice</span>
+        <h2 class="section-title">Add-On Services</h2>
+        <p class="section-subtitle">Complement your membership with these offerings</p>
+      </div>
+      <div class="addons-grid">
+        <div class="addon-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="addon-icon">🧘</div>
+          <h3>Private Sessions</h3>
+          <p>One-on-one instruction tailored to your goals and needs.</p>
+          <div class="addon-pricing">
+            <span class="addon-price">$85</span>
+            <span class="addon-unit">per hour</span>
+          </div>
+          <a href="contact.html" class="btn btn-outline btn-sm">Book Session</a>
+        </div>
+        <div class="addon-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="addon-icon">💆</div>
+          <h3>Massage Therapy</h3>
+          <p>Therapeutic massage to complement your yoga practice.</p>
+          <div class="addon-pricing">
+            <span class="addon-price">$95</span>
+            <span class="addon-unit">per 60 min</span>
+          </div>
+          <a href="contact.html" class="btn btn-outline btn-sm">Book Massage</a>
+        </div>
+        <div class="addon-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="addon-icon">🌿</div>
+          <h3>Wellness Consultation</h3>
+          <p>Holistic health guidance and personalized wellness plans.</p>
+          <div class="addon-pricing">
+            <span class="addon-price">$75</span>
+            <span class="addon-unit">per session</span>
+          </div>
+          <a href="contact.html" class="btn btn-outline btn-sm">Schedule</a>
+        </div>
+        <div class="addon-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="addon-icon">🎒</div>
+          <h3>Mat & Towel Service</h3>
+          <p>Fresh mat and towel provided for every class.</p>
+          <div class="addon-pricing">
+            <span class="addon-price">$15</span>
+            <span class="addon-unit">per month</span>
+          </div>
+          <a href="contact.html" class="btn btn-outline btn-sm">Add Service</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Questions</span>
+        <h2 class="section-title">Membership FAQ</h2>
+        <p class="section-subtitle">Everything you need to know</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+          <h4>Can I freeze my membership?</h4>
+          <p>Yes! Unlimited and Premium members can freeze their membership for up to 2 months per year for a small administrative fee of $15/month.</p>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+          <h4>What's your cancellation policy?</h4>
+          <p>Monthly memberships require 30 days notice to cancel. Annual memberships are non-refundable but can be frozen if needed.</p>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+          <h4>Do class packs expire?</h4>
+          <p>Class packs are valid for 3 months from purchase date. Extensions may be granted for medical reasons with documentation.</p>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+          <h4>Can I share my membership?</h4>
+          <p>Memberships are non-transferable. However, class packs can be shared with family members, and unlimited members receive guest passes.</p>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+          <h4>What if I need to miss a class?</h4>
+          <p>Please cancel at least 2 hours before class start time. Late cancellations or no-shows for unlimited members may result in a $10 fee.</p>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+          <h4>Do you offer corporate memberships?</h4>
+          <p>Yes! We offer special corporate rates for companies with 5+ employees. Contact us for custom pricing and wellness packages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Compare Plans</span>
+        <h2 class="section-title">Membership Comparison</h2>
+        <p class="section-subtitle">Find the perfect fit for your practice</p>
+      </div>
+      <div class="comparison-table-wrapper" data-aos="fade-up">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Drop-In</th>
+              <th>Class Pack</th>
+              <th>Unlimited</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Classes per Month</td>
+              <td>1</td>
+              <td>Varies</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Advance Booking</td>
+              <td>✗</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓ Priority</td>
+            </tr>
+            <tr>
+              <td>Guest Passes</td>
+              <td>✗</td>
+              <td>✗</td>
+              <td>2/month</td>
+              <td>4/month</td>
+            </tr>
+            <tr>
+              <td>Free Workshops</td>
+              <td>✗</td>
+              <td>✗</td>
+              <td>2/month</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Retail Discount</td>
+              <td>✗</td>
+              <td>✗</td>
+              <td>10%</td>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <td>Mat Storage</td>
+              <td>✗</td>
+              <td>✗</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Private Session</td>
+              <td>✗</td>
+              <td>✗</td>
+              <td>✗</td>
+              <td>1/month</td>
+            </tr>
+            <tr>
+              <td>Wellness Consultation</td>
+              <td>✗</td>
+              <td>✗</td>
+              <td>✗</td>
+              <td>✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <h2>Ready to Begin Your Journey?</h2>
+        <p>Start with our 30-day introductory offer and experience the Serenity Yoga difference.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg">Get Started</a>
+          <a href="classes.html" class="btn btn-secondary btn-lg">View Schedule</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Serenity<span>Yoga</span></a>
+          <p class="footer-description">Transform your body, calm your mind, and nourish your spirit through the ancient practice of yoga.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="YouTube">📺</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="classes.html" class="footer-link">Classes</a></li>
+            <li><a href="instructors.html" class="footer-link">Instructors</a></li>
+            <li><a href="membership.html" class="footer-link">Membership</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Hours</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link">Mon-Fri: 6am - 9pm</span></li>
+            <li><span class="footer-link">Sat-Sun: 8am - 7pm</span></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+15551234567" class="footer-link">+1 (555) 123-4567</a></li>
+            <li><a href="mailto:hello@serenityyoga.com" class="footer-link">hello@serenityyoga.com</a></li>
+            <li><span class="footer-link">123 Wellness Ave, Portland</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Serenity Yoga. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+  <script>
+    // Pricing toggle functionality
+    const toggle = document.getElementById('pricing-toggle');
+    const monthlyPrices = document.querySelectorAll('.monthly-price');
+    const annualPrices = document.querySelectorAll('.annual-price');
+    
+    toggle.addEventListener('change', function() {
+      if (this.checked) {
+        monthlyPrices.forEach(el => el.style.display = 'none');
+        annualPrices.forEach(el => el.style.display = 'block');
+      } else {
+        monthlyPrices.forEach(el => el.style.display = 'block');
+        annualPrices.forEach(el => el.style.display = 'none');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shop Organic - Green Harvest Grocery Store. Browse our selection of fresh produce, organic dairy, pantry staples, and healthy beverages.">
+    <title>Shop Organic | Green Harvest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../core/css/base.css">
+    <link rel="stylesheet" href="../../core/css/components.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Green<span>Harvest</span></a>
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="shop.html" class="navbar-link active">Shop</a></li>
+                <li><a href="recipes.html" class="navbar-link">Recipes</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <div class="container">
+            <h1>Shop Organic</h1>
+            <p>Discover fresh, organic products from local farms</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products..." id="search-input">
+                <button class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Sidebar -->
+                <aside class="shop-sidebar">
+                    <div class="filter-section">
+                        <h3>Categories</h3>
+                        <ul class="filter-list">
+                            <li><a href="#" class="filter-link active" data-category="all">All Products</a></li>
+                            <li><a href="#" class="filter-link" data-category="produce">Fresh Produce</a></li>
+                            <li><a href="#" class="filter-link" data-category="dairy">Organic Dairy</a></li>
+                            <li><a href="#" class="filter-link" data-category="pantry">Pantry Staples</a></li>
+                            <li><a href="#" class="filter-link" data-category="beverages">Healthy Beverages</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Certifications</h3>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked> Organic Certified
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked> Non-GMO
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox"> Gluten-Free
+                        </label>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="shop-main">
+                    <div class="shop-controls">
+                        <div class="results-count">Showing 24 of 156 products</div>
+                        <div class="sort-options">
+                            <label for="sort-select">Sort by:</label>
+                            <select id="sort-select">
+                                <option value="featured">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name">Name</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <!-- Product Cards -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="image-gallery">
+                                    <div class="gallery-image active">
+                                        <img src="https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg"
+                                            alt="Organic Apples">
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="https://images.pexels.com/photos/2329441/pexels-photo-2329441.jpeg"
+                                            alt="Organic Apples Detail">
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="https://images.pexels.com/photos/2329442/pexels-photo-2329442.jpeg"
+                                            alt="Organic Apples Close-up">
+                                    </div>
+                                </div>
+                                <div class="product-badges">
+                                    <span class="badge-organic">Organic</span>
+                                </div>
+                                <div class="gallery-indicators">
+                                    <div class="gallery-indicator active"></div>
+                                    <div class="gallery-indicator"></div>
+                                    <div class="gallery-indicator"></div>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Organic Red Apples</h3>
+                                <p>Fresh, crisp apples from local orchards with natural sweetness and perfect texture.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="image-gallery">
+                                    <div class="gallery-image active">
+                                        <img src="https://images.pexels.com/photos/236010/pexels-photo-236010.jpeg"
+                                            alt="Organic Milk">
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="https://images.pexels.com/photos/236011/pexels-photo-236011.jpeg"
+                                            alt="Organic Milk Detail">
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="https://images.pexels.com/photos/236012/pexels-photo-236012.jpeg"
+                                            alt="Organic Milk Close-up">
+                                    </div>
+                                </div>
+                                <div class="product-badges">
+                                    <span class="badge-organic">Organic</span>
+                                    <span class="badge-sale">Sale</span>
+                                </div>
+                                <div class="gallery-indicators">
+                                    <div class="gallery-indicator active"></div>
+                                    <div class="gallery-indicator"></div>
+                                    <div class="gallery-indicator"></div>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Organic Whole Milk</h3>
+                                <p>Grass-fed, hormone-free milk from pasture-raised cows for rich, creamy nutrition.</p>
+                            </div>
+                        </div>
+
+                        <!-- Add more product cards as needed -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn prev-btn" disabled>Previous</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span class="pagination-dots">...</span>
+                        <button class="page-btn">7</button>
+                        <button class="page-btn next-btn">Next</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Green Harvest</h3>
+                    <p>Fresh organic groceries from local farms to your table.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contact.html">Delivery Info</a></li>
+                        <li><a href="contact.html">Returns</a></li>
+                        <li><a href="contact.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Green Harvest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../core/js/main.js"></script>
+</body>
+
+</html>

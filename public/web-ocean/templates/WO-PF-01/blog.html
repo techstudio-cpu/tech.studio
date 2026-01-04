@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Design insights, tips, and case studies from Alex Chen. Learn about branding, web design, and creative process.">
+  <title>Blog | Alex Chen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Alex<span>Chen</span></a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="portfolio.html" class="navbar-link">Portfolio</a></li>
+        <li><a href="services.html" class="navbar-link">Services</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="blog.html" class="navbar-link active">Blog</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm navbar-cta">Let's Talk</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-item active">Blog</span>
+      </nav>
+      <h1 class="page-title">Design Insights</h1>
+      <p class="page-subtitle">Tips, tutorials, and case studies from the design world</p>
+    </div>
+  </section>
+
+  <!-- Blog Filters -->
+  <section class="section">
+    <div class="container">
+      <div class="blog-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-category="all">All Posts</button>
+        <button class="filter-btn" data-category="tutorials">Tutorials</button>
+        <button class="filter-btn" data-category="case-studies">Case Studies</button>
+        <button class="filter-btn" data-category="tips">Design Tips</button>
+        <button class="filter-btn" data-category="industry">Industry News</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Post -->
+  <section class="section section-alt">
+    <div class="container">
+      <article class="featured-blog-post" data-aos="fade-up">
+        <div class="featured-post-image">
+          <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Brand Identity Design Process">
+          <span class="post-badge">Featured</span>
+        </div>
+        <div class="featured-post-content">
+          <div class="post-meta">
+            <span class="post-category">Case Study</span>
+            <span class="post-date">January 15, 2025</span>
+            <span class="post-read-time">10 min read</span>
+          </div>
+          <h2>Complete Brand Identity: TechFlow Case Study</h2>
+          <p>A deep dive into the complete rebranding process for a tech startup, from initial research to final implementation. Learn how strategic thinking and creative execution came together to create a memorable brand.</p>
+          <a href="#" class="btn btn-primary">Read Full Case Study</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Blog Posts Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="blog-posts-grid">
+        <!-- Post 1 -->
+        <article class="blog-post-card" data-category="tutorials" data-aos="fade-up" data-aos-delay="50">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Typography Guide">
+          </div>
+          <div class="post-card-content">
+            <span class="post-card-category">Tutorial</span>
+            <div class="post-card-meta">
+              <span class="post-date">January 12, 2025</span>
+              <span class="post-read-time">8 min read</span>
+            </div>
+            <h3>Typography Fundamentals for Designers</h3>
+            <p>Master the art of typography with this comprehensive guide covering font pairing, hierarchy, and readability.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="blog-post-card" data-category="tips" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Color Theory">
+          </div>
+          <div class="post-card-content">
+            <span class="post-card-category">Design Tips</span>
+            <div class="post-card-meta">
+              <span class="post-date">January 10, 2025</span>
+              <span class="post-read-time">6 min read</span>
+            </div>
+            <h3>Creating Effective Color Palettes</h3>
+            <p>Learn how to choose colors that not only look great but also communicate your brand message effectively.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="blog-post-card" data-category="case-studies" data-aos="fade-up" data-aos-delay="150">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/3738386/pexels-photo-3738386.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Packaging Design">
+          </div>
+          <div class="post-card-content">
+            <span class="post-card-category">Case Study</span>
+            <div class="post-card-meta">
+              <span class="post-date">January 8, 2025</span>
+              <span class="post-read-time">12 min read</span>
+            </div>
+            <h3>Sustainable Packaging Design Process</h3>
+            <p>Behind the scenes of creating eco-friendly packaging for an organic coffee brand.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="blog-post-card" data-category="tutorials" data-aos="fade-up" data-aos-delay="50">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Logo Design">
+          </div>
+          <div class="post-card-content">
+            <span class="post-card-category">Tutorial</span>
+            <div class="post-card-meta">
+              <span class="post-date">January 5, 2025</span>
+              <span class="post-read-time">15 min read</span>
+            </div>
+            <h3>Logo Design: From Concept to Final</h3>
+            <p>A step-by-step walkthrough of my logo design process, including sketching, refinement, and presentation.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 5 -->
+        <article class="blog-post-card" data-category="industry" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Design Trends">
+          </div>
+          <div class="post-card-content">
+            <span class="post-card-category">Industry News</span>
+            <div class="post-card-meta">
+              <span class="post-date">January 3, 2025</span>
+              <span class="post-read-time">7 min read</span>
+            </div>
+            <h3>Design Trends to Watch in 2025</h3>
+            <p>Exploring the emerging design trends that will shape the visual landscape this year.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 6 -->
+        <article class="blog-post-card" data-category="tips" data-aos="fade-up" data-aos-delay="150">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/1053687/pexels-photo-1053687.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Client Communication">
+          </div>
+          <div class="post-card-content">
+            <span class="post-card-category">Design Tips</span>
+            <div class="post-card-meta">
+              <span class="post-date">December 30, 2024</span>
+              <span class="post-read-time">5 min read</span>
+            </div>
+            <h3>Effective Client Communication Tips</h3>
+            <p>How to present your designs, handle feedback, and maintain great client relationships.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 7 -->
+        <article class="blog-post-card" data-category="tutorials" data-aos="fade-up" data-aos-delay="50">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Grid Systems">
+          </div>
+          <div class="post-card-content">
+            <span class="post-card-category">Tutorial</span>
+            <div class="post-card-meta">
+              <span class="post-date">December 28, 2024</span>
+              <span class="post-read-time">9 min read</span>
+            </div>
+            <h3>Mastering Grid Systems in Design</h3>
+            <p>Understanding and implementing grid systems for better layout design and visual hierarchy.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 8 -->
+        <article class="blog-post-card" data-category="case-studies" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Website Redesign">
+          </div>
+          <div class="post-card-content">
+            <span class="post-card-category">Case Study</span>
+            <div class="post-card-meta">
+              <span class="post-date">December 25, 2024</span>
+              <span class="post-read-time">11 min read</span>
+            </div>
+            <h3>E-commerce Website Redesign Journey</h3>
+            <p>How UX research and strategic design improved conversion rates by 45%.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 9 -->
+        <article class="blog-post-card" data-category="tips" data-aos="fade-up" data-aos-delay="150">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Design Tools">
+          </div>
+          <div class="post-card-content">
+            <span class="post-card-category">Design Tips</span>
+            <div class="post-card-meta">
+              <span class="post-date">December 22, 2024</span>
+              <span class="post-read-time">6 min read</span>
+            </div>
+            <h3>Essential Design Tools for 2025</h3>
+            <p>My favorite software, plugins, and resources that streamline the design workflow.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination" data-aos="fade-up">
+        <button class="pagination-btn" disabled>← Previous</button>
+        <div class="pagination-numbers">
+          <button class="pagination-number active">1</button>
+          <button class="pagination-number">2</button>
+          <button class="pagination-number">3</button>
+          <span class="pagination-dots">...</span>
+          <button class="pagination-number">8</button>
+        </div>
+        <button class="pagination-btn">Next →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="newsletter-card" data-aos="fade-up">
+        <div class="newsletter-content">
+          <span class="section-badge">Stay Updated</span>
+          <h2>Design Insights in Your Inbox</h2>
+          <p>Get weekly design tips, case studies, and industry insights delivered straight to your inbox. Join 5,000+ designers.</p>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Explore</span>
+        <h2 class="section-title">Browse by Topic</h2>
+        <p class="section-subtitle">Find content that interests you</p>
+      </div>
+      <div class="categories-grid">
+        <a href="#" class="category-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="category-icon">📚</div>
+          <h3>Tutorials</h3>
+          <p>24 articles</p>
+        </a>
+        <a href="#" class="category-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="category-icon">📊</div>
+          <h3>Case Studies</h3>
+          <p>18 articles</p>
+        </a>
+        <a href="#" class="category-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="category-icon">💡</div>
+          <h3>Design Tips</h3>
+          <p>32 articles</p>
+        </a>
+        <a href="#" class="category-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="category-icon">📰</div>
+          <h3>Industry News</h3>
+          <p>15 articles</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <h2>Need Design Help?</h2>
+        <p>Let's discuss how I can help bring your project to life.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg">Start a Project</a>
+          <a href="portfolio.html" class="btn btn-secondary btn-lg">View Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Alex<span>Chen</span></a>
+          <p class="footer-description">Graphic designer crafting visual solutions that tell stories and drive results.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Behance">🎨</a>
+            <a href="#" aria-label="Dribbble">🏀</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Brand Identity</a></li>
+            <li><a href="services.html" class="footer-link">Web Design</a></li>
+            <li><a href="services.html" class="footer-link">Print Design</a></li>
+            <li><a href="services.html" class="footer-link">Illustration</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@alexchen.design" class="footer-link">hello@alexchen.design</a></li>
+            <li><a href="tel:+15551234567" class="footer-link">+1 (555) 123-4567</a></li>
+            <li><span class="footer-link">San Francisco, CA</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Alex Chen. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

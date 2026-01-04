@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Healthy Recipes - Green Harvest. Discover nutritious recipes using fresh organic ingredients from local farms.">
+    <title>Healthy Recipes | Green Harvest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../core/css/base.css">
+    <link rel="stylesheet" href="../../core/css/components.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Green<span>Harvest</span></a>
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="shop.html" class="navbar-link">Shop</a></li>
+                <li><a href="recipes.html" class="navbar-link active">Recipes</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Recipes Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Healthy Recipes</h1>
+            <p>Nutritious meals made with fresh organic ingredients</p>
+        </div>
+    </section>
+
+    <!-- Recipe Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="recipe-categories">
+                <a href="#breakfast" class="recipe-category-card">
+                    <div class="category-icon">🌅</div>
+                    <h3>Breakfast</h3>
+                    <p>Start your day right</p>
+                </a>
+                <a href="#lunch" class="recipe-category-card">
+                    <div class="category-icon">🥗</div>
+                    <h3>Lunch</h3>
+                    <p>Light and fresh</p>
+                </a>
+                <a href="#dinner" class="recipe-category-card">
+                    <div class="category-icon">🍽️</div>
+                    <h3>Dinner</h3>
+                    <p>Wholesome meals</p>
+                </a>
+                <a href="#snacks" class="recipe-category-card">
+                    <div class="category-icon">🥕</div>
+                    <h3>Snacks</h3>
+                    <p>Healthy bites</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Recipe -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="featured-recipe">
+                <div class="recipe-image">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+                        alt="Quinoa Buddha Bowl">
+                </div>
+                <div class="recipe-content">
+                    <span class="recipe-badge">Featured Recipe</span>
+                    <h2>Quinoa Buddha Bowl</h2>
+                    <p>A nourishing bowl packed with organic quinoa, roasted vegetables, and tahini dressing. Perfect
+                        for lunch or dinner.</p>
+                    <div class="recipe-meta">
+                        <span>⏱️ 30 mins</span>
+                        <span>👥 4 servings</span>
+                        <span>🥗 Vegan</span>
+                    </div>
+                    <a href="#recipe-detail" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Grid -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Latest Recipes</h2>
+            <div class="recipes-grid">
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg"
+                            alt="Avocado Toast">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Avocado Toast with Poached Egg</h3>
+                        <p>Simple, delicious, and packed with healthy fats.</p>
+                        <div class="recipe-meta">
+                            <span>⏱️ 15 mins</span>
+                            <span>🥚 Contains eggs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg"
+                            alt="Green Smoothie">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Green Power Smoothie</h3>
+                        <p>Boost your energy with this nutrient-rich smoothie.</p>
+                        <div class="recipe-meta">
+                            <span>⏱️ 5 mins</span>
+                            <span>🥤 Vegan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg"
+                            alt="Grilled Salmon">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Herb-Crusted Salmon</h3>
+                        <p>Omega-3 rich salmon with fresh herbs and lemon.</p>
+                        <div class="recipe-meta">
+                            <span>⏱️ 25 mins</span>
+                            <span>🐟 Contains fish</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get Recipe Updates</h2>
+                <p>Subscribe for weekly healthy recipes and cooking tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Green Harvest</h3>
+                    <p>Fresh organic groceries from local farms to your table.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Green Harvest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../core/js/main.js"></script>
+</body>
+
+</html>

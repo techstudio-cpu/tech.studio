@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wanderlust Journal - A travel blog sharing adventures, destination guides, and travel tips from around the world.">
+  <title>Wanderlust Journal | Travel Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Wanderlust<span>.</span></a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link active">Home</a></li>
+        <li><a href="destinations.html" class="navbar-link">Destinations</a></li>
+        <li><a href="blog.html" class="navbar-link">Blog</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        <li><a href="#subscribe" class="btn btn-primary btn-sm navbar-cta">Subscribe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero hero-blog">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up">
+        <span class="hero-badge">✈️ Travel Stories</span>
+        <h1 class="hero-title">Explore the World Through My Eyes</h1>
+        <p class="hero-description">Join me on adventures across continents. From hidden gems to iconic landmarks, discover travel guides, tips, and stories that inspire your next journey.</p>
+        <div class="hero-buttons">
+          <a href="blog.html" class="btn btn-primary btn-lg">Read Latest Posts</a>
+          <a href="destinations.html" class="btn btn-secondary btn-lg">Explore Destinations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Post -->
+  <section class="section">
+    <div class="container">
+      <div class="featured-post" data-aos="fade-up">
+        <div class="featured-image">
+          <img src="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Santorini Greece">
+          <span class="featured-badge">Featured</span>
+        </div>
+        <div class="featured-content">
+          <div class="post-meta">
+            <span class="post-category">Europe</span>
+            <span class="post-date">January 2, 2025</span>
+          </div>
+          <h2>A Week in Santorini: The Ultimate Greek Island Guide</h2>
+          <p>Discover the magic of Santorini's iconic blue domes, stunning sunsets, and hidden beaches. This comprehensive guide covers everything from the best time to visit to where to find the most authentic Greek cuisine.</p>
+          <div class="post-author">
+            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Maya Travels">
+            <div>
+              <span class="author-name">Maya Sharma</span>
+              <span class="read-time">8 min read</span>
+            </div>
+          </div>
+          <a href="blog.html" class="btn btn-primary">Read Full Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Posts -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Latest Stories</span>
+        <h2 class="section-title">Recent Adventures</h2>
+        <p class="section-subtitle">Fresh travel tales and destination guides</p>
+      </div>
+      <div class="posts-grid">
+        <article class="post-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-image">
+            <img src="https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bali Rice Terraces">
+            <span class="post-category-badge">Asia</span>
+          </div>
+          <div class="post-content">
+            <div class="post-meta">
+              <span class="post-date">Dec 28, 2024</span>
+              <span class="read-time">6 min</span>
+            </div>
+            <h3>Bali Beyond the Beaches: Exploring Ubud's Rice Terraces</h3>
+            <p>Escape the crowds and discover the spiritual heart of Bali in Ubud's lush green landscapes.</p>
+            <a href="blog.html" class="post-link">Read More →</a>
+          </div>
+        </article>
+        <article class="post-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="post-image">
+            <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tokyo Night">
+            <span class="post-category-badge">Asia</span>
+          </div>
+          <div class="post-content">
+            <div class="post-meta">
+              <span class="post-date">Dec 20, 2024</span>
+              <span class="read-time">10 min</span>
+            </div>
+            <h3>Tokyo After Dark: A Night Owl's Guide to Japan's Capital</h3>
+            <p>From neon-lit streets to hidden izakayas, experience Tokyo's vibrant nightlife scene.</p>
+            <a href="blog.html" class="post-link">Read More →</a>
+          </div>
+        </article>
+        <article class="post-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="post-image">
+            <img src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Swiss Alps">
+            <span class="post-category-badge">Europe</span>
+          </div>
+          <div class="post-content">
+            <div class="post-meta">
+              <span class="post-date">Dec 15, 2024</span>
+              <span class="read-time">7 min</span>
+            </div>
+            <h3>Swiss Alps on a Budget: Yes, It's Possible!</h3>
+            <p>Practical tips for experiencing Switzerland's stunning mountains without breaking the bank.</p>
+            <a href="blog.html" class="post-link">Read More →</a>
+          </div>
+        </article>
+        <article class="post-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="post-image">
+            <img src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Morocco">
+            <span class="post-category-badge">Africa</span>
+          </div>
+          <div class="post-content">
+            <div class="post-meta">
+              <span class="post-date">Dec 10, 2024</span>
+              <span class="read-time">9 min</span>
+            </div>
+            <h3>Marrakech Magic: A First-Timer's Complete Guide</h3>
+            <p>Navigate the souks, riads, and medinas of Morocco's most enchanting city.</p>
+            <a href="blog.html" class="post-link">Read More →</a>
+          </div>
+        </article>
+        <article class="post-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="post-image">
+            <img src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=600" alt="New Zealand">
+            <span class="post-category-badge">Oceania</span>
+          </div>
+          <div class="post-content">
+            <div class="post-meta">
+              <span class="post-date">Dec 5, 2024</span>
+              <span class="read-time">12 min</span>
+            </div>
+            <h3>New Zealand Road Trip: 2 Weeks on the South Island</h3>
+            <p>The ultimate itinerary for exploring NZ's dramatic landscapes by car.</p>
+            <a href="blog.html" class="post-link">Read More →</a>
+          </div>
+        </article>
+        <article class="post-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="post-image">
+            <img src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Iceland">
+            <span class="post-category-badge">Europe</span>
+          </div>
+          <div class="post-content">
+            <div class="post-meta">
+              <span class="post-date">Nov 28, 2024</span>
+              <span class="read-time">8 min</span>
+            </div>
+            <h3>Chasing Northern Lights in Iceland: A Complete Guide</h3>
+            <p>When, where, and how to see the aurora borealis in the land of fire and ice.</p>
+            <a href="blog.html" class="post-link">Read More →</a>
+          </div>
+        </article>
+      </div>
+      <div class="text-center mt-4">
+        <a href="blog.html" class="btn btn-secondary btn-lg">View All Posts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Explore</span>
+        <h2 class="section-title">Popular Destinations</h2>
+        <p class="section-subtitle">Browse guides by location</p>
+      </div>
+      <div class="destinations-grid">
+        <a href="destinations.html" class="destination-card destination-large" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Europe">
+          <div class="destination-overlay">
+            <h3>Europe</h3>
+            <span>45 Guides</span>
+          </div>
+        </a>
+        <a href="destinations.html" class="destination-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Asia">
+          <div class="destination-overlay">
+            <h3>Asia</h3>
+            <span>38 Guides</span>
+          </div>
+        </a>
+        <a href="destinations.html" class="destination-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Africa">
+          <div class="destination-overlay">
+            <h3>Africa</h3>
+            <span>22 Guides</span>
+          </div>
+        </a>
+        <a href="destinations.html" class="destination-card" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Oceania">
+          <div class="destination-overlay">
+            <h3>Oceania</h3>
+            <span>15 Guides</span>
+          </div>
+        </a>
+        <a href="destinations.html" class="destination-card" data-aos="fade-up" data-aos-delay="500">
+          <img src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Americas">
+          <div class="destination-overlay">
+            <h3>Americas</h3>
+            <span>30 Guides</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image" data-aos="fade-right">
+          <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Maya Sharma">
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <span class="section-badge">About Me</span>
+          <h2>Hi, I'm Maya!</h2>
+          <p>I'm a travel writer and photographer from Mumbai who left her corporate job to explore the world. Over the past 5 years, I've visited 40+ countries and documented my adventures here.</p>
+          <p>This blog is my way of sharing practical travel tips, honest reviews, and stories that inspire you to pack your bags and explore. Whether you're a budget backpacker or luxury traveler, there's something here for everyone.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">40+</span>
+              <span class="stat-label">Countries</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">150+</span>
+              <span class="stat-label">Articles</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50K+</span>
+              <span class="stat-label">Readers</span>
+            </div>
+          </div>
+          <a href="about.html" class="btn btn-primary">Read My Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section newsletter-section" id="subscribe">
+    <div class="container">
+      <div class="newsletter-content" data-aos="fade-up">
+        <h2>Join the Adventure</h2>
+        <p>Subscribe to get travel tips, destination guides, and exclusive content delivered to your inbox every week.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email address" class="form-input" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <span class="newsletter-note">Join 15,000+ travelers. Unsubscribe anytime.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Wanderlust<span>.</span></a>
+          <p class="footer-description">Inspiring travel stories and practical guides to help you explore the world with confidence.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Pinterest">📌</a>
+            <a href="#" aria-label="YouTube">📺</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Destinations</h4>
+          <ul class="footer-links">
+            <li><a href="destinations.html" class="footer-link">Europe</a></li>
+            <li><a href="destinations.html" class="footer-link">Asia</a></li>
+            <li><a href="destinations.html" class="footer-link">Africa</a></li>
+            <li><a href="destinations.html" class="footer-link">Americas</a></li>
+            <li><a href="destinations.html" class="footer-link">Oceania</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html" class="footer-link">Travel Tips</a></li>
+            <li><a href="blog.html" class="footer-link">Itineraries</a></li>
+            <li><a href="blog.html" class="footer-link">Budget Travel</a></li>
+            <li><a href="blog.html" class="footer-link">Solo Travel</a></li>
+            <li><a href="blog.html" class="footer-link">Photography</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">Work With Me</a></li>
+            <li><a href="#" class="footer-link">Press Kit</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Wanderlust Journal. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

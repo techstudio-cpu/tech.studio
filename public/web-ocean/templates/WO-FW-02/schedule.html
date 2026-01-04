@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View FitLife Gym's weekly class schedule, filter by training style, and reserve your spot instantly.">
+  <title>FitLife Gym | Schedule</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-to-content" href="#main-content">Skip to content</a>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Fit<span>Life</span></a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="programs.html" class="navbar-link">Programs</a></li>
+        <li><a href="trainers.html" class="navbar-link">Trainers</a></li>
+        <li><a href="membership.html" class="navbar-link">Membership</a></li>
+        <li><a href="schedule.html" class="navbar-link active">Schedule</a></li>
+        <li><a href="#" class="btn btn-primary btn-sm navbar-cta">Join Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="page-hero">
+    <div class="container">
+      <span class="hero-badge">Schedule</span>
+      <h1>Book Classes, Labs & Recovery Blocks</h1>
+      <p>200+ weekly sessions led by our expert coaches. Filter by modality, intensity, or location and reserve instantly.</p>
+      <div class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Schedule</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Filter Bar -->
+    <section class="section">
+      <div class="container">
+        <div class="schedule-filter-bar" data-aos="fade-up">
+          <div class="filter-group">
+            <label for="daySelect">Day</label>
+            <select id="daySelect" class="form-select">
+              <option>All week</option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Training Type</label>
+            <div class="filter-tags">
+              <button class="active" type="button">All</button>
+              <button type="button">Strength</button>
+              <button type="button">Conditioning</button>
+              <button type="button">Mind & Body</button>
+              <button type="button">Recovery</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label for="locationSelect">Studio</label>
+            <select id="locationSelect" class="form-select">
+              <option>Main Club</option>
+              <option>Rooftop</option>
+              <option>Recovery Lab</option>
+              <option>Outdoor</option>
+            </select>
+          </div>
+          <a href="membership.html" class="btn btn-primary btn-sm">Get Unlimited Access</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly Schedule Table -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge">Weekly Grid</span>
+          <h2>Signature Classes</h2>
+          <p class="section-subtitle">Tap any slot in the app to reserve in real time.</p>
+        </div>
+        <div class="schedule-table" data-aos="fade-up">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>6:00 AM</td>
+                <td><div class="class-slot"><strong>HIIT Ignite</strong><span>Leo  Studio A</span></div></td>
+                <td><div class="class-slot"><strong>Sunrise Flow</strong><span>Nisha  Rooftop</span></div></td>
+                <td><div class="class-slot"><strong>Barbell Club</strong><span>Arjun  Strength Lab</span></div></td>
+                <td><div class="class-slot"><strong>Metabolic Ride</strong><span>Leo  Cycle Studio</span></div></td>
+                <td><div class="class-slot"><strong>Warrior Boxing</strong><span>Miguel  Studio B</span></div></td>
+                <td><div class="class-slot"><strong>Trail Prep</strong><span>Guest Coach  Outdoor</span></div></td>
+              </tr>
+              <tr>
+                <td>7:30 AM</td>
+                <td><div class="class-slot"><strong>Reformer Core</strong><span>Kavya  Studio C</span></div></td>
+                <td><div class="class-slot"><strong>Strength Foundations</strong><span>Arjun  Strength Lab</span></div></td>
+                <td><div class="class-slot"><strong>Hot Vinyasa</strong><span>Nisha  Studio B</span></div></td>
+                <td><div class="class-slot"><strong>Row & Ride</strong><span>Leo  Cardio Zone</span></div></td>
+                <td><div class="class-slot"><strong>Mobility Reset</strong><span>Riya  Recovery Lab</span></div></td>
+                <td><div class="class-slot"><strong>Family Fit</strong><span>Team  Main Floor</span></div></td>
+              </tr>
+              <tr>
+                <td>12:30 PM</td>
+                <td><div class="class-slot"><strong>Lunch Express</strong><span>Leo  Studio A</span></div></td>
+                <td><div class="class-slot"><strong>Boxing Drills</strong><span>Miguel  Studio B</span></div></td>
+                <td><div class="class-slot"><strong>Desk Detox</strong><span>Nisha  Mind Lab</span></div></td>
+                <td><div class="class-slot"><strong>Power Pilates</strong><span>Kavya  Studio C</span></div></td>
+                <td><div class="class-slot"><strong>Strength Circuit</strong><span>Arjun  Strength Lab</span></div></td>
+                <td><div class="class-slot"><strong>Sound Bath</strong><span>Guest Healer  Recovery</span></div></td>
+              </tr>
+              <tr>
+                <td>6:30 PM</td>
+                <td><div class="class-slot"><strong>Metabolic Burn Lab</strong><span>Riya  Studio A</span></div></td>
+                <td><div class="class-slot"><strong>Spin Noir</strong><span>Leo  Cycle Studio</span></div></td>
+                <td><div class="class-slot"><strong>Strength Queens</strong><span>Kavya  Strength Lab</span></div></td>
+                <td><div class="class-slot"><strong>Combat Conditioning</strong><span>Miguel  Studio B</span></div></td>
+                <td><div class="class-slot"><strong>Yin & Candlelight</strong><span>Nisha  Rooftop</span></div></td>
+                <td><div class="class-slot"><strong>Sunset Sculpt</strong><span>Guest Coach  Rooftop</span></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Capsules -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge">Today</span>
+          <h2>Featured Sessions</h2>
+          <p class="section-subtitle">Curated highlights with remaining spots.</p>
+        </div>
+        <div class="programs-grid">
+          <div class="program-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="program-icon"></div>
+            <h3>Express HIIT</h3>
+            <p>30-minute mega set targeting metabolic conditioning.</p>
+            <ul class="program-features">
+              <li>Intensity: </li>
+              <li>Coach: Leo</li>
+              <li>Slots left: 4</li>
+            </ul>
+            <a href="#" class="program-link">Reserve Spot </a>
+          </div>
+          <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="program-icon"></div>
+            <h3>Rooftop Flow</h3>
+            <p>Sunset mobility + breath work with live percussion.</p>
+            <ul class="program-features">
+              <li>Intensity: </li>
+              <li>Coach: Nisha</li>
+              <li>Slots left: 2</li>
+            </ul>
+            <a href="#" class="program-link">Reserve Spot </a>
+          </div>
+          <div class="program-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="program-icon"></div>
+            <h3>Fight Camp</h3>
+            <p>Technical pad work, footwork ladders, and sparring labs.</p>
+            <ul class="program-features">
+              <li>Intensity: </li>
+              <li>Coach: Miguel</li>
+              <li>Slots left: 1</li>
+            </ul>
+            <a href="#" class="program-link">Reserve Spot </a>
+          </div>
+          <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="program-icon"></div>
+            <h3>Recovery Circuit</h3>
+            <p>Contrast therapy, guided breathing, and assisted stretching.</p>
+            <ul class="program-features">
+              <li>Intensity: Chill</li>
+              <li>Coach: Sana</li>
+              <li>Slots left: 6</li>
+            </ul>
+            <a href="#" class="program-link">Reserve Spot </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + Booking -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="schedule-cta" data-aos="fade-up">
+          <div>
+            <h3>Need a recurring slot?</h3>
+            <p>Performance & Elite members can lock weekly reservations via concierge.</p>
+          </div>
+          <div class="cta-buttons">
+            <a href="membership.html" class="btn btn-primary">Upgrade Plan</a>
+            <a href="tel:+919876543210" class="btn btn-secondary">Talk to Concierge</a>
+          </div>
+        </div>
+
+        <div class="booking-form mt-3" data-aos="fade-up">
+          <h3>Request Private Session</h3>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="sessionName" class="form-label form-label-required">Full Name</label>
+                <input id="sessionName" type="text" class="form-input" placeholder="Rahul Verma" required>
+              </div>
+              <div class="form-group">
+                <label for="sessionEmail" class="form-label form-label-required">Email</label>
+                <input id="sessionEmail" type="email" class="form-input" placeholder="rahul@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="sessionDate" class="form-label form-label-required">Preferred Date</label>
+                <input id="sessionDate" type="date" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="sessionType" class="form-label">Session Type</label>
+                <select id="sessionType" class="form-select">
+                  <option>Personal Training</option>
+                  <option>Mobility Therapy</option>
+                  <option>Boxing Private</option>
+                  <option>Corporate Booking</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sessionNotes" class="form-label">Goals / Notes</label>
+              <textarea id="sessionNotes" class="form-textarea" placeholder="Tell us about your requirements and schedule."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg w-100">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Fit<span>Life</span></a>
+          <p class="footer-description">Premium fitness, recovery, and lifestyle club. Designed by TechStudio.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"></a>
+            <a href="#" aria-label="Facebook"></a>
+            <a href="#" aria-label="YouTube"></a>
+            <a href="#" aria-label="Twitter"></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Visit</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link">Bandra West, Mumbai</span></li>
+            <li><span class="footer-link">+91 98765 43210</span></li>
+            <li><span class="footer-link">hello@fitlife.in</span></li>
+            <li><span class="footer-link">6AM  11PM</span></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="programs.html" class="footer-link">Programs</a></li>
+            <li><a href="trainers.html" class="footer-link">Trainers</a></li>
+            <li><a href="membership.html" class="footer-link">Membership</a></li>
+            <li><a href="#" class="footer-link">Community Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">FAQ</a></li>
+            <li><a href="#" class="footer-link">Corporate Wellness</a></li>
+            <li><a href="#" class="footer-link">Gift Cards</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p> 2025 FitLife Gym. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"></button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

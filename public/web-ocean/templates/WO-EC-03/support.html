@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TechVault Support - Get help with your electronics purchases. Warranty information, returns, shipping, and customer support.">
+    <title>Support | TechVault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../core/css/base.css">
+    <link rel="stylesheet" href="../../core/css/components.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Tech<span>Vault</span></a>
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="products.html" class="navbar-link">Products</a></li>
+                <li><a href="categories.html" class="navbar-link">Categories</a></li>
+                <li><a href="deals.html" class="navbar-link">Deals</a></li>
+                <li><a href="support.html" class="navbar-link active">Support</a></li>
+                <li><a href="#" class="btn btn-primary btn-sm navbar-cta">🛒 Cart (0)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Customer Support</h1>
+            <p class="page-subtitle">We're here to help you with all your electronics needs</p>
+        </div>
+    </section>
+
+    <!-- Support Options -->
+    <section class="section">
+        <div class="container">
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">📞</div>
+                    <h3>Phone Support</h3>
+                    <p>Call our expert technicians for immediate assistance</p>
+                    <div class="support-contact">
+                        <strong>1-800-TECH-HELP</strong>
+                        <span>Mon-Fri: 9AM-8PM IST</span>
+                    </div>
+                    <a href="tel:18008324435" class="btn btn-primary">Call Now</a>
+                </div>
+
+                <div class="support-card">
+                    <div class="support-icon">💬</div>
+                    <h3>Live Chat</h3>
+                    <p>Get instant help from our support team</p>
+                    <div class="support-contact">
+                        <strong>Available 24/7</strong>
+                        <span>Average response: 2 minutes</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="startChat()">Start Chat</button>
+                </div>
+
+                <div class="support-card">
+                    <div class="support-icon">📧</div>
+                    <h3>Email Support</h3>
+                    <p>Send us detailed queries and we'll respond within 24 hours</p>
+                    <div class="support-contact">
+                        <strong>support@techvault.com</strong>
+                        <span>Response within 24 hours</span>
+                    </div>
+                    <a href="mailto:support@techvault.com" class="btn btn-primary">Send Email</a>
+                </div>
+
+                <div class="support-card">
+                    <div class="support-icon">📱</div>
+                    <h3>WhatsApp Support</h3>
+                    <p>Connect with us on WhatsApp for quick support</p>
+                    <div class="support-contact">
+                        <strong>+91 98765 43210</strong>
+                        <span>Mon-Sat: 10AM-6PM IST</span>
+                    </div>
+                    <a href="https://wa.me/919876543210" class="btn btn-primary">WhatsApp Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Help Topics -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quick Help Topics</h2>
+                <p class="section-subtitle">Find answers to common questions</p>
+            </div>
+            <div class="help-topics">
+                <div class="topic-card">
+                    <div class="topic-icon">🚚</div>
+                    <h4>Shipping & Delivery</h4>
+                    <p>Track your orders and learn about our shipping policies</p>
+                    <a href="#shipping" class="topic-link">Learn More →</a>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">↩️</div>
+                    <h4>Returns & Exchanges</h4>
+                    <p>Easy returns within 30 days of purchase</p>
+                    <a href="#returns" class="topic-link">Learn More →</a>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">🛡️</div>
+                    <h4>Warranty & Support</h4>
+                    <p>Comprehensive warranty coverage for all products</p>
+                    <a href="#warranty" class="topic-link">Learn More →</a>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">💳</div>
+                    <h4>Payment & Billing</h4>
+                    <p>Secure payment options and billing support</p>
+                    <a href="#payment" class="topic-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Support Sections -->
+    <section class="section" id="shipping">
+        <div class="container">
+            <div class="support-detail">
+                <div class="detail-content">
+                    <h3>🚚 Shipping & Delivery</h3>
+                    <div class="detail-info">
+                        <h4>Standard Delivery</h4>
+                        <p>Free shipping on orders over ₹999. Delivery within 3-5 business days.</p>
+
+                        <h4>Express Delivery</h4>
+                        <p>Premium delivery service with tracking. Available in major cities for ₹99.</p>
+
+                        <h4>International Shipping</h4>
+                        <p>Worldwide shipping available. Customs duties may apply.</p>
+
+                        <h4>Order Tracking</h4>
+                        <p>Real-time tracking updates sent via SMS and email.</p>
+                    </div>
+                </div>
+                <div class="detail-image">
+                    <img src="https://images.pexels.com/photos/3945509/pexels-photo-3945509.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Shipping">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light" id="returns">
+        <div class="container">
+            <div class="support-detail">
+                <div class="detail-image">
+                    <img src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Returns">
+                </div>
+                <div class="detail-content">
+                    <h3>↩️ Returns & Exchanges</h3>
+                    <div class="detail-info">
+                        <h4>30-Day Return Policy</h4>
+                        <p>Return any product within 30 days for a full refund or exchange.</p>
+
+                        <h4>Return Process</h4>
+                        <p>1. Contact our support team<br>2. Pack the item securely<br>3. Ship using our prepaid
+                            label<br>4. Refund processed within 5-7 days</p>
+
+                        <h4>Return Conditions</h4>
+                        <p>Items must be unused, in original packaging with all accessories.</p>
+
+                        <h4>Exchanges</h4>
+                        <p>Exchange for a different size, color, or model at no extra cost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="warranty">
+        <div class="container">
+            <div class="support-detail">
+                <div class="detail-content">
+                    <h3>🛡️ Warranty & Support</h3>
+                    <div class="detail-info">
+                        <h4>Manufacturer Warranty</h4>
+                        <p>All products come with manufacturer warranty. Terms vary by brand.</p>
+
+                        <h4>Extended Warranty</h4>
+                        <p>Purchase extended warranty for additional peace of mind.</p>
+
+                        <h4>Technical Support</h4>
+                        <p>Free technical support for all products during warranty period.</p>
+
+                        <h4>Repair Services</h4>
+                        <p>Authorized service centers available across major cities.</p>
+                    </div>
+                </div>
+                <div class="detail-image">
+                    <img src="https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Warranty">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light" id="payment">
+        <div class="container">
+            <div class="support-detail">
+                <div class="detail-image">
+                    <img src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Payment">
+                </div>
+                <div class="detail-content">
+                    <h3>💳 Payment & Billing</h3>
+                    <div class="detail-info">
+                        <h4>Secure Payment</h4>
+                        <p>All transactions are secured with 256-bit SSL encryption.</p>
+
+                        <h4>Payment Methods</h4>
+                        <p>Credit/Debit cards, UPI, Net Banking, Wallets, Cash on Delivery.</p>
+
+                        <h4>EMI Options</h4>
+                        <p>Flexible EMI options available from major banks.</p>
+
+                        <h4>Billing Support</h4>
+                        <p>Need help with your bill? Contact our billing team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How long does shipping take?</h4>
+                    <p>Standard delivery takes 3-5 business days. Express delivery is available for 1-2 days in select
+                        cities.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I cancel my order?</h4>
+                    <p>Orders can be cancelled within 24 hours of placement. Contact our support team immediately.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer installation services?</h4>
+                    <p>Yes, we offer installation services for select products. Additional charges may apply.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What if my product is damaged?</h4>
+                    <p>Report damaged products within 48 hours. We'll arrange for replacement or full refund.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you provide receipts?</h4>
+                    <p>Digital receipts are sent via email. Physical receipts available upon request.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I track my order?</h4>
+                    <p>Use the tracking link sent via SMS and email, or check your order status on our website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="contact-form-section">
+                <div class="form-header">
+                    <h2>Still Need Help?</h2>
+                    <p>Send us a message and we'll get back to you as soon as possible.</p>
+                </div>
+                <form class="support-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Support Category</label>
+                            <select id="category" name="category" required>
+                                <option value="">Select Category</option>
+                                <option value="shipping">Shipping & Delivery</option>
+                                <option value="returns">Returns & Exchanges</option>
+                                <option value="warranty">Warranty & Support</option>
+                                <option value="payment">Payment & Billing</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="order">Order Number (if applicable)</label>
+                        <input type="text" id="order" name="order">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Describe your issue in detail..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechVault</h3>
+                    <p>Your trusted source for premium electronics and gadgets. Quality products, exceptional service.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#shipping">Shipping</a></li>
+                        <li><a href="#returns">Returns</a></li>
+                        <li><a href="#warranty">Warranty</a></li>
+                        <li><a href="#payment">Payment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📞 1-800-TECH-HELP</li>
+                        <li>💬 Live Chat 24/7</li>
+                        <li>📧 support@techvault.com</li>
+                        <li>📱 WhatsApp Support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVault. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../core/js/main.js"></script>
+    <script>
+        function startChat() {
+            // Simulate starting a live chat
+            alert('Live chat feature coming soon! Please use our contact form or call our support line.');
+        }
+
+        // Form submission
+        document.querySelector('.support-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! Our support team will get back to you within 24 hours.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

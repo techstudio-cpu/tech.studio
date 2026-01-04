@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Shop our curated collection of elegant dresses, tops, accessories and more at Velvet & Thread.">
+  <title>Shop | Velvet & Thread</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Velvet<span>&</span>Thread</a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="shop.html" class="navbar-link active">Shop</a></li>
+        <li><a href="lookbook.html" class="navbar-link">Lookbook</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm navbar-cta">Shop Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-item active">Shop</span>
+      </nav>
+      <h1 class="page-title">Our Collection</h1>
+      <p class="page-subtitle">Discover timeless pieces crafted for the modern woman</p>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section class="section shop-section">
+    <div class="container">
+      <div class="shop-layout">
+        <!-- Sidebar Filters -->
+        <aside class="shop-sidebar">
+          <div class="filter-group">
+            <h4 class="filter-title">Categories</h4>
+            <ul class="filter-list">
+              <li><a href="#" class="filter-link active">All Products <span>(405)</span></a></li>
+              <li><a href="#" class="filter-link">Dresses <span>(120)</span></a></li>
+              <li><a href="#" class="filter-link">Tops & Blouses <span>(85)</span></a></li>
+              <li><a href="#" class="filter-link">Outerwear <span>(45)</span></a></li>
+              <li><a href="#" class="filter-link">Knitwear <span>(55)</span></a></li>
+              <li><a href="#" class="filter-link">Accessories <span>(100)</span></a></li>
+            </ul>
+          </div>
+          <div class="filter-group">
+            <h4 class="filter-title">Size</h4>
+            <div class="size-filters">
+              <button class="size-btn">XS</button>
+              <button class="size-btn">S</button>
+              <button class="size-btn active">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <h4 class="filter-title">Color</h4>
+            <div class="color-filters">
+              <button class="color-btn" style="background: #000000" aria-label="Black"></button>
+              <button class="color-btn" style="background: #ffffff; border: 1px solid #ddd" aria-label="White"></button>
+              <button class="color-btn active" style="background: #c9a87c" aria-label="Gold"></button>
+              <button class="color-btn" style="background: #d4a5a5" aria-label="Rose"></button>
+              <button class="color-btn" style="background: #4a5568" aria-label="Gray"></button>
+              <button class="color-btn" style="background: #2d3748" aria-label="Navy"></button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Products Grid -->
+        <div class="shop-content">
+          <div class="shop-toolbar">
+            <p class="results-count">Showing <strong>1-12</strong> of <strong>405</strong> products</p>
+            <div class="shop-sort">
+              <label for="sort">Sort by:</label>
+              <select id="sort" class="form-select">
+                <option>Featured</option>
+                <option>Newest</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Best Selling</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <div class="image-gallery">
+                  <div class="gallery-image active">
+                    <img
+                      src="https://images.pexels.com/photos/6311251/pexels-photo-6311251.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Silk Midi Dress">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311252/pexels-photo-6311252.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Silk Midi Dress Detail">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311253/pexels-photo-6311253.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Silk Midi Dress Back">
+                  </div>
+                </div>
+                <div class="product-badges">
+                  <span class="badge badge-primary">New</span>
+                </div>
+                <div class="gallery-indicators">
+                  <div class="gallery-indicator active"></div>
+                  <div class="gallery-indicator"></div>
+                  <div class="gallery-indicator"></div>
+                </div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Add to wishlist">♡</button>
+                  <button class="product-action-btn" aria-label="Quick view">👁</button>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Dresses</span>
+                <h3 class="product-title">Silk Midi Dress</h3>
+                <a href="#" class="btn btn-outline btn-sm">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <div class="image-gallery">
+                  <div class="gallery-image active">
+                    <img
+                      src="https://images.pexels.com/photos/6311600/pexels-photo-6311600.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Linen Blazer">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311601/pexels-photo-6311601.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Linen Blazer Detail">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311602/pexels-photo-6311602.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Linen Blazer Close-up">
+                  </div>
+                </div>
+                <div class="gallery-indicators">
+                  <div class="gallery-indicator active"></div>
+                  <div class="gallery-indicator"></div>
+                  <div class="gallery-indicator"></div>
+                </div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Add to wishlist">♡</button>
+                  <button class="product-action-btn" aria-label="Quick view">👁</button>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Outerwear</span>
+                <h3 class="product-title">Linen Blazer</h3>
+                <a href="#" class="btn btn-outline btn-sm">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <div class="image-gallery">
+                  <div class="gallery-image active">
+                    <img
+                      src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Gold Chain Necklace">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/1152078/pexels-photo-1152078.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Gold Chain Necklace Detail">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/1152079/pexels-photo-1152079.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Gold Chain Necklace Close-up">
+                  </div>
+                </div>
+                <div class="product-badges">
+                  <span class="badge badge-success">Bestseller</span>
+                </div>
+                <div class="gallery-indicators">
+                  <div class="gallery-indicator active"></div>
+                  <div class="gallery-indicator"></div>
+                  <div class="gallery-indicator"></div>
+                </div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Add to wishlist">♡</button>
+                  <button class="product-action-btn" aria-label="Quick view">👁</button>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Accessories</span>
+                <h3 class="product-title">Gold Chain Necklace</h3>
+                <a href="#" class="btn btn-outline btn-sm">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <div class="image-gallery">
+                  <div class="gallery-image active">
+                    <img
+                      src="https://images.pexels.com/photos/6311158/pexels-photo-6311158.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Cashmere Sweater">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311159/pexels-photo-6311159.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Cashmere Sweater Detail">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311160/pexels-photo-6311160.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Cashmere Sweater Texture">
+                  </div>
+                </div>
+                <div class="gallery-indicators">
+                  <div class="gallery-indicator active"></div>
+                  <div class="gallery-indicator"></div>
+                  <div class="gallery-indicator"></div>
+                </div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Add to wishlist">♡</button>
+                  <button class="product-action-btn" aria-label="Quick view">👁</button>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Knitwear</span>
+                <h3 class="product-title">Cashmere Sweater</h3>
+                <a href="#" class="btn btn-outline btn-sm">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <div class="image-gallery">
+                  <div class="gallery-image active">
+                    <img
+                      src="https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Floral Maxi Dress">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311393/pexels-photo-6311393.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Floral Maxi Dress Detail">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311394/pexels-photo-6311394.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Floral Maxi Dress Pattern">
+                  </div>
+                </div>
+                <div class="gallery-indicators">
+                  <div class="gallery-indicator active"></div>
+                  <div class="gallery-indicator"></div>
+                  <div class="gallery-indicator"></div>
+                </div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Add to wishlist">♡</button>
+                  <button class="product-action-btn" aria-label="Quick view">👁</button>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Dresses</span>
+                <h3 class="product-title">Floral Maxi Dress</h3>
+                <a href="#" class="btn btn-outline btn-sm">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <div class="image-gallery">
+                  <div class="gallery-image active">
+                    <img
+                      src="https://images.pexels.com/photos/6311652/pexels-photo-6311652.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Satin Blouse">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311653/pexels-photo-6311653.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Satin Blouse Detail">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311654/pexels-photo-6311654.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Satin Blouse Fabric">
+                  </div>
+                </div>
+                <div class="product-badges">
+                  <span class="badge badge-warning">Sale</span>
+                </div>
+                <div class="gallery-indicators">
+                  <div class="gallery-indicator active"></div>
+                  <div class="gallery-indicator"></div>
+                  <div class="gallery-indicator"></div>
+                </div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Add to wishlist">♡</button>
+                  <button class="product-action-btn" aria-label="Quick view">👁</button>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Tops</span>
+                <h3 class="product-title">Satin Blouse</h3>
+                <a href="#" class="btn btn-outline btn-sm">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <div class="image-gallery">
+                  <div class="gallery-image active">
+                    <img
+                      src="https://images.pexels.com/photos/6311387/pexels-photo-6311387.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Summer Wrap Dress">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311388/pexels-photo-6311388.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Summer Wrap Dress Detail">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311389/pexels-photo-6311389.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Summer Wrap Dress Back">
+                  </div>
+                </div>
+                <div class="gallery-indicators">
+                  <div class="gallery-indicator active"></div>
+                  <div class="gallery-indicator"></div>
+                  <div class="gallery-indicator"></div>
+                </div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Add to wishlist">♡</button>
+                  <button class="product-action-btn" aria-label="Quick view">👁</button>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Dresses</span>
+                <h3 class="product-title">Summer Wrap Dress</h3>
+                <a href="#" class="btn btn-outline btn-sm">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <div class="image-gallery">
+                  <div class="gallery-image active">
+                    <img
+                      src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Pearl Earrings">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/1536620/pexels-photo-1536620.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Pearl Earrings Detail">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/1536621/pexels-photo-1536621.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Pearl Earrings Close-up">
+                  </div>
+                </div>
+                <div class="gallery-indicators">
+                  <div class="gallery-indicator active"></div>
+                  <div class="gallery-indicator"></div>
+                  <div class="gallery-indicator"></div>
+                </div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Add to wishlist">♡</button>
+                  <button class="product-action-btn" aria-label="Quick view">👁</button>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Accessories</span>
+                <h3 class="product-title">Pearl Drop Earrings</h3>
+                <a href="#" class="btn btn-outline btn-sm">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <div class="image-gallery">
+                  <div class="gallery-image active">
+                    <img
+                      src="https://images.pexels.com/photos/6311475/pexels-photo-6311475.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Wool Coat">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311476/pexels-photo-6311476.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Wool Coat Detail">
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="https://images.pexels.com/photos/6311477/pexels-photo-6311477.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Wool Coat Fabric">
+                  </div>
+                </div>
+                <div class="product-badges">
+                  <span class="badge badge-primary">New</span>
+                </div>
+                <div class="gallery-indicators">
+                  <div class="gallery-indicator active"></div>
+                  <div class="gallery-indicator"></div>
+                  <div class="gallery-indicator"></div>
+                </div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Add to wishlist">♡</button>
+                  <button class="product-action-btn" aria-label="Quick view">👁</button>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Outerwear</span>
+                <h3 class="product-title">Wool Blend Coat</h3>
+                <a href="#" class="btn btn-outline btn-sm">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav class="pagination">
+            <a href="#" class="pagination-item">←</a>
+            <a href="#" class="pagination-item active">1</a>
+            <a href="#" class="pagination-item">2</a>
+            <a href="#" class="pagination-item">3</a>
+            <span class="pagination-item">...</span>
+            <a href="#" class="pagination-item">12</a>
+            <a href="#" class="pagination-item">→</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Velvet<span>&</span>Thread</a>
+          <p class="footer-description">Curating timeless fashion for the modern woman since 2010. Quality, elegance,
+            and style in every stitch.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Pinterest">📌</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Shop</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html" class="footer-link">All Products</a></li>
+            <li><a href="#" class="footer-link">Dresses</a></li>
+            <li><a href="#" class="footer-link">Tops & Blouses</a></li>
+            <li><a href="#" class="footer-link">Accessories</a></li>
+            <li><a href="#" class="footer-link">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="lookbook.html" class="footer-link">Lookbook</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Help</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">FAQs</a></li>
+            <li><a href="#" class="footer-link">Shipping Info</a></li>
+            <li><a href="#" class="footer-link">Returns</a></li>
+            <li><a href="#" class="footer-link">Size Guide</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Velvet & Thread. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+
+</html>

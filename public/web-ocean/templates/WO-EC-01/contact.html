@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Velvet & Thread. We're here to help with orders, styling advice, and any questions.">
+  <title>Contact Us | Velvet & Thread</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Velvet<span>&</span>Thread</a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="shop.html" class="navbar-link">Shop</a></li>
+        <li><a href="lookbook.html" class="navbar-link">Lookbook</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="contact.html" class="navbar-link active">Contact</a></li>
+        <li><a href="shop.html" class="btn btn-primary btn-sm navbar-cta">Shop Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-item active">Contact</span>
+      </nav>
+      <h1 class="page-title">Get in Touch</h1>
+      <p class="page-subtitle">We'd love to hear from you</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-section">
+        <div class="contact-info" data-aos="fade-right">
+          <h2>Let's Connect</h2>
+          <p>Have a question about an order, need styling advice, or just want to say hello? We're here to help and would love to hear from you.</p>
+          
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-text">
+                <h4>Visit Our Boutique</h4>
+                <p>123 Fashion Street, Bandra West<br>Mumbai, Maharashtra 400050</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div class="contact-text">
+                <h4>Call Us</h4>
+                <p>+91 98765 43210<br>Mon-Sat: 10am - 7pm</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-text">
+                <h4>Email Us</h4>
+                <p>hello@velvetandthread.com<br>support@velvetandthread.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">💬</div>
+              <div class="contact-text">
+                <h4>Live Chat</h4>
+                <p>Available 24/7<br>Click the chat icon below</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">📘</a>
+              <a href="#" class="social-link" aria-label="Instagram">📷</a>
+              <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+              <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form" data-aos="fade-left">
+          <h3 class="contact-form-title">Send Us a Message</h3>
+          <form data-validate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name *</label>
+                <input type="text" id="firstName" class="form-input" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name *</label>
+                <input type="text" id="lastName" class="form-input" placeholder="Your last name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address *</label>
+              <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input type="tel" id="phone" class="form-input" placeholder="+91 98765 43210">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject *</label>
+              <select id="subject" class="form-select" required>
+                <option value="">Select a topic</option>
+                <option value="order">Order Inquiry</option>
+                <option value="returns">Returns & Exchanges</option>
+                <option value="styling">Styling Advice</option>
+                <option value="wholesale">Wholesale Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Your Message *</label>
+              <textarea id="message" class="form-textarea" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0!2d72.83!3d19.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDAzJzM2LjAiTiA3MsKwNDknNDguMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        title="Store Location">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Quick Help</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find quick answers to common questions</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+          <button class="faq-question">
+            How long does shipping take?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Standard shipping takes 5-7 business days across India. Express shipping (2-3 days) is available for an additional fee. Metro cities typically receive orders faster.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+          <button class="faq-question">
+            What is your return policy?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We offer a 30-day hassle-free return policy. Items must be unworn, unwashed, and with original tags attached. Refunds are processed within 5-7 business days after we receive the return.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+          <button class="faq-question">
+            How do I track my order?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Once your order ships, you'll receive an email with a tracking number. You can also track your order by logging into your account or using the "Track Order" link in our footer.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+          <button class="faq-question">
+            Do you offer international shipping?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Currently, we ship within India only. We're working on expanding to international markets soon. Sign up for our newsletter to be the first to know when we launch international shipping.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+          <button class="faq-question">
+            Can I modify or cancel my order?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Orders can be modified or cancelled within 2 hours of placing them. After that, our team begins processing and we cannot make changes. Please contact us immediately if you need to modify your order.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Velvet<span>&</span>Thread</a>
+          <p class="footer-description">Curating timeless fashion for the modern woman since 2010. Quality, elegance, and style in every stitch.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Pinterest">📌</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Shop</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html" class="footer-link">All Products</a></li>
+            <li><a href="#" class="footer-link">Dresses</a></li>
+            <li><a href="#" class="footer-link">Tops & Blouses</a></li>
+            <li><a href="#" class="footer-link">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="lookbook.html" class="footer-link">Lookbook</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Help</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">FAQs</a></li>
+            <li><a href="#" class="footer-link">Shipping</a></li>
+            <li><a href="#" class="footer-link">Returns</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Velvet & Thread. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

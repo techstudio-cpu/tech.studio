@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TechVault Products - Browse our complete catalog of electronics, smartphones, laptops, audio gear, and smart home devices.">
+    <title>Products | TechVault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../core/css/base.css">
+    <link rel="stylesheet" href="../../core/css/components.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Tech<span>Vault</span></a>
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="products.html" class="navbar-link active">Products</a></li>
+                <li><a href="categories.html" class="navbar-link">Categories</a></li>
+                <li><a href="deals.html" class="navbar-link">Deals</a></li>
+                <li><a href="support.html" class="navbar-link">Support</a></li>
+                <li><a href="#" class="btn btn-primary btn-sm navbar-cta">🛒 Cart (0)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">All Products</h1>
+            <p class="page-subtitle">Discover our complete range of premium electronics and gadgets</p>
+        </div>
+    </section>
+
+    <!-- Product Filters & Search -->
+    <section class="section">
+        <div class="container">
+            <div class="product-filters">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products..." id="searchInput">
+                    <button type="button" id="searchBtn">🔍 Search</button>
+                </div>
+                <div class="filter-options">
+                    <select id="categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="smartphones">Smartphones</option>
+                        <option value="laptops">Laptops</option>
+                        <option value="audio">Audio</option>
+                        <option value="wearables">Wearables</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="smart-home">Smart Home</option>
+                    </select>
+                    <select id="sortFilter">
+                        <option value="featured">Featured</option>
+                        <option value="name">Name A-Z</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Smartphones -->
+                <div class="product-card" data-category="smartphones" data-rating="4.8">
+                    <div class="product-image">
+                        <div class="image-gallery">
+                            <div class="gallery-image active">
+                                <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="Galaxy S24 Ultra">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/788947/pexels-photo-788947.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="Galaxy S24 Ultra Detail">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/788948/pexels-photo-788948.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="Galaxy S24 Ultra Screen">
+                            </div>
+                        </div>
+                        <span class="product-badge">Hot</span>
+                        <div class="gallery-indicators">
+                            <div class="gallery-indicator active"></div>
+                            <div class="gallery-indicator"></div>
+                            <div class="gallery-indicator"></div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Quick view">👁</button>
+                            <button class="action-btn" aria-label="Add to wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Smartphones</span>
+                        <h3 class="product-title">Galaxy S24 Ultra</h3>
+                        <div class="product-rating">★★★★★ (4.8)</div>
+                        <p class="product-description">200MP camera, S Pen included, 5000mAh battery</p>
+                        <button class="btn btn-primary btn-sm product-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="smartphones" data-rating="4.9">
+                    <div class="product-image">
+                        <div class="image-gallery">
+                            <div class="gallery-image active">
+                                <img src="https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="iPhone 15 Pro Max">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/47262/pexels-photo-47262.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="iPhone 15 Pro Max Detail">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/47263/pexels-photo-47263.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="iPhone 15 Pro Max Camera">
+                            </div>
+                        </div>
+                        <span class="product-badge">New</span>
+                        <div class="gallery-indicators">
+                            <div class="gallery-indicator active"></div>
+                            <div class="gallery-indicator"></div>
+                            <div class="gallery-indicator"></div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Quick view">👁</button>
+                            <button class="action-btn" aria-label="Add to wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Smartphones</span>
+                        <h3 class="product-title">iPhone 15 Pro Max</h3>
+                        <div class="product-rating">★★★★★ (4.9)</div>
+                        <p class="product-description">Titanium design, A17 Pro chip, Pro camera system</p>
+                        <button class="btn btn-primary btn-sm product-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Laptops -->
+                <div class="product-card" data-category="laptops" data-rating="4.7">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="MacBook Pro 16">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Quick view">👁</button>
+                            <button class="action-btn" aria-label="Add to wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Laptops</span>
+                        <h3 class="product-title">MacBook Pro 16"</h3>
+                        <div class="product-rating">★★★★★ (4.7)</div>
+                        <p class="product-description">M3 Pro chip, 18GB RAM, 512GB SSD, Liquid Retina XDR</p>
+                        <button class="btn btn-primary btn-sm product-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="laptops" data-rating="4.6">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Dell XPS 13">
+                        <span class="product-badge">Best Seller</span>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Quick view">👁</button>
+                            <button class="action-btn" aria-label="Add to wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Laptops</span>
+                        <h3 class="product-title">Dell XPS 13</h3>
+                        <div class="product-rating">★★★★★ (4.6)</div>
+                        <p class="product-description">13.4" InfinityEdge display, Intel i7, 16GB RAM</p>
+                        <button class="btn btn-primary btn-sm product-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Audio -->
+                <div class="product-card" data-category="audio" data-rating="4.8">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Sony WH-1000XM5">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Quick view">👁</button>
+                            <button class="action-btn" aria-label="Add to wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Audio</span>
+                        <h3 class="product-title">Sony WH-1000XM5</h3>
+                        <div class="product-rating">★★★★★ (4.8)</div>
+                        <p class="product-description">Industry-leading noise cancellation, 30hr battery</p>
+                        <button class="btn btn-primary btn-sm product-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="audio" data-rating="4.7">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk-4158.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="AirPods Pro 2">
+                        <span class="product-badge">Popular</span>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Quick view">👁</button>
+                            <button class="action-btn" aria-label="Add to wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Audio</span>
+                        <h3 class="product-title">AirPods Pro 2</h3>
+                        <div class="product-rating">★★★★★ (4.7)</div>
+                        <p class="product-description">Active noise cancellation, H2 chip, 6hr battery</p>
+                        <button class="btn btn-primary btn-sm product-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Wearables -->
+                <div class="product-card" data-category="wearables" data-rating="4.6">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Apple Watch Ultra 2">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Quick view">👁</button>
+                            <button class="action-btn" aria-label="Add to wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Wearables</span>
+                        <h3 class="product-title">Apple Watch Ultra 2</h3>
+                        <div class="product-rating">★★★★★ (4.6)</div>
+                        <p class="product-description">Titanium case, S9 chip, 36hr battery, precision GPS</p>
+                        <button class="btn btn-primary btn-sm product-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="wearables" data-rating="4.5">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1697214/pexels-photo-1697214.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Samsung Galaxy Watch 6">
+                        <span class="product-badge">New</span>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Quick view">👁</button>
+                            <button class="action-btn" aria-label="Add to wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Wearables</span>
+                        <h3 class="product-title">Galaxy Watch 6</h3>
+                        <div class="product-rating">★★★★★ (4.5)</div>
+                        <p class="product-description">Super AMOLED display, health monitoring, 40hr battery</p>
+                        <button class="btn btn-primary btn-sm product-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Gaming -->
+                <div class="product-card" data-category="gaming" data-rating="4.9">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/811587/pexels-photo-811587.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="PlayStation 5">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Quick view">👁</button>
+                            <button class="action-btn" aria-label="Add to wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Gaming</span>
+                        <h3 class="product-title">PlayStation 5</h3>
+                        <div class="product-rating">★★★★★ (4.9)</div>
+                        <p class="product-description">Ultra-high speed SSD, Ray Tracing, 4K gaming</p>
+                        <button class="btn btn-primary btn-sm product-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Smart Home -->
+                <div class="product-card" data-category="smart-home" data-rating="4.7">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Amazon Echo Dot">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Quick view">👁</button>
+                            <button class="action-btn" aria-label="Add to wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Smart Home</span>
+                        <h3 class="product-title">Echo Dot (5th Gen)</h3>
+                        <div class="product-rating">★★★★★ (4.7)</div>
+                        <p class="product-description">Alexa voice assistant, smart home hub, improved audio</p>
+                        <button class="btn btn-primary btn-sm product-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-4">
+                <button class="btn btn-secondary btn-lg" id="loadMoreBtn">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Get notified about new product launches and exclusive deals</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechVault</h3>
+                    <p>Your trusted source for premium electronics and gadgets. Quality products, exceptional service.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="categories.html?cat=smartphones">Smartphones</a></li>
+                        <li><a href="categories.html?cat=laptops">Laptops</a></li>
+                        <li><a href="categories.html?cat=audio">Audio</a></li>
+                        <li><a href="categories.html?cat=wearables">Wearables</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support.html#warranty">Warranty</a></li>
+                        <li><a href="support.html#returns">Returns</a></li>
+                        <li><a href="support.html#shipping">Shipping</a></li>
+                        <li><a href="support.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVault. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../core/js/main.js"></script>
+    <script>
+        // Product filtering and search functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('searchInput');
+            const searchBtn = document.getElementById('searchBtn');
+            const categoryFilter = document.getElementById('categoryFilter');
+            const sortFilter = document.getElementById('sortFilter');
+            const productsGrid = document.getElementById('productsGrid');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const productCards = Array.from(document.querySelectorAll('.product-card'));
+
+            let visibleProducts = 10;
+
+            function filterProducts() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const selectedCategory = categoryFilter.value;
+                const sortBy = sortFilter.value;
+
+                let filteredProducts = productCards.filter(card => {
+                    const title = card.querySelector('.product-title').textContent.toLowerCase();
+                    const category = card.dataset.category;
+                    const matchesSearch = title.includes(searchTerm);
+                    const matchesCategory = !selectedCategory || category === selectedCategory;
+
+                    return matchesSearch && matchesCategory;
+                });
+
+                // Sort products
+                filteredProducts.sort((a, b) => {
+                    switch (sortBy) {
+                        case 'name':
+                            return a.querySelector('.product-title').textContent.localeCompare(b.querySelector('.product-title').textContent);
+                        case 'rating':
+                            return parseFloat(b.dataset.rating) - parseFloat(a.dataset.rating);
+                        case 'newest':
+                            return Math.random() - 0.5; // Random for demo
+                        default:
+                            return 0;
+                    }
+                });
+
+                // Show/hide products
+                productCards.forEach(card => card.style.display = 'none');
+                filteredProducts.slice(0, visibleProducts).forEach(card => card.style.display = 'block');
+
+                // Update load more button
+                loadMoreBtn.style.display = filteredProducts.length > visibleProducts ? 'block' : 'none';
+            }
+
+            function loadMoreProducts() {
+                visibleProducts += 10;
+                filterProducts();
+            }
+
+            searchBtn.addEventListener('click', filterProducts);
+            searchInput.addEventListener('keyup', function (e) {
+                if (e.key === 'Enter') filterProducts();
+            });
+            categoryFilter.addEventListener('change', filterProducts);
+            sortFilter.addEventListener('change', filterProducts);
+            loadMoreBtn.addEventListener('click', loadMoreProducts);
+
+            // Initial filter
+            filterProducts();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read travel stories, tips, and guides from around the world. Budget travel, luxury escapes, and cultural experiences.">
+  <title>Travel Blog | Wanderlust Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Wanderlust<span>Journal</span></a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="destinations.html" class="navbar-link">Destinations</a></li>
+        <li><a href="blog.html" class="navbar-link active">Blog</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="contact.html" class="navbar-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-item active">Blog</span>
+      </nav>
+      <h1 class="page-title">Travel Stories & Guides</h1>
+      <p class="page-subtitle">Adventures, tips, and inspiration from the road</p>
+    </div>
+  </section>
+
+  <!-- Blog Filters -->
+  <section class="section">
+    <div class="container">
+      <div class="blog-filters-wrapper" data-aos="fade-up">
+        <div class="blog-category-filters">
+          <button class="category-filter-btn active" data-category="all">All Posts</button>
+          <button class="category-filter-btn" data-category="guides">Travel Guides</button>
+          <button class="category-filter-btn" data-category="tips">Travel Tips</button>
+          <button class="category-filter-btn" data-category="food">Food & Culture</button>
+          <button class="category-filter-btn" data-category="budget">Budget Travel</button>
+          <button class="category-filter-btn" data-category="photography">Photography</button>
+        </div>
+        <div class="blog-search">
+          <input type="search" placeholder="Search posts..." class="search-input">
+          <button class="btn btn-primary btn-sm">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Post -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="featured-blog-post" data-aos="fade-up">
+        <div class="featured-post-image">
+          <img src="https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Complete Guide to Kyoto">
+          <span class="post-badge">Featured</span>
+        </div>
+        <div class="featured-post-content">
+          <div class="post-meta">
+            <span class="post-category">Travel Guides</span>
+            <span class="post-date">January 15, 2025</span>
+            <span class="post-read-time">12 min read</span>
+          </div>
+          <h2>Complete Guide to Exploring Kyoto: Temples, Gardens & Tea Houses</h2>
+          <p>Discover the ancient capital of Japan with our comprehensive guide covering the best temples, traditional neighborhoods, seasonal highlights, and insider tips for an authentic experience.</p>
+          <div class="post-tags">
+            <span class="tag">Japan</span>
+            <span class="tag">Asia</span>
+            <span class="tag">Culture</span>
+            <span class="tag">Photography</span>
+          </div>
+          <a href="#" class="btn btn-primary">Read Full Article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Posts Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="blog-posts-grid">
+        <!-- Post 1 -->
+        <article class="blog-post-card" data-category="tips" data-aos="fade-up" data-aos-delay="50">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Packing Tips">
+            <span class="post-card-category">Travel Tips</span>
+          </div>
+          <div class="post-card-content">
+            <div class="post-card-meta">
+              <span class="post-date">January 12, 2025</span>
+              <span class="post-read-time">5 min read</span>
+            </div>
+            <h3>Ultimate Packing List for Long-Term Travel</h3>
+            <p>Everything you need (and nothing you don't) for extended trips around the world.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="blog-post-card" data-category="food" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Street Food">
+            <span class="post-card-category">Food & Culture</span>
+          </div>
+          <div class="post-card-content">
+            <div class="post-card-meta">
+              <span class="post-date">January 10, 2025</span>
+              <span class="post-read-time">8 min read</span>
+            </div>
+            <h3>Best Street Food Markets in Southeast Asia</h3>
+            <p>A foodie's guide to the most authentic and delicious street food experiences.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="blog-post-card" data-category="budget" data-aos="fade-up" data-aos-delay="150">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/259447/pexels-photo-259447.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Budget Travel">
+            <span class="post-card-category">Budget Travel</span>
+          </div>
+          <div class="post-card-content">
+            <div class="post-card-meta">
+              <span class="post-date">January 8, 2025</span>
+              <span class="post-read-time">10 min read</span>
+            </div>
+            <h3>How I Traveled Europe for $50 a Day</h3>
+            <p>Practical tips and strategies for exploring Europe on a tight budget.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="blog-post-card" data-category="photography" data-aos="fade-up" data-aos-delay="50">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Photography Tips">
+            <span class="post-card-category">Photography</span>
+          </div>
+          <div class="post-card-content">
+            <div class="post-card-meta">
+              <span class="post-date">January 5, 2025</span>
+              <span class="post-read-time">7 min read</span>
+            </div>
+            <h3>Travel Photography Tips for Beginners</h3>
+            <p>Capture stunning travel photos with your smartphone or camera.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 5 -->
+        <article class="blog-post-card" data-category="guides" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bali Guide">
+            <span class="post-card-category">Travel Guides</span>
+          </div>
+          <div class="post-card-content">
+            <div class="post-card-meta">
+              <span class="post-date">January 3, 2025</span>
+              <span class="post-read-time">15 min read</span>
+            </div>
+            <h3>2 Weeks in Bali: The Perfect Itinerary</h3>
+            <p>From Ubud's rice terraces to Seminyak's beaches, plan your dream Bali trip.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 6 -->
+        <article class="blog-post-card" data-category="tips" data-aos="fade-up" data-aos-delay="150">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Solo Travel">
+            <span class="post-card-category">Travel Tips</span>
+          </div>
+          <div class="post-card-content">
+            <div class="post-card-meta">
+              <span class="post-date">December 30, 2024</span>
+              <span class="post-read-time">6 min read</span>
+            </div>
+            <h3>Solo Female Travel: Safety Tips & Destinations</h3>
+            <p>Empowering advice for women traveling alone around the world.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 7 -->
+        <article class="blog-post-card" data-category="food" data-aos="fade-up" data-aos-delay="50">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Italian Cuisine">
+            <span class="post-card-category">Food & Culture</span>
+          </div>
+          <div class="post-card-content">
+            <div class="post-card-meta">
+              <span class="post-date">December 28, 2024</span>
+              <span class="post-read-time">9 min read</span>
+            </div>
+            <h3>A Food Lover's Guide to Italy</h3>
+            <p>Regional specialties, hidden trattorias, and culinary experiences you can't miss.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 8 -->
+        <article class="blog-post-card" data-category="guides" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Machu Picchu">
+            <span class="post-card-category">Travel Guides</span>
+          </div>
+          <div class="post-card-content">
+            <div class="post-card-meta">
+              <span class="post-date">December 25, 2024</span>
+              <span class="post-read-time">11 min read</span>
+            </div>
+            <h3>Hiking to Machu Picchu: Everything You Need to Know</h3>
+            <p>Complete guide to trekking the Inca Trail and visiting this ancient wonder.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 9 -->
+        <article class="blog-post-card" data-category="budget" data-aos="fade-up" data-aos-delay="150">
+          <div class="post-card-image">
+            <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Hostel Life">
+            <span class="post-card-category">Budget Travel</span>
+          </div>
+          <div class="post-card-content">
+            <div class="post-card-meta">
+              <span class="post-date">December 22, 2024</span>
+              <span class="post-read-time">6 min read</span>
+            </div>
+            <h3>Best Hostels Around the World for Solo Travelers</h3>
+            <p>Affordable accommodation with great social vibes and amenities.</p>
+            <a href="#" class="post-read-more">Read More →</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination" data-aos="fade-up">
+        <button class="pagination-btn" disabled>← Previous</button>
+        <div class="pagination-numbers">
+          <button class="pagination-number active">1</button>
+          <button class="pagination-number">2</button>
+          <button class="pagination-number">3</button>
+          <button class="pagination-number">4</button>
+          <span class="pagination-dots">...</span>
+          <button class="pagination-number">12</button>
+        </div>
+        <button class="pagination-btn">Next →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <h2>Never Miss a New Post</h2>
+        <p>Get travel inspiration, tips, and destination guides delivered to your inbox every week.</p>
+        <form class="newsletter-form-inline">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="newsletter-note">Join 10,000+ travelers. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Wanderlust<span>Journal</span></a>
+          <p class="footer-description">Inspiring travelers to explore the world one destination at a time. Join our community of adventure seekers.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Pinterest">📌</a>
+            <a href="#" aria-label="YouTube">📺</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="destinations.html" class="footer-link">Destinations</a></li>
+            <li><a href="blog.html" class="footer-link">Travel Blog</a></li>
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html" class="footer-link">Travel Tips</a></li>
+            <li><a href="blog.html" class="footer-link">Food & Culture</a></li>
+            <li><a href="blog.html" class="footer-link">Photography</a></li>
+            <li><a href="blog.html" class="footer-link">Budget Travel</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="footer-newsletter-text">Get travel inspiration delivered weekly</p>
+          <form class="footer-newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Wanderlust Journal. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

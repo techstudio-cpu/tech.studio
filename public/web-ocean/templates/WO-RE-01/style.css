@@ -1,0 +1,716 @@
+/* ==================== WO-RE-01: REAL ESTATE AGENCY ==================== */
+/* Prestige Realty - Premium Real Estate Template */
+/* Color Palette: Deep Blue, Gold, White */
+
+:root {
+  --primary: #1a365d;
+  --primary-dark: #0f2744;
+  --secondary: #d4af37;
+  --accent: #2563eb;
+  --text-dark: #1e293b;
+  --text-light: #64748b;
+  --bg-light: #f8fafc;
+  --bg-cream: #faf5eb;
+  --white: #ffffff;
+}
+
+/* Override base colors */
+.btn-primary {
+  background: linear-gradient(135deg, var(--secondary) 0%, #b8972e 100%);
+  color: var(--primary-dark);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+}
+
+.btn-secondary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.section-badge {
+  background: rgba(26, 54, 93, 0.1);
+  color: var(--primary);
+}
+
+/* Typography */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* Navbar Dark */
+.navbar-dark {
+  background: transparent;
+}
+
+.navbar-dark.scrolled {
+  background: rgba(26, 54, 93, 0.95);
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-link {
+  color: var(--white);
+}
+
+.navbar-dark .navbar-link:hover,
+.navbar-dark .navbar-link.active {
+  color: var(--secondary);
+}
+
+.navbar-dark .navbar-link::after {
+  background: var(--secondary);
+}
+
+.navbar-dark .navbar-toggle span {
+  background: var(--white);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-brand span {
+  color: var(--secondary);
+}
+
+/* Hero Realty */
+.hero-realty {
+  min-height: 100vh;
+  background: url('https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-realty .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(26, 54, 93, 0.9) 0%, rgba(15, 39, 68, 0.7) 100%);
+}
+
+.hero-realty .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-realty .hero-content {
+  max-width: 900px;
+  color: var(--white);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-realty .hero-badge {
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--secondary);
+}
+
+.hero-realty .hero-title {
+  color: var(--white);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.hero-realty .hero-title span {
+  color: var(--secondary);
+}
+
+.hero-realty .hero-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  margin-bottom: 40px;
+}
+
+/* Property Search */
+.property-search {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.search-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.search-tab {
+  padding: 10px 24px;
+  background: transparent;
+  border: 2px solid #e2e8f0;
+  border-radius: 50px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-tab:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.search-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 16px;
+  align-items: end;
+}
+
+.search-field label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.search-field input,
+.search-field select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 0.9375rem;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+.search-field input:focus,
+.search-field select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.search-btn {
+  padding: 14px 32px;
+  height: fit-content;
+}
+
+@media (max-width: 992px) {
+  .search-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-btn {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .search-btn {
+    grid-column: span 1;
+  }
+}
+
+/* Properties Grid */
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.property-card {
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.property-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.property-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.property-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.property-card:hover .property-image img {
+  transform: scale(1.05);
+}
+
+.property-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 14px;
+  background: var(--secondary);
+  color: var(--primary-dark);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.property-type {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 6px 14px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.property-type.rent {
+  background: #059669;
+}
+
+.property-actions {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.property-card:hover .property-actions {
+  opacity: 1;
+}
+
+.action-btn {
+  width: 36px;
+  height: 36px;
+  background: var(--white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  background: var(--secondary);
+}
+
+.property-content {
+  padding: 20px;
+}
+
+.property-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.property-price span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+.property-title {
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.property-location {
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  margin-bottom: 16px;
+}
+
+.property-features {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 0.8125rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 1200px) {
+  .properties-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  border-color: var(--secondary);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.service-link {
+  color: var(--primary);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.service-link:hover {
+  color: var(--secondary);
+}
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Stats Section */
+.stats-section {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.stat-suffix {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.stat-label {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Neighborhoods Grid */
+.neighborhoods-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 180px);
+  gap: 20px;
+}
+
+.neighborhood-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.neighborhood-large {
+  grid-row: span 2;
+}
+
+.neighborhood-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.neighborhood-card:hover img {
+  transform: scale(1.1);
+}
+
+.neighborhood-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26, 54, 93, 0.9) 0%, transparent 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  color: var(--white);
+}
+
+.neighborhood-overlay h3 {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.neighborhood-overlay span {
+  font-size: 0.875rem;
+  color: var(--secondary);
+}
+
+@media (max-width: 992px) {
+  .neighborhoods-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .neighborhood-card {
+    height: 200px;
+  }
+
+  .neighborhood-large {
+    grid-row: span 1;
+    grid-column: span 2;
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .neighborhoods-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .neighborhood-large {
+    grid-column: span 1;
+  }
+}
+
+/* Agents Grid */
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.agent-card {
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.agent-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.agent-card .agent-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.agent-card .agent-content {
+  padding: 24px;
+}
+
+.agent-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.agent-title {
+  display: block;
+  color: var(--secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.agent-card p {
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.agent-stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 16px;
+  font-size: 0.8125rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+  .agents-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .agents-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Testimonials */
+.testimonial-card {
+  background: var(--white);
+  border: 1px solid #e2e8f0;
+}
+
+.testimonial-rating {
+  color: var(--secondary);
+}
+
+/* CTA Realty */
+.cta-realty {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.cta-realty .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.cta-realty .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+.footer {
+  background: var(--primary-dark);
+}
+
+.footer-brand span {
+  color: var(--secondary);
+}
+
+.footer-social a:hover {
+  background: var(--secondary);
+  color: var(--primary-dark);
+}
+
+.footer-link:hover {
+  color: var(--secondary);
+}
+
+/* Section Alt */
+.section-alt {
+  background: var(--bg-light);
+}
+
+/* Back to Top */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--secondary);
+  color: var(--primary-dark);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  z-index: 999;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px);
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Saffron Kitchen for reservations, inquiries, and private event bookings. Visit us in Bandra West, Mumbai.">
+  <title>Contact & Reservations | Saffron Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Saffron<span>Kitchen</span></a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="menu.html" class="navbar-link">Menu</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="events.html" class="navbar-link">Events</a></li>
+        <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm navbar-cta active">Reserve Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-item active">Contact</span>
+      </nav>
+      <h1 class="page-title">Get In Touch</h1>
+      <p class="page-subtitle">We'd love to hear from you and serve you soon</p>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-info-grid">
+        <div class="contact-info-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="contact-icon">📍</div>
+          <h3>Visit Us</h3>
+          <p>123 Linking Road<br>Bandra West, Mumbai<br>Maharashtra 400050</p>
+          <a href="#map" class="contact-link">View on Map</a>
+        </div>
+        <div class="contact-info-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-icon">📞</div>
+          <h3>Call Us</h3>
+          <p>Reservations:<br><a href="tel:+919876543210">+91 98765 43210</a></p>
+          <p>General Inquiries:<br><a href="tel:+912226543210">+91 22 2654 3210</a></p>
+        </div>
+        <div class="contact-info-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="contact-icon">✉️</div>
+          <h3>Email Us</h3>
+          <p>Reservations:<br><a href="mailto:reservations@saffronkitchen.in">reservations@saffronkitchen.in</a></p>
+          <p>Events:<br><a href="mailto:events@saffronkitchen.in">events@saffronkitchen.in</a></p>
+        </div>
+        <div class="contact-info-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-icon">🕐</div>
+          <h3>Opening Hours</h3>
+          <p>Tuesday - Sunday<br>Lunch: 12:00 PM - 3:00 PM<br>Dinner: 7:00 PM - 11:00 PM</p>
+          <p class="text-muted">Closed on Mondays</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Form -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="reservation-form-wrapper">
+        <div class="reservation-form-content" data-aos="fade-right">
+          <span class="section-badge">Book Your Table</span>
+          <h2>Make a Reservation</h2>
+          <p>Reserve your table in advance to ensure the best dining experience. We recommend booking at least 24 hours ahead, especially for weekends and special occasions.</p>
+          <div class="reservation-benefits">
+            <div class="benefit-item">
+              <span class="benefit-icon">✓</span>
+              <p>Priority seating</p>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">✓</span>
+              <p>Special occasion arrangements</p>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">✓</span>
+              <p>Dietary preferences noted</p>
+            </div>
+          </div>
+        </div>
+        <div class="reservation-form-card" data-aos="fade-left">
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label for="guests">Number of Guests *</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Select guests</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7+">7+ Guests</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date *</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time *</label>
+                <select id="time" name="time" required>
+                  <option value="">Select time</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="12:30">12:30 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="13:30">1:30 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="14:30">2:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                  <option value="21:30">9:30 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="occasion">Special Occasion (Optional)</label>
+              <select id="occasion" name="occasion">
+                <option value="">Select occasion</option>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="business">Business Dinner</option>
+                <option value="celebration">Celebration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Special Requests or Dietary Requirements</label>
+              <textarea id="message" name="message" rows="4" placeholder="Let us know about any allergies, dietary preferences, or special arrangements..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Confirm Reservation</button>
+            <p class="form-note">You will receive a confirmation email within 2 hours. For same-day reservations, please call us directly.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">General Inquiries</span>
+        <h2 class="section-title">Send Us a Message</h2>
+        <p class="section-subtitle">For questions, feedback, or event bookings</p>
+      </div>
+      <div class="quick-contact-form" data-aos="fade-up">
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Name *</label>
+              <input type="text" id="contact-name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email *</label>
+              <input type="email" id="contact-email" name="email" required placeholder="your@email.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required placeholder="How can we help?">
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message *</label>
+            <textarea id="contact-message" name="message" rows="5" required placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section" id="map">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Find Us</span>
+        <h2 class="section-title">Our Location</h2>
+        <p class="section-subtitle">Conveniently located in the heart of Bandra West</p>
+      </div>
+    </div>
+    <div class="map-container" data-aos="fade-up">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.8474389456896!2d72.82634731490163!3d19.05532958710684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c94d6f2a7c8f%3A0x7e8e8e8e8e8e8e8e!2sBandra%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="container">
+      <div class="map-directions" data-aos="fade-up">
+        <h3>Getting Here</h3>
+        <div class="directions-grid">
+          <div class="direction-item">
+            <span class="direction-icon">🚇</span>
+            <div>
+              <h4>By Metro</h4>
+              <p>Bandra Station (Western Line) - 10 min walk</p>
+            </div>
+          </div>
+          <div class="direction-item">
+            <span class="direction-icon">🚗</span>
+            <div>
+              <h4>By Car</h4>
+              <p>Valet parking available. Street parking nearby.</p>
+            </div>
+          </div>
+          <div class="direction-item">
+            <span class="direction-icon">🚕</span>
+            <div>
+              <h4>By Taxi/Cab</h4>
+              <p>Easily accessible via Uber, Ola, or local taxis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <h2>Ready to Dine With Us?</h2>
+        <p>Experience the finest Indian cuisine in an elegant setting. We look forward to serving you.</p>
+        <div class="cta-buttons">
+          <a href="tel:+919876543210" class="btn btn-primary btn-lg">Call Now</a>
+          <a href="menu.html" class="btn btn-secondary btn-lg">View Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Saffron<span>Kitchen</span></a>
+          <p class="footer-description">Fine Indian dining experience celebrating authentic flavors and culinary traditions since 2010.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="TripAdvisor">✈️</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="menu.html" class="footer-link">Menu</a></li>
+            <li><a href="about.html" class="footer-link">Our Story</a></li>
+            <li><a href="events.html" class="footer-link">Private Events</a></li>
+            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Hours</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link">Lunch: 12pm - 3pm</span></li>
+            <li><span class="footer-link">Dinner: 7pm - 11pm</span></li>
+            <li><span class="footer-link">Closed Mondays</span></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+919876543210" class="footer-link">+91 98765 43210</a></li>
+            <li><a href="mailto:reservations@saffronkitchen.in" class="footer-link">reservations@saffronkitchen.in</a></li>
+            <li><span class="footer-link">Bandra West, Mumbai</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Saffron Kitchen. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

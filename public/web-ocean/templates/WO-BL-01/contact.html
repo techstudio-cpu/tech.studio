@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Wanderlust Journal for collaborations, questions, or travel advice.">
+  <title>Contact | Wanderlust Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Wanderlust<span>Journal</span></a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="destinations.html" class="navbar-link">Destinations</a></li>
+        <li><a href="blog.html" class="navbar-link">Blog</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="contact.html" class="navbar-link active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-item active">Contact</span>
+      </nav>
+      <h1 class="page-title">Get In Touch</h1>
+      <p class="page-subtitle">I'd love to hear from you</p>
+    </div>
+  </section>
+
+  <!-- Contact Options -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-options-grid">
+        <div class="contact-option-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="contact-option-icon">💼</div>
+          <h3>Business Inquiries</h3>
+          <p>Interested in collaborations, sponsored content, or partnerships?</p>
+          <a href="mailto:business@wanderlustjournal.com" class="contact-link">business@wanderlustjournal.com</a>
+        </div>
+        <div class="contact-option-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-option-icon">✈️</div>
+          <h3>Travel Questions</h3>
+          <p>Need advice on destinations, itineraries, or travel tips?</p>
+          <a href="mailto:hello@wanderlustjournal.com" class="contact-link">hello@wanderlustjournal.com</a>
+        </div>
+        <div class="contact-option-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="contact-option-icon">📱</div>
+          <h3>Social Media</h3>
+          <p>Follow my daily adventures and connect with me on social platforms.</p>
+          <div class="social-links-inline">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">YouTube</a>
+            <a href="#" class="social-link">Pinterest</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="contact-form-wrapper">
+        <div class="contact-form-intro" data-aos="fade-right">
+          <span class="section-badge">Send a Message</span>
+          <h2>Let's Connect</h2>
+          <p>Whether you have a question about a destination, want to collaborate, or just want to say hello, I'm always happy to hear from fellow travelers and readers.</p>
+          <div class="contact-response-time">
+            <div class="response-icon">⏱️</div>
+            <div>
+              <h4>Response Time</h4>
+              <p>I typically respond within 24-48 hours. For urgent inquiries, please reach out via email directly.</p>
+            </div>
+          </div>
+          <div class="contact-faq-link">
+            <h4>Quick Questions?</h4>
+            <p>Check out my <a href="about.html#faq">FAQ section</a> for answers to common questions about travel, gear, and blogging.</p>
+          </div>
+        </div>
+        <div class="contact-form-card" data-aos="fade-left">
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a topic</option>
+                <option value="collaboration">Business Collaboration</option>
+                <option value="travel-advice">Travel Advice</option>
+                <option value="blog-question">Blog Question</option>
+                <option value="press">Press Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Tell me what's on your mind..."></textarea>
+            </div>
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="newsletter" checked>
+                <span>Yes, I'd like to receive travel tips and updates via email</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
+            <p class="form-note">Your information is safe with me. I respect your privacy and will never share your details.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration Info -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Work Together</span>
+        <h2 class="section-title">Collaboration Opportunities</h2>
+        <p class="section-subtitle">Let's create something amazing together</p>
+      </div>
+      <div class="collaboration-grid">
+        <div class="collab-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="collab-icon">✍️</div>
+          <h3>Sponsored Content</h3>
+          <p>In-depth blog posts, destination guides, and product reviews that align with my audience's interests.</p>
+          <ul class="collab-features">
+            <li>SEO-optimized articles</li>
+            <li>High-quality photography</li>
+            <li>Social media promotion</li>
+            <li>Authentic storytelling</li>
+          </ul>
+        </div>
+        <div class="collab-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="collab-icon">📸</div>
+          <h3>Photography & Video</h3>
+          <p>Professional destination photography and video content for tourism boards, hotels, and travel brands.</p>
+          <ul class="collab-features">
+            <li>Destination photography</li>
+            <li>Hotel & resort shoots</li>
+            <li>YouTube videos</li>
+            <li>Instagram reels & stories</li>
+          </ul>
+        </div>
+        <div class="collab-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="collab-icon">🎤</div>
+          <h3>Speaking & Workshops</h3>
+          <p>Engaging presentations on travel blogging, content creation, and building a location-independent lifestyle.</p>
+          <ul class="collab-features">
+            <li>Travel conferences</li>
+            <li>Blogging workshops</li>
+            <li>Photography seminars</li>
+            <li>Panel discussions</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-4" data-aos="fade-up">
+        <a href="mailto:business@wanderlustjournal.com" class="btn btn-primary btn-lg">Request Media Kit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Reach & Engagement</span>
+        <h2 class="section-title">By The Numbers</h2>
+        <p class="section-subtitle">Current audience statistics (Updated January 2025)</p>
+      </div>
+      <div class="stats-grid-contact">
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="stat-icon">📊</div>
+          <h3>100K+</h3>
+          <p>Monthly Blog Visitors</p>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-icon">📷</div>
+          <h3>85K</h3>
+          <p>Instagram Followers</p>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="stat-icon">📺</div>
+          <h3>45K</h3>
+          <p>YouTube Subscribers</p>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-icon">📌</div>
+          <h3>120K</h3>
+          <p>Pinterest Monthly Views</p>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="stat-icon">✉️</div>
+          <h3>15K</h3>
+          <p>Email Subscribers</p>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-icon">🌍</div>
+          <h3>65+</h3>
+          <p>Countries Covered</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Past Collaborations -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Trusted By</span>
+        <h2 class="section-title">Past Collaborations</h2>
+        <p class="section-subtitle">Brands and organizations I've worked with</p>
+      </div>
+      <div class="brands-grid" data-aos="fade-up">
+        <div class="brand-item">
+          <div class="brand-logo">🏨</div>
+          <p>Marriott Hotels</p>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo">✈️</div>
+          <p>Qatar Airways</p>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo">🎒</div>
+          <p>Osprey Packs</p>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo">📷</div>
+          <p>Sony Alpha</p>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo">🗺️</div>
+          <p>Lonely Planet</p>
+        </div>
+        <div class="brand-item">
+          <div class="brand-logo">🌏</div>
+          <p>Tourism Australia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Common Questions</span>
+        <h2 class="section-title">Before You Reach Out</h2>
+        <p class="section-subtitle">Quick answers to frequently asked questions</p>
+      </div>
+      <div class="faq-contact-grid">
+        <div class="faq-contact-item" data-aos="fade-up" data-aos-delay="50">
+          <h4>Do you accept guest posts?</h4>
+          <p>Currently, I'm not accepting guest posts. However, I'm open to collaborative content with fellow travel bloggers. Reach out with your ideas!</p>
+        </div>
+        <div class="faq-contact-item" data-aos="fade-up" data-aos-delay="100">
+          <h4>Can you help plan my trip?</h4>
+          <p>While I can't offer personalized trip planning services, my blog has comprehensive destination guides and itineraries that should help you plan your adventure.</p>
+        </div>
+        <div class="faq-contact-item" data-aos="fade-up" data-aos-delay="150">
+          <h4>Do you offer travel consulting?</h4>
+          <p>Yes! I offer one-on-one consulting for aspiring travel bloggers and content creators. Email me for rates and availability.</p>
+        </div>
+        <div class="faq-contact-item" data-aos="fade-up" data-aos-delay="200">
+          <h4>What's your collaboration process?</h4>
+          <p>I review all proposals carefully. If it's a good fit, I'll send you my media kit and we can discuss details, timelines, and deliverables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <h2>Stay Updated</h2>
+        <p>Join my newsletter for weekly travel inspiration, tips, and exclusive content straight to your inbox.</p>
+        <form class="newsletter-form-inline">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Wanderlust<span>Journal</span></a>
+          <p class="footer-description">Inspiring travelers to explore the world one destination at a time. Join our community of adventure seekers.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Pinterest">📌</a>
+            <a href="#" aria-label="YouTube">📺</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="destinations.html" class="footer-link">Destinations</a></li>
+            <li><a href="blog.html" class="footer-link">Travel Blog</a></li>
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html" class="footer-link">Travel Tips</a></li>
+            <li><a href="blog.html" class="footer-link">Food & Culture</a></li>
+            <li><a href="blog.html" class="footer-link">Photography</a></li>
+            <li><a href="blog.html" class="footer-link">Budget Travel</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="footer-newsletter-text">Get travel inspiration delivered weekly</p>
+          <form class="footer-newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Wanderlust Journal. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

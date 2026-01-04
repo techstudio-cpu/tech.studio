@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LearnHub - Online Learning Platform. Master new skills with expert-led courses in technology, business, design, and more.">
+  <title>LearnHub | Online Learning Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Learn<span>Hub</span></a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link active">Home</a></li>
+        <li><a href="courses.html" class="navbar-link">Courses</a></li>
+        <li><a href="instructors.html" class="navbar-link">Instructors</a></li>
+        <li><a href="pricing.html" class="navbar-link">Pricing</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        <li><a href="courses.html" class="btn btn-primary btn-sm navbar-cta">Start Learning</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero hero-education">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content" data-aos="fade-up">
+          <span class="hero-badge">🎓 Learn From Experts</span>
+          <h1 class="hero-title">Unlock Your <span>Potential</span></h1>
+          <p class="hero-description">Master in-demand skills with our expert-led courses. From coding to business, design to marketing — learn at your own pace and transform your career.</p>
+          <div class="hero-search">
+            <input type="text" placeholder="What do you want to learn?" class="search-input">
+            <button class="btn btn-primary">Search Courses</button>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h3>500+</h3>
+              <p>Courses</p>
+            </div>
+            <div class="hero-stat">
+              <h3>50K+</h3>
+              <p>Students</p>
+            </div>
+            <div class="hero-stat">
+              <h3>100+</h3>
+              <p>Instructors</p>
+            </div>
+            <div class="hero-stat">
+              <h3>4.8</h3>
+              <p>Avg Rating</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" data-aos="fade-left">
+          <img src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Online Learning">
+          <div class="floating-card card-1">
+            <span class="card-icon">📚</span>
+            <div>
+              <strong>New Course</strong>
+              <span>React Masterclass</span>
+            </div>
+          </div>
+          <div class="floating-card card-2">
+            <span class="card-icon">🏆</span>
+            <div>
+              <strong>Certificate</strong>
+              <span>Earned!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Browse Categories</span>
+        <h2 class="section-title">Explore Our Courses</h2>
+        <p class="section-subtitle">Find the perfect course to advance your skills</p>
+      </div>
+      <div class="categories-grid">
+        <a href="courses.html?cat=development" class="category-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="category-icon">💻</div>
+          <h3>Development</h3>
+          <p>120+ Courses</p>
+        </a>
+        <a href="courses.html?cat=business" class="category-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="category-icon">📊</div>
+          <h3>Business</h3>
+          <p>85+ Courses</p>
+        </a>
+        <a href="courses.html?cat=design" class="category-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="category-icon">🎨</div>
+          <h3>Design</h3>
+          <p>95+ Courses</p>
+        </a>
+        <a href="courses.html?cat=marketing" class="category-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="category-icon">📱</div>
+          <h3>Marketing</h3>
+          <p>70+ Courses</p>
+        </a>
+        <a href="courses.html?cat=data" class="category-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="category-icon">📈</div>
+          <h3>Data Science</h3>
+          <p>60+ Courses</p>
+        </a>
+        <a href="courses.html?cat=photography" class="category-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="category-icon">📷</div>
+          <h3>Photography</h3>
+          <p>45+ Courses</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Courses -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Top Rated</span>
+        <h2 class="section-title">Featured Courses</h2>
+        <p class="section-subtitle">Our most popular courses loved by thousands of students</p>
+      </div>
+      <div class="courses-grid">
+        <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Web Development">
+            <span class="course-badge">Bestseller</span>
+          </div>
+          <div class="course-content">
+            <div class="course-meta">
+              <span class="course-category">Development</span>
+              <span class="course-rating">⭐ 4.9 (2.5k)</span>
+            </div>
+            <h3 class="course-title">Complete Web Development Bootcamp</h3>
+            <p class="course-instructor">By Rahul Sharma</p>
+            <div class="course-info">
+              <span>📚 45 Lessons</span>
+              <span>⏱ 32 Hours</span>
+              <span>📊 All Levels</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-current">₹1,499</span>
+                <span class="price-original">₹4,999</span>
+              </div>
+              <a href="courses.html" class="btn btn-primary btn-sm">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="UI/UX Design">
+            <span class="course-badge">New</span>
+          </div>
+          <div class="course-content">
+            <div class="course-meta">
+              <span class="course-category">Design</span>
+              <span class="course-rating">⭐ 4.8 (1.8k)</span>
+            </div>
+            <h3 class="course-title">UI/UX Design Masterclass</h3>
+            <p class="course-instructor">By Priya Patel</p>
+            <div class="course-info">
+              <span>📚 38 Lessons</span>
+              <span>⏱ 28 Hours</span>
+              <span>📊 Intermediate</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-current">₹1,299</span>
+                <span class="price-original">₹3,999</span>
+              </div>
+              <a href="courses.html" class="btn btn-primary btn-sm">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Digital Marketing">
+          </div>
+          <div class="course-content">
+            <div class="course-meta">
+              <span class="course-category">Marketing</span>
+              <span class="course-rating">⭐ 4.7 (3.2k)</span>
+            </div>
+            <h3 class="course-title">Digital Marketing Complete Guide</h3>
+            <p class="course-instructor">By Amit Kumar</p>
+            <div class="course-info">
+              <span>📚 52 Lessons</span>
+              <span>⏱ 40 Hours</span>
+              <span>📊 Beginner</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-current">₹999</span>
+                <span class="price-original">₹2,999</span>
+              </div>
+              <a href="courses.html" class="btn btn-primary btn-sm">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Data Science">
+          </div>
+          <div class="course-content">
+            <div class="course-meta">
+              <span class="course-category">Data Science</span>
+              <span class="course-rating">⭐ 4.9 (1.5k)</span>
+            </div>
+            <h3 class="course-title">Python for Data Science & ML</h3>
+            <p class="course-instructor">By Dr. Ananya Gupta</p>
+            <div class="course-info">
+              <span>📚 65 Lessons</span>
+              <span>⏱ 48 Hours</span>
+              <span>📊 Advanced</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-current">₹1,999</span>
+                <span class="price-original">₹5,999</span>
+              </div>
+              <a href="courses.html" class="btn btn-primary btn-sm">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="courses.html" class="btn btn-secondary btn-lg">Browse All Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Why LearnHub</span>
+        <h2 class="section-title">Learn Smarter, Not Harder</h2>
+        <p class="section-subtitle">What makes our platform the best choice for your learning journey</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Expert Instructors</h3>
+          <p class="feature-description">Learn from industry professionals with real-world experience and proven track records.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">Learn Anywhere</h3>
+          <p class="feature-description">Access courses on any device. Download for offline viewing and learn on the go.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">🏆</div>
+          <h3 class="feature-title">Certificates</h3>
+          <p class="feature-description">Earn recognized certificates upon completion to showcase your new skills.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon">💬</div>
+          <h3 class="feature-title">Community Support</h3>
+          <p class="feature-description">Join a community of learners. Get help, share knowledge, and grow together.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructors -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Meet Our Team</span>
+        <h2 class="section-title">Top Instructors</h2>
+        <p class="section-subtitle">Learn from the best in the industry</p>
+      </div>
+      <div class="instructors-grid">
+        <div class="instructor-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Rahul Sharma" class="instructor-image">
+          <div class="instructor-content">
+            <h3>Rahul Sharma</h3>
+            <span class="instructor-title">Web Development</span>
+            <div class="instructor-stats">
+              <span>⭐ 4.9</span>
+              <span>👥 25K Students</span>
+              <span>📚 12 Courses</span>
+            </div>
+          </div>
+        </div>
+        <div class="instructor-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Priya Patel" class="instructor-image">
+          <div class="instructor-content">
+            <h3>Priya Patel</h3>
+            <span class="instructor-title">UI/UX Design</span>
+            <div class="instructor-stats">
+              <span>⭐ 4.8</span>
+              <span>👥 18K Students</span>
+              <span>📚 8 Courses</span>
+            </div>
+          </div>
+        </div>
+        <div class="instructor-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dr. Ananya Gupta" class="instructor-image">
+          <div class="instructor-content">
+            <h3>Dr. Ananya Gupta</h3>
+            <span class="instructor-title">Data Science</span>
+            <div class="instructor-stats">
+              <span>⭐ 4.9</span>
+              <span>👥 15K Students</span>
+              <span>📚 6 Courses</span>
+            </div>
+          </div>
+        </div>
+        <div class="instructor-card" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Amit Kumar" class="instructor-image">
+          <div class="instructor-content">
+            <h3>Amit Kumar</h3>
+            <span class="instructor-title">Digital Marketing</span>
+            <div class="instructor-stats">
+              <span>⭐ 4.7</span>
+              <span>👥 32K Students</span>
+              <span>📚 15 Courses</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Success Stories</span>
+        <h2 class="section-title">What Students Say</h2>
+        <p class="section-subtitle">Join thousands of successful learners</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"LearnHub helped me transition from marketing to web development. The courses are comprehensive and the instructors are amazing. I landed my dream job within 6 months!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Vikram Singh" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Vikram Singh</h4>
+              <p>Web Developer at TechCorp</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"The UI/UX course was exactly what I needed. Practical projects, great feedback, and a supportive community. I've already started freelancing with my new skills!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Sneha Reddy" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Sneha Reddy</h4>
+              <p>Freelance Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"As a working professional, I needed flexible learning. LearnHub's mobile app let me learn during my commute. The data science course was worth every rupee!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Meera Joshi" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Meera Joshi</h4>
+              <p>Data Analyst at FinServe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section cta-education">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <h2 class="cta-title">Start Learning Today</h2>
+        <p class="cta-description">Join 50,000+ learners and unlock your potential. Get unlimited access to all courses with our premium membership.</p>
+        <div class="cta-buttons">
+          <a href="courses.html" class="btn btn-primary btn-lg">Browse Courses</a>
+          <a href="pricing.html" class="btn btn-secondary btn-lg">View Pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Learn<span>Hub</span></a>
+          <p class="footer-description">Empowering learners worldwide with quality education. Master new skills and transform your career with expert-led courses.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="#" aria-label="YouTube">📺</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Courses</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html" class="footer-link">All Courses</a></li>
+            <li><a href="#" class="footer-link">Development</a></li>
+            <li><a href="#" class="footer-link">Design</a></li>
+            <li><a href="#" class="footer-link">Marketing</a></li>
+            <li><a href="#" class="footer-link">Data Science</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="instructors.html" class="footer-link">Instructors</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Help Center</a></li>
+            <li><a href="#" class="footer-link">FAQs</a></li>
+            <li><a href="#" class="footer-link">Community</a></li>
+            <li><a href="#" class="footer-link">Become Instructor</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 LearnHub. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

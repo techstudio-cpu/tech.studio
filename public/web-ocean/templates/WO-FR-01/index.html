@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brew & Bake Café - Artisan coffee, fresh pastries, and cozy vibes. Visit us for the perfect morning brew or afternoon treat.">
+  <title>Brew & Bake | Artisan Café & Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Brew<span>&</span>Bake</a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link active">Home</a></li>
+        <li><a href="menu.html" class="navbar-link">Menu</a></li>
+        <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+        <li><a href="about.html" class="navbar-link">Our Story</a></li>
+        <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm navbar-cta">Reserve Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero hero-cafe">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up">
+        <span class="hero-badge">☕ Est. 2015</span>
+        <h1 class="hero-title">Where Every Cup Tells a <span>Story</span></h1>
+        <p class="hero-description">Artisan coffee, freshly baked pastries, and a cozy atmosphere that feels like home. Start your day right or unwind with us.</p>
+        <div class="hero-buttons">
+          <a href="menu.html" class="btn btn-primary btn-lg">View Menu</a>
+          <a href="contact.html" class="btn btn-secondary btn-lg">Reserve a Table</a>
+        </div>
+        <div class="hero-hours">
+          <span>📍 123 Coffee Lane, Mumbai</span>
+          <span>⏰ Mon-Sun: 7am - 10pm</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll to explore</span>
+      <div class="scroll-indicator"></div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images" data-aos="fade-right">
+          <img src="https://images.pexels.com/photos/1855214/pexels-photo-1855214.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Coffee being poured" class="about-img-1">
+          <img src="https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Fresh pastries" class="about-img-2">
+          <div class="about-badge">
+            <span class="badge-number">8+</span>
+            <span class="badge-text">Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <span class="section-badge">Our Story</span>
+          <h2>Crafted with Passion, Served with Love</h2>
+          <p>What started as a small corner café has grown into a beloved community gathering spot. We source our beans directly from sustainable farms and bake everything fresh daily.</p>
+          <p>Our baristas are trained artisans who take pride in every cup they craft. From the perfect espresso to our signature pastries, every item on our menu is made with care.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <span class="feature-icon">🌱</span>
+              <div>
+                <h4>Ethically Sourced</h4>
+                <p>Direct trade beans from sustainable farms</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <span class="feature-icon">🥐</span>
+              <div>
+                <h4>Fresh Daily</h4>
+                <p>All pastries baked in-house every morning</p>
+              </div>
+            </div>
+          </div>
+          <a href="about.html" class="btn btn-primary">Read Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Highlights -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Our Menu</span>
+        <h2 class="section-title">Signature Offerings</h2>
+        <p class="section-subtitle">Handcrafted beverages and freshly baked delights</p>
+      </div>
+      
+      <div class="menu-categories">
+        <button class="menu-tab active" data-category="coffee">Coffee</button>
+        <button class="menu-tab" data-category="pastries">Pastries</button>
+        <button class="menu-tab" data-category="sandwiches">Sandwiches</button>
+        <button class="menu-tab" data-category="specials">Specials</button>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="menu-item-image">
+            <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Signature Latte">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Signature Caramel Latte</h3>
+              <span class="menu-price">₹220</span>
+            </div>
+            <p>Smooth espresso with house-made caramel and steamed milk</p>
+            <span class="menu-tag">Bestseller</span>
+          </div>
+        </div>
+        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="menu-item-image">
+            <img src="https://images.pexels.com/photos/2067628/pexels-photo-2067628.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cold Brew">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Nitro Cold Brew</h3>
+              <span class="menu-price">₹280</span>
+            </div>
+            <p>24-hour steeped cold brew infused with nitrogen</p>
+            <span class="menu-tag">New</span>
+          </div>
+        </div>
+        <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="menu-item-image">
+            <img src="https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress&cs=tinysrgb&w=400" alt="Croissant">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Butter Croissant</h3>
+              <span class="menu-price">₹150</span>
+            </div>
+            <p>Flaky, buttery layers baked to golden perfection</p>
+          </div>
+        </div>
+        <div class="menu-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="menu-item-image">
+            <img src="https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Avocado Toast">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Avocado Toast</h3>
+              <span class="menu-price">₹320</span>
+            </div>
+            <p>Sourdough with smashed avocado, cherry tomatoes & poached egg</p>
+            <span class="menu-tag">Popular</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="menu.html" class="btn btn-primary btn-lg">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section features-section">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">☕</div>
+          <h3>Premium Beans</h3>
+          <p>Single-origin Arabica beans roasted in small batches for optimal freshness</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">🥧</div>
+          <h3>Fresh Baked</h3>
+          <p>All pastries and breads made from scratch daily by our in-house bakers</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">🌿</div>
+          <h3>Vegan Options</h3>
+          <p>Plant-based milk alternatives and delicious vegan pastry selections</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon">📶</div>
+          <h3>Free WiFi</h3>
+          <p>High-speed internet and plenty of outlets for remote workers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Preview -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Our Space</span>
+        <h2 class="section-title">A Glimpse Inside</h2>
+        <p class="section-subtitle">Cozy corners and warm vibes await you</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item-large" data-aos="fade-up">
+          <img src="https://images.pexels.com/photos/1855214/pexels-photo-1855214.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Café Interior">
+          <div class="gallery-overlay">
+            <span>Our Cozy Interior</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Coffee Art">
+          <div class="gallery-overlay">
+            <span>Latte Art</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pastry Display">
+          <div class="gallery-overlay">
+            <span>Fresh Pastries</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://images.pexels.com/photos/1024359/pexels-photo-1024359.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Outdoor Seating">
+          <div class="gallery-overlay">
+            <span>Outdoor Patio</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://images.pexels.com/photos/1813466/pexels-photo-1813466.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Barista">
+          <div class="gallery-overlay">
+            <span>Our Baristas</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="gallery.html" class="btn btn-secondary btn-lg">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Reviews</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+        <p class="section-subtitle">Join our community of coffee lovers</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"The best coffee in the city, hands down! The atmosphere is perfect for both working and catching up with friends. Their croissants are to die for!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Kavya Nair" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Kavya Nair</h4>
+              <p>Regular Customer</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"I work remotely and Brew & Bake has become my second office. Great WiFi, amazing coffee, and the staff remembers my order. What more could you ask for?"</p>
+          <div class="testimonial-author">
+            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Arjun Mehta" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Arjun Mehta</h4>
+              <p>Freelance Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"The avocado toast is incredible, and their seasonal specials never disappoint. This place has the perfect balance of quality food and cozy ambiance."</p>
+          <div class="testimonial-author">
+            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Priya Sharma" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Priya Sharma</h4>
+              <p>Food Blogger</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="events-grid">
+        <div class="events-content" data-aos="fade-right">
+          <span class="section-badge">Café Events</span>
+          <h2>More Than Just Coffee</h2>
+          <p>Join us for special events, live music nights, and community gatherings. We believe in bringing people together over great food and drinks.</p>
+          <div class="events-list">
+            <div class="event-item">
+              <div class="event-date">
+                <span class="date-day">15</span>
+                <span class="date-month">Jan</span>
+              </div>
+              <div class="event-info">
+                <h4>Open Mic Night</h4>
+                <p>Share your talent or enjoy local performers</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-date">
+                <span class="date-day">22</span>
+                <span class="date-month">Jan</span>
+              </div>
+              <div class="event-info">
+                <h4>Coffee Tasting Workshop</h4>
+                <p>Learn about origins and brewing techniques</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-date">
+                <span class="date-day">29</span>
+                <span class="date-month">Jan</span>
+              </div>
+              <div class="event-info">
+                <h4>Book Club Meetup</h4>
+                <p>Monthly discussion with fellow book lovers</p>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">View All Events</a>
+        </div>
+        <div class="events-image" data-aos="fade-left">
+          <img src="https://images.pexels.com/photos/1813466/pexels-photo-1813466.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Café Event">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section cta-cafe">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <h2 class="cta-title">Ready for Your Perfect Cup?</h2>
+        <p class="cta-description">Visit us today or reserve a table for your next gathering. We can't wait to serve you!</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg">Reserve a Table</a>
+          <a href="menu.html" class="btn btn-secondary btn-lg">View Menu</a>
+        </div>
+        <div class="cta-contact">
+          <span>📞 +91 98765 43210</span>
+          <span>📍 123 Coffee Lane, Bandra, Mumbai</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Brew<span>&</span>Bake</a>
+          <p class="footer-description">Your neighborhood café serving artisan coffee and fresh pastries since 2015. A place where every cup tells a story.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube">📺</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="menu.html" class="footer-link">Our Menu</a></li>
+            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+            <li><a href="about.html" class="footer-link">Our Story</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Hours</h4>
+          <ul class="footer-links">
+            <li><span class="footer-link">Mon - Fri: 7am - 10pm</span></li>
+            <li><span class="footer-link">Saturday: 8am - 11pm</span></li>
+            <li><span class="footer-link">Sunday: 8am - 9pm</span></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+919876543210" class="footer-link">+91 98765 43210</a></li>
+            <li><a href="mailto:hello@brewandbake.com" class="footer-link">hello@brewandbake.com</a></li>
+            <li><span class="footer-link">123 Coffee Lane, Bandra<br>Mumbai 400050</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Brew & Bake. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

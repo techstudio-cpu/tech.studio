@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shop Artisan Haven - Discover unique handmade crafts, pottery, jewelry, home décor, and artisanal goods from talented local artisans.">
+    <title>Shop | Artisan Haven</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../core/css/base.css">
+    <link rel="stylesheet" href="../../core/css/components.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Artisan<span>Haven</span></a>
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="shop.html" class="navbar-link active">Shop</a></li>
+                <li><a href="artisans.html" class="navbar-link">Our Artisans</a></li>
+                <li><a href="custom.html" class="navbar-link">Custom Orders</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Handmade Treasures</h1>
+            <p>Discover unique creations crafted with love by talented artisans</p>
+        </div>
+    </section>
+
+    <!-- Filters & Search -->
+    <section class="section">
+        <div class="container">
+            <div class="shop-controls">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search handmade treasures..." id="searchInput">
+                    <button class="btn btn-primary">🔍</button>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Items</button>
+                    <button class="filter-btn" data-filter="pottery">Pottery</button>
+                    <button class="filter-btn" data-filter="jewelry">Jewelry</button>
+                    <button class="filter-btn" data-filter="decor">Home Décor</button>
+                    <button class="filter-btn" data-filter="textiles">Textiles</button>
+                    <button class="filter-btn" data-filter="art">Art & Prints</button>
+                </div>
+                <div class="sort-options">
+                    <select id="sortSelect">
+                        <option value="featured">Featured</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="popular">Most Popular</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="products-grid">
+                <div class="product-card" data-category="pottery">
+                    <div class="product-image">
+                        <div class="image-gallery">
+                            <div class="gallery-image active">
+                                <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
+                                    alt="Handmade Ceramic Bowl">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg"
+                                    alt="Ceramic Bowl Detail">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg"
+                                    alt="Ceramic Bowl Side View">
+                            </div>
+                        </div>
+                        <div class="product-badge">New</div>
+                        <div class="gallery-indicators">
+                            <div class="gallery-indicator active"></div>
+                            <div class="gallery-indicator"></div>
+                            <div class="gallery-indicator"></div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Ceramic Serving Bowl</h4>
+                        <p class="product-artisan">by Maria Rodriguez</p>
+                        <p class="product-description">Hand-thrown stoneware bowl with natural glaze finish. Perfect for
+                            serving salads or as a decorative piece.</p>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry">
+                    <div class="product-image">
+                        <div class="image-gallery">
+                            <div class="gallery-image active">
+                                <img src="https://images.pexels.com/photos/1697214/pexels-photo-1697214.jpeg"
+                                    alt="Silver Necklace">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1697215/pexels-photo-1697215.jpeg"
+                                    alt="Silver Necklace Detail">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1697216/pexels-photo-1697216.jpeg"
+                                    alt="Silver Necklace Close-up">
+                            </div>
+                        </div>
+                        <div class="product-badge">Bestseller</div>
+                        <div class="gallery-indicators">
+                            <div class="gallery-indicator active"></div>
+                            <div class="gallery-indicator"></div>
+                            <div class="gallery-indicator"></div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Silver Moon Necklace</h4>
+                        <p class="product-artisan">by Elena Vasquez</p>
+                        <p class="product-description">Sterling silver pendant with moonstone. Handcrafted with
+                            traditional silversmithing techniques.</p>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="decor">
+                    <div class="product-image">
+                        <div class="image-gallery">
+                            <div class="gallery-image active">
+                                <img src="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg"
+                                    alt="Macramé Wall Hanging">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1571454/pexels-photo-1571454.jpeg"
+                                    alt="Macramé Wall Hanging Detail">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1571455/pexels-photo-1571455.jpeg"
+                                    alt="Macramé Wall Hanging Close-up">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1571456/pexels-photo-1571456.jpeg"
+                                    alt="Macramé Wall Hanging Texture">
+                            </div>
+                        </div>
+                        <div class="gallery-indicators">
+                            <div class="gallery-indicator active"></div>
+                            <div class="gallery-indicator"></div>
+                            <div class="gallery-indicator"></div>
+                            <div class="gallery-indicator"></div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Macramé Wall Art</h4>
+                        <p class="product-artisan">by Sarah Chen</p>
+                        <p class="product-description">Intricate macramé wall hanging made with natural cotton rope.
+                            Adds bohemian charm to any space.</p>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="textiles">
+                    <div class="product-image">
+                        <div class="image-gallery">
+                            <div class="gallery-image active">
+                                <img src="https://images.pexels.com/photos/1697215/pexels-photo-1697215.jpeg"
+                                    alt="Handwoven Scarf">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1697216/pexels-photo-1697216.jpeg"
+                                    alt="Alpaca Wool Scarf Detail">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1697217/pexels-photo-1697217.jpeg"
+                                    alt="Alpaca Wool Scarf Texture">
+                            </div>
+                        </div>
+                        <div class="product-badge">Limited</div>
+                        <div class="gallery-indicators">
+                            <div class="gallery-indicator active"></div>
+                            <div class="gallery-indicator"></div>
+                            <div class="gallery-indicator"></div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Alpaca Wool Scarf</h4>
+                        <p class="product-artisan">by Andean Weavers Co-op</p>
+                        <p class="product-description">Soft alpaca wool scarf handwoven by indigenous artisans in the
+                            Andes. Warm and ethically sourced.</p>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="art">
+                    <div class="product-image">
+                        <div class="image-gallery">
+                            <div class="gallery-image active">
+                                <img src="https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg"
+                                    alt="Abstract Painting">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1571462/pexels-photo-1571462.jpeg"
+                                    alt="Abstract Painting Detail">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg"
+                                    alt="Abstract Painting Close-up">
+                            </div>
+                        </div>
+                        <div class="gallery-indicators">
+                            <div class="gallery-indicator active"></div>
+                            <div class="gallery-indicator"></div>
+                            <div class="gallery-indicator"></div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Abstract Landscape</h4>
+                        <p class="product-artisan">by James Wilson</p>
+                        <p class="product-description">Acrylic on canvas capturing the essence of coastal landscapes.
+                            Original artwork, ready to hang.</p>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pottery">
+                    <div class="product-image">
+                        <div class="image-gallery">
+                            <div class="gallery-image active">
+                                <img src="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg"
+                                    alt="Ceramic Vase">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
+                                    alt="Raku Fired Vase Detail">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg"
+                                    alt="Raku Fired Vase Close-up">
+                            </div>
+                        </div>
+                        <div class="gallery-indicators">
+                            <div class="gallery-indicator active"></div>
+                            <div class="gallery-indicator"></div>
+                            <div class="gallery-indicator"></div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Raku Fired Vase</h4>
+                        <p class="product-artisan">by Hiroshi Tanaka</p>
+                        <p class="product-description">Traditional Japanese raku pottery with crackled glaze. Each piece
+                            is unique due to the firing process.</p>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry">
+                    <div class="product-image">
+                        <div class="image-gallery">
+                            <div class="gallery-image active">
+                                <img src="https://images.pexels.com/photos/1697216/pexels-photo-1697216.jpeg"
+                                    alt="Beaded Bracelet">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1697217/pexels-photo-1697217.jpeg"
+                                    alt="Seed Bead Bracelet Detail">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1697218/pexels-photo-1697218.jpeg"
+                                    alt="Seed Bead Bracelet Close-up">
+                            </div>
+                        </div>
+                        <div class="product-badge">Handmade</div>
+                        <div class="gallery-indicators">
+                            <div class="gallery-indicator active"></div>
+                            <div class="gallery-indicator"></div>
+                            <div class="gallery-indicator"></div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Seed Bead Bracelet</h4>
+                        <p class="product-artisan">by African Bead Collective</p>
+                        <p class="product-description">Colorful bracelet made with traditional African seed beads. Each
+                            bead is individually placed by hand.</p>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="decor">
+                    <div class="product-image">
+                        <div class="image-gallery">
+                            <div class="gallery-image active">
+                                <img src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg"
+                                    alt="Wooden Bowl Set">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1571464/pexels-photo-1571464.jpeg"
+                                    alt="Walnut Salad Bowls Detail">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="https://images.pexels.com/photos/1571465/pexels-photo-1571465.jpeg"
+                                    alt="Walnut Salad Bowls Close-up">
+                            </div>
+                        </div>
+                        <div class="gallery-indicators">
+                            <div class="gallery-indicator active"></div>
+                            <div class="gallery-indicator"></div>
+                            <div class="gallery-indicator"></div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Walnut Salad Bowls</h4>
+                        <p class="product-artisan">by Mountain Woodworkers</p>
+                        <p class="product-description">Set of three hand-turned walnut salad bowls. Food-safe finish,
+                            perfect for everyday use or entertaining.</p>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more">
+                <button class="btn btn-primary btn-lg">Load More Treasures</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Connected with Artisans</h2>
+                <p>Get notified about new handmade arrivals and exclusive artisan stories.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Artisan Haven</h3>
+                    <p>Connecting you with talented artisans and their unique handmade creations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="artisans.html">Our Artisans</a></li>
+                        <li><a href="custom.html">Custom Orders</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Artisan Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../core/js/main.js"></script>
+    <script>
+        // Product filtering functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            const searchInput = document.getElementById('searchInput');
+
+            // Filter by category
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    productCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Search functionality
+            searchInput.addEventListener('input', function () {
+                const searchTerm = this.value.toLowerCase();
+
+                productCards.forEach(card => {
+                    const title = card.querySelector('h4').textContent.toLowerCase();
+                    const description = card.querySelector('.product-description').textContent.toLowerCase();
+                    const artisan = card.querySelector('.product-artisan').textContent.toLowerCase();
+
+                    if (title.includes(searchTerm) || description.includes(searchTerm) || artisan.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

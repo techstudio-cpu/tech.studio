@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TechVault Deals - Special offers, discounts, and flash sales on premium electronics. Limited time deals on smartphones, laptops, and gadgets.">
+    <title>Deals & Offers | TechVault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../core/css/base.css">
+    <link rel="stylesheet" href="../../core/css/components.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Tech<span>Vault</span></a>
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="products.html" class="navbar-link">Products</a></li>
+                <li><a href="categories.html" class="navbar-link">Categories</a></li>
+                <li><a href="deals.html" class="navbar-link active">Deals</a></li>
+                <li><a href="support.html" class="navbar-link">Support</a></li>
+                <li><a href="#" class="btn btn-primary btn-sm navbar-cta">🛒 Cart (0)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Deals Hero -->
+    <section class="deals-hero">
+        <div class="container">
+            <div class="deals-hero-content">
+                <span class="deals-badge">🔥 Hot Deals</span>
+                <h1>Exclusive Offers</h1>
+                <p>Limited time deals on premium electronics. Save big on top brands!</p>
+                <div class="countdown-timer">
+                    <div class="timer-item">
+                        <span class="timer-number" id="days">02</span>
+                        <span class="timer-label">Days</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="hours">14</span>
+                        <span class="timer-label">Hours</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="minutes">35</span>
+                        <span class="timer-label">Minutes</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="seconds">42</span>
+                        <span class="timer-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Deal -->
+    <section class="section">
+        <div class="container">
+            <div class="featured-deal">
+                <div class="deal-content">
+                    <span class="deal-badge">Flash Sale</span>
+                    <h2>Samsung Galaxy S24 Ultra</h2>
+                    <p class="deal-description">200MP camera, S Pen included, flagship performance</p>
+                    <div class="deal-pricing">
+                        <span class="original-price">₹1,29,999</span>
+                        <span class="deal-price">₹89,999</span>
+                        <span class="savings">Save ₹40,000 (31%)</span>
+                    </div>
+                    <div class="deal-features">
+                        <span>✅ Free Shipping</span>
+                        <span>✅ 2 Year Warranty</span>
+                        <span>✅ Extended Support</span>
+                    </div>
+                    <button class="btn btn-primary btn-lg">Grab This Deal</button>
+                </div>
+                <div class="deal-image">
+                    <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Samsung Galaxy S24 Ultra">
+                    <div class="deal-discount-badge">-31%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deal Categories -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Deal Categories</h2>
+                <p class="section-subtitle">Find amazing deals across all categories</p>
+            </div>
+            <div class="deal-categories">
+                <div class="deal-category-card">
+                    <div class="category-icon">📱</div>
+                    <h4>Smartphone Deals</h4>
+                    <p>Up to 40% off on latest phones</p>
+                    <a href="#smartphones" class="btn btn-secondary">View Deals</a>
+                </div>
+                <div class="deal-category-card">
+                    <div class="category-icon">💻</div>
+                    <h4>Laptop Deals</h4>
+                    <p>Premium laptops at best prices</p>
+                    <a href="#laptops" class="btn btn-secondary">View Deals</a>
+                </div>
+                <div class="deal-category-card">
+                    <div class="category-icon">🎧</div>
+                    <h4>Audio Deals</h4>
+                    <p>Sound quality without compromise</p>
+                    <a href="#audio" class="btn btn-secondary">View Deals</a>
+                </div>
+                <div class="deal-category-card">
+                    <div class="category-icon">⌚</div>
+                    <h4>Wearable Deals</h4>
+                    <p>Stay connected, stay healthy</p>
+                    <a href="#wearables" class="btn btn-secondary">View Deals</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Deals -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">All Current Deals</h2>
+                <p class="section-subtitle">Don't miss out on these limited-time offers</p>
+            </div>
+
+            <div class="deals-grid">
+                <!-- Smartphone Deals -->
+                <div class="deal-card" id="smartphones">
+                    <div class="deal-image">
+                        <img src="https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="iPhone 15 Pro">
+                        <div class="deal-badge">25% OFF</div>
+                    </div>
+                    <div class="deal-content">
+                        <span class="deal-category">Smartphones</span>
+                        <h4>iPhone 15 Pro</h4>
+                        <p>Titanium design, A17 Pro chip</p>
+                        <div class="deal-pricing">
+                            <span class="deal-price">₹1,14,999</span>
+                            <span class="original-price">₹1,29,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Samsung Galaxy S24">
+                        <div class="deal-badge">20% OFF</div>
+                    </div>
+                    <div class="deal-content">
+                        <span class="deal-category">Smartphones</span>
+                        <h4>Samsung Galaxy S24</h4>
+                        <p>AI features, premium camera</p>
+                        <div class="deal-pricing">
+                            <span class="deal-price">₹64,999</span>
+                            <span class="original-price">₹79,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Laptop Deals -->
+                <div class="deal-card" id="laptops">
+                    <div class="deal-image">
+                        <img src="https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="MacBook Pro">
+                        <div class="deal-badge">15% OFF</div>
+                    </div>
+                    <div class="deal-content">
+                        <span class="deal-category">Laptops</span>
+                        <h4>MacBook Pro 14"</h4>
+                        <p>M3 chip, all-day battery</p>
+                        <div class="deal-pricing">
+                            <span class="deal-price">₹1,61,999</span>
+                            <span class="original-price">₹1,89,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Dell XPS 13">
+                        <div class="deal-badge">30% OFF</div>
+                    </div>
+                    <div class="deal-content">
+                        <span class="deal-category">Laptops</span>
+                        <h4>Dell XPS 13</h4>
+                        <p>Ultra-portable, powerful performance</p>
+                        <div class="deal-pricing">
+                            <span class="deal-price">₹84,999</span>
+                            <span class="original-price">₹1,19,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Audio Deals -->
+                <div class="deal-card" id="audio">
+                    <div class="deal-image">
+                        <img src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Sony WH-1000XM5">
+                        <div class="deal-badge">25% OFF</div>
+                    </div>
+                    <div class="deal-content">
+                        <span class="deal-category">Audio</span>
+                        <h4>Sony WH-1000XM5</h4>
+                        <p>Best noise cancellation</p>
+                        <div class="deal-pricing">
+                            <span class="deal-price">₹22,499</span>
+                            <span class="original-price">₹29,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk-4158.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="AirPods Pro">
+                        <div class="deal-badge">20% OFF</div>
+                    </div>
+                    <div class="deal-content">
+                        <span class="deal-category">Audio</span>
+                        <h4>AirPods Pro 2</h4>
+                        <p>Active noise cancellation</p>
+                        <div class="deal-pricing">
+                            <span class="deal-price">₹19,999</span>
+                            <span class="original-price">₹24,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Wearable Deals -->
+                <div class="deal-card" id="wearables">
+                    <div class="deal-image">
+                        <img src="https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Apple Watch Ultra">
+                        <div class="deal-badge">15% OFF</div>
+                    </div>
+                    <div class="deal-content">
+                        <span class="deal-category">Wearables</span>
+                        <h4>Apple Watch Ultra 2</h4>
+                        <p>Adventure-ready smartwatch</p>
+                        <div class="deal-pricing">
+                            <span class="deal-price">₹72,249</span>
+                            <span class="original-price">₹84,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="https://images.pexels.com/photos/1697214/pexels-photo-1697214.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Galaxy Watch 6">
+                        <div class="deal-badge">25% OFF</div>
+                    </div>
+                    <div class="deal-content">
+                        <span class="deal-category">Wearables</span>
+                        <h4>Galaxy Watch 6</h4>
+                        <p>Health and fitness tracking</p>
+                        <div class="deal-pricing">
+                            <span class="deal-price">₹22,499</span>
+                            <span class="original-price">₹29,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deal Alerts -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="deal-alerts">
+                <div class="alert-content">
+                    <h3>Get Deal Alerts</h3>
+                    <p>Be the first to know about flash sales and exclusive offers</p>
+                    <div class="alert-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+                <div class="alert-benefits">
+                    <div class="benefit">
+                        <span class="benefit-icon">⚡</span>
+                        <span>Instant notifications</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">🎯</span>
+                        <span>Exclusive deals</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">🔔</span>
+                        <span>Early access</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechVault</h3>
+                    <p>Your trusted source for premium electronics and gadgets. Quality products, exceptional service.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Deals</h4>
+                    <ul>
+                        <li><a href="#smartphones">Phone Deals</a></li>
+                        <li><a href="#laptops">Laptop Deals</a></li>
+                        <li><a href="#audio">Audio Deals</a></li>
+                        <li><a href="#wearables">Wearable Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support.html#warranty">Warranty</a></li>
+                        <li><a href="support.html#returns">Returns</a></li>
+                        <li><a href="support.html#shipping">Shipping</a></li>
+                        <li><a href="support.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVault. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../core/js/main.js"></script>
+    <script>
+        // Countdown timer functionality
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const endDate = new Date('2025-12-31T23:59:59').getTime();
+            const timeLeft = endDate - now;
+
+            if (timeLeft > 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+    </script>
+</body>
+
+</html>

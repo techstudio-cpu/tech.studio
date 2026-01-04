@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pet Adoptions - Find your perfect companion at Pawfect Supplies. Partnering with local shelters to help pets find loving homes.">
+    <title>Pet Adoptions | Pawfect Supplies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../core/css/base.css">
+    <link rel="stylesheet" href="../../core/css/components.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Pawfect<span>Supplies</span></a>
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="shop.html" class="navbar-link">Shop</a></li>
+                <li><a href="care.html" class="navbar-link">Pet Care</a></li>
+                <li><a href="adoptions.html" class="navbar-link active">Adoptions</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Adoptions Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Pet Adoptions</h1>
+            <p>Find your perfect companion and give a pet a loving forever home</p>
+        </div>
+    </section>
+
+    <!-- Adoption Process -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Adoption Process</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Choose Your Pet</h4>
+                    <p>Browse our adoptable pets and find the one that captures your heart.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Application</h4>
+                    <p>Fill out our adoption application to tell us about yourself and your home.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Meet & Greet</h4>
+                    <p>Meet your potential new family member and see if it's a good match.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Take Home</h4>
+                    <p>Complete the adoption process and welcome your new pet home!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Pets -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Pets Available for Adoption</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Pets</button>
+                <button class="filter-btn" data-filter="dogs">Dogs</button>
+                <button class="filter-btn" data-filter="cats">Cats</button>
+                <button class="filter-btn" data-filter="puppies">Puppies</button>
+                <button class="filter-btn" data-filter="kittens">Kittens</button>
+            </div>
+            <div class="pets-grid">
+                <div class="pet-card" data-category="dogs">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
+                            alt="Golden Retriever">
+                        <div class="pet-status">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h4>Buddy</h4>
+                        <p class="pet-details">Golden Retriever • 2 years • Male</p>
+                        <p class="pet-description">Friendly and energetic golden retriever who loves playing fetch and
+                            going for walks.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+                <div class="pet-card" data-category="cats">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg" alt="Tabby Cat">
+                        <div class="pet-status">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h4>Whiskers</h4>
+                        <p class="pet-details">Domestic Shorthair • 1 year • Female</p>
+                        <p class="pet-description">Sweet and affectionate tabby cat who loves cuddles and playing with
+                            toys.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+                <div class="pet-card" data-category="puppies">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg"
+                            alt="Labrador Puppy">
+                        <div class="pet-status">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h4>Max</h4>
+                        <p class="pet-details">Labrador • 3 months • Male</p>
+                        <p class="pet-description">Playful and curious puppy ready to learn and grow with his new
+                            family.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+                <div class="pet-card" data-category="kittens">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg" alt="Kitten">
+                        <div class="pet-status">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h4>Luna</h4>
+                        <p class="pet-details">Maine Coon • 2 months • Female</p>
+                        <p class="pet-description">Adorable fluffy kitten with lots of personality and energy.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+                <div class="pet-card" data-category="dogs">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg" alt="Beagle">
+                        <div class="pet-status">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h4>Bella</h4>
+                        <p class="pet-details">Beagle • 1.5 years • Female</p>
+                        <p class="pet-description">Curious and friendly beagle who loves exploring and making new
+                            friends.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+                <div class="pet-card" data-category="cats">
+                    <div class="pet-image">
+                        <img src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg" alt="Siamese Cat">
+                        <div class="pet-status">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h4>Sasha</h4>
+                        <p class="pet-details">Siamese • 6 months • Female</p>
+                        <p class="pet-description">Elegant and vocal Siamese cat who loves attention and interactive
+                            play.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Requirements -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Adoption Requirements</h2>
+            <div class="requirements-grid">
+                <div class="requirement-card">
+                    <div class="requirement-icon">🏠</div>
+                    <h4>Suitable Home</h4>
+                    <p>Applicants must provide a safe, stable home environment for the pet.</p>
+                </div>
+                <div class="requirement-card">
+                    <div class="requirement-icon">💰</div>
+                    <h4>Financial Stability</h4>
+                    <p>Ability to afford veterinary care, food, and supplies for the pet's lifetime.</p>
+                </div>
+                <div class="requirement-card">
+                    <div class="requirement-icon">⏰</div>
+                    <h4>Time Commitment</h4>
+                    <p>Daily time for exercise, training, and companionship.</p>
+                </div>
+                <div class="requirement-card">
+                    <div class="requirement-icon">👨‍👩‍👧‍👦</div>
+                    <h4>Family Agreement</h4>
+                    <p>All household members must agree to the adoption.</p>
+                </div>
+                <div class="requirement-card">
+                    <div class="requirement-icon">📋</div>
+                    <h4>Application Process</h4>
+                    <p>Complete adoption application and meet-and-greet with the pet.</p>
+                </div>
+                <div class="requirement-card">
+                    <div class="requirement-icon">💉</div>
+                    <h4>Veterinary Care</h4>
+                    <p>Commitment to regular veterinary check-ups and vaccinations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Shelters -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Our Partner Shelters</h2>
+            <div class="shelters-grid">
+                <div class="shelter-card">
+                    <div class="shelter-logo">
+                        <img src="https://via.placeholder.com/100x100/FF8C42/FFFFFF?text=HS" alt="Happy Shelter">
+                    </div>
+                    <h4>Happy Shelter</h4>
+                    <p>No-kill shelter dedicated to finding loving homes for abandoned pets.</p>
+                    <a href="#" class="btn btn-secondary">Visit Shelter</a>
+                </div>
+                <div class="shelter-card">
+                    <div class="shelter-logo">
+                        <img src="https://via.placeholder.com/100x100/FF8C42/FFFFFF?text=PA" alt="Paws Alliance">
+                    </div>
+                    <h4>Paws Alliance</h4>
+                    <p>Community organization focused on animal welfare and education.</p>
+                    <a href="#" class="btn btn-secondary">Visit Shelter</a>
+                </div>
+                <div class="shelter-card">
+                    <div class="shelter-logo">
+                        <img src="https://via.placeholder.com/100x100/FF8C42/FFFFFF?text=RC" alt="Rescue Center">
+                    </div>
+                    <h4>City Rescue Center</h4>
+                    <p>Municipal animal shelter providing comprehensive care and adoption services.</p>
+                    <a href="#" class="btn btn-secondary">Visit Shelter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Adopt?</h2>
+                <p>Start your journey to find your perfect pet companion today.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Start Adoption Process</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Pawfect Supplies</h3>
+                    <p>Premium pet supplies for happy, healthy pets.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="care.html">Pet Care</a></li>
+                        <li><a href="adoptions.html">Adoptions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pawfect Supplies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../core/js/main.js"></script>
+    <script>
+        // Pet filtering functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const petCards = document.querySelectorAll('.pet-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    petCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

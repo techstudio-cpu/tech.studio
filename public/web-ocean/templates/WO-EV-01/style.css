@@ -1,0 +1,595 @@
+/* ==================== WO-EV-01: WEDDING & EVENT PLANNERS ==================== */
+/* Eternal Moments - Elegant Wedding Template */
+/* Color Palette: Blush Pink, Rose Gold, Ivory */
+
+:root {
+  --primary: #d4a5a5;
+  --primary-dark: #c48b8b;
+  --secondary: #c9a87c;
+  --accent: #f5e6e0;
+  --text-dark: #3d3d3d;
+  --text-light: #6b6b6b;
+  --bg-light: #faf8f6;
+  --bg-blush: #fdf5f3;
+  --white: #ffffff;
+}
+
+/* Override base colors */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  box-shadow: 0 4px 15px rgba(212, 165, 165, 0.3);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 25px rgba(212, 165, 165, 0.4);
+}
+
+.btn-secondary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.section-badge {
+  background: rgba(212, 165, 165, 0.15);
+  color: var(--primary-dark);
+}
+
+/* Typography */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Navbar Dark */
+.navbar-dark {
+  background: transparent;
+}
+
+.navbar-dark.scrolled {
+  background: rgba(61, 61, 61, 0.95);
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-link {
+  color: var(--white);
+}
+
+.navbar-dark .navbar-link:hover,
+.navbar-dark .navbar-link.active {
+  color: var(--primary);
+}
+
+.navbar-dark .navbar-link::after {
+  background: var(--primary);
+}
+
+.navbar-dark .navbar-toggle span {
+  background: var(--white);
+}
+
+.navbar-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.navbar-brand span {
+  color: var(--primary);
+}
+
+/* Hero Wedding */
+.hero-wedding {
+  min-height: 100vh;
+  background: url('https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-wedding .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(61, 61, 61, 0.7) 0%, rgba(61, 61, 61, 0.4) 100%);
+}
+
+.hero-wedding .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-wedding .hero-content {
+  max-width: 700px;
+  color: var(--white);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-wedding .hero-badge {
+  background: rgba(212, 165, 165, 0.3);
+  color: var(--white);
+}
+
+.hero-wedding .hero-title {
+  color: var(--white);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+.hero-wedding .hero-title span {
+  color: var(--primary);
+}
+
+.hero-wedding .hero-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+}
+
+.hero-wedding .hero-buttons {
+  justify-content: center;
+}
+
+.hero-wedding .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.hero-wedding .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8125rem;
+  z-index: 1;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--primary), transparent);
+  margin: 12px auto 0;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--white);
+  padding: 40px 32px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #f0e6e3;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.service-link {
+  color: var(--primary);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.service-link:hover {
+  color: var(--primary-dark);
+}
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  gap: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.portfolio-large {
+  grid-row: span 2;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(61, 61, 61, 0.9) 0%, transparent 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-category {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(212, 165, 165, 0.3);
+  color: var(--primary);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  width: fit-content;
+}
+
+.portfolio-overlay h3 {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.portfolio-overlay p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .portfolio-item {
+    height: 250px;
+  }
+
+  .portfolio-large {
+    grid-row: span 1;
+    grid-column: span 2;
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-large {
+    grid-column: span 1;
+    height: 300px;
+  }
+}
+
+/* Why Grid */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.why-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.why-content > p {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.why-features {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.why-feature {
+  display: flex;
+  gap: 16px;
+}
+
+.why-feature .feature-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.why-feature h4 {
+  font-size: 1.125rem;
+  margin-bottom: 4px;
+}
+
+.why-feature p {
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+.why-image {
+  position: relative;
+}
+
+.why-image img {
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.why-stats {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  background: var(--white);
+  padding: 24px 32px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 32px;
+}
+
+.why-stats .stat {
+  text-align: center;
+}
+
+.why-stats .stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.why-stats .stat-label {
+  font-size: 0.8125rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-stats {
+    right: 20px;
+  }
+}
+
+/* Packages Grid */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.package-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 40px;
+  border: 2px solid #f0e6e3;
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.package-card.featured {
+  border-color: var(--primary);
+  transform: scale(1.05);
+}
+
+.package-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.package-header {
+  margin-bottom: 32px;
+}
+
+.package-header h3 {
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.package-price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.package-header p {
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+.package-features {
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.package-features li {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0e6e3;
+  color: var(--text-light);
+  font-size: 0.9375rem;
+}
+
+.package-features li:last-child {
+  border-bottom: none;
+}
+
+.package-card .btn {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .package-card.featured {
+    transform: none;
+  }
+}
+
+/* Testimonials */
+.testimonial-card {
+  background: var(--white);
+  border: 1px solid #f0e6e3;
+}
+
+.testimonial-rating {
+  color: var(--secondary);
+}
+
+/* CTA Wedding */
+.cta-wedding {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.cta-wedding .btn-primary {
+  background: var(--white);
+  color: var(--primary);
+}
+
+.cta-wedding .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.cta-wedding .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.footer-brand span {
+  color: var(--primary);
+}
+
+.footer-social a:hover {
+  background: var(--primary);
+}
+
+.footer-link:hover {
+  color: var(--primary);
+}
+
+/* Section Alt */
+.section-alt {
+  background: var(--bg-blush);
+}
+
+/* Back to Top */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 165, 165, 0.4);
+  z-index: 999;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px);
+}

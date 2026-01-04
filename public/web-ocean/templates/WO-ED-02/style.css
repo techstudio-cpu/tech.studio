@@ -1,0 +1,579 @@
+/* ==================== WO-ED-02: PRESCHOOL & EARLY LEARNING ==================== */
+/* EduKids Academy - Colorful Preschool Template */
+/* Color Palette: Bright Blue, Orange, Yellow */
+
+:root {
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
+  --secondary: #fb923c;
+  --accent: #fbbf24;
+  --text-dark: #1e293b;
+  --text-light: #64748b;
+  --bg-light: #f0f9ff;
+  --bg-yellow: #fef3c7;
+  --white: #ffffff;
+}
+
+/* Override base colors */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
+.btn-secondary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.section-badge {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--primary);
+}
+
+/* Typography */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+.navbar-brand span {
+  color: var(--secondary);
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: var(--primary);
+}
+
+.navbar-link::after {
+  background: var(--primary);
+}
+
+/* Hero Preschool */
+.hero-preschool {
+  min-height: 100vh;
+  background: url('https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-preschool .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.85) 0%, rgba(251, 146, 60, 0.7) 100%);
+}
+
+.hero-preschool .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-preschool .hero-content {
+  max-width: 700px;
+  color: var(--white);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-preschool .hero-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.hero-preschool .hero-title {
+  color: var(--white);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.hero-preschool .hero-title span {
+  color: var(--accent);
+}
+
+.hero-preschool .hero-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+}
+
+.hero-preschool .hero-buttons {
+  justify-content: center;
+}
+
+.hero-preschool .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.hero-preschool .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9375rem;
+}
+
+.feature-icon {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .hero-features {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Programs Grid */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.program-card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+}
+
+.program-age {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--secondary);
+  color: var(--white);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.program-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.program-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.program-card p {
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.program-highlights {
+  margin-bottom: 20px;
+}
+
+.program-highlights li {
+  padding: 6px 0;
+  color: var(--text-light);
+  font-size: 0.875rem;
+  position: relative;
+  padding-left: 20px;
+}
+
+.program-highlights li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+@media (max-width: 1200px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Approach Grid */
+.approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.approach-content h2 {
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+
+.approach-content > p {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.approach-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 16px;
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.benefit-item h4 {
+  font-size: 1.125rem;
+  margin-bottom: 4px;
+}
+
+.benefit-item p {
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+.approach-image {
+  position: relative;
+}
+
+.approach-image img {
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.approach-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--white);
+  padding: 20px 24px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge-icon {
+  font-size: 2rem;
+}
+
+.approach-badge strong {
+  display: block;
+  font-size: 1.125rem;
+  color: var(--primary);
+}
+
+.approach-badge span {
+  font-size: 0.8125rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+  .approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .approach-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .approach-badge {
+    right: 20px;
+  }
+}
+
+/* Facilities Grid */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.facility-card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+}
+
+.facility-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.facility-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.facility-card p {
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Schedule Timeline */
+.schedule-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-time {
+  min-width: 100px;
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.125rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.125rem;
+  margin-bottom: 4px;
+}
+
+.timeline-content p {
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .timeline-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .timeline-time {
+    min-width: auto;
+  }
+}
+
+/* Testimonials */
+.testimonial-card {
+  background: var(--white);
+  border: 1px solid #e2e8f0;
+}
+
+.testimonial-rating {
+  color: var(--accent);
+}
+
+/* Enrollment Section */
+.enrollment-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  padding: 80px 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.enrollment-content h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.enrollment-content p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enrollment-steps {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: var(--accent);
+  color: var(--text-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.step-item span:last-child {
+  font-size: 0.875rem;
+}
+
+.enrollment-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.enrollment-section .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.enrollment-section .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .enrollment-steps {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .enrollment-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Footer */
+.footer-brand span {
+  color: var(--secondary);
+}
+
+.footer-social a:hover {
+  background: var(--primary);
+}
+
+.footer-link:hover {
+  color: var(--primary);
+}
+
+/* Section Alt */
+.section-alt {
+  background: var(--bg-light);
+}
+
+/* Back to Top */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+  z-index: 999;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px);
+}

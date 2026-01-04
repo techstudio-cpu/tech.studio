@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore destination guides from around the world. Travel tips, hidden gems, and cultural insights.">
+  <title>Destinations | Wanderlust Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../core/css/base.css">
+  <link rel="stylesheet" href="../../core/css/components.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Wanderlust<span>Journal</span></a>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="destinations.html" class="navbar-link active">Destinations</a></li>
+        <li><a href="blog.html" class="navbar-link">Blog</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="contact.html" class="navbar-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-item active">Destinations</span>
+      </nav>
+      <h1 class="page-title">Explore the World</h1>
+      <p class="page-subtitle">Comprehensive guides to inspire your next adventure</p>
+    </div>
+  </section>
+
+  <!-- Region Filters -->
+  <section class="section">
+    <div class="container">
+      <div class="destination-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-region="all">All Regions</button>
+        <button class="filter-btn" data-region="asia">Asia</button>
+        <button class="filter-btn" data-region="europe">Europe</button>
+        <button class="filter-btn" data-region="americas">Americas</button>
+        <button class="filter-btn" data-region="africa">Africa</button>
+        <button class="filter-btn" data-region="oceania">Oceania</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Destination -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="featured-destination" data-aos="fade-up">
+        <div class="featured-dest-image">
+          <img src="https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kyoto, Japan">
+          <span class="dest-badge">Featured</span>
+        </div>
+        <div class="featured-dest-content">
+          <span class="section-badge">Editor's Pick</span>
+          <h2>Kyoto, Japan</h2>
+          <p class="dest-region">🌏 Asia</p>
+          <p>Ancient temples, serene gardens, and traditional tea houses await in Japan's cultural heart. Discover the perfect blend of tradition and modernity in this enchanting city.</p>
+          <div class="dest-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🏯</span>
+              <div>
+                <h4>2,000+ Temples</h4>
+                <p>Historic shrines & gardens</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🍜</span>
+              <div>
+                <h4>Culinary Paradise</h4>
+                <p>Authentic Japanese cuisine</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🌸</span>
+              <div>
+                <h4>Cherry Blossoms</h4>
+                <p>Spring spectacle</p>
+              </div>
+            </div>
+          </div>
+          <a href="blog.html" class="btn btn-primary">Read Full Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Asia Destinations -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">🌏 Asia</span>
+        <h2 class="section-title">Asian Adventures</h2>
+        <p class="section-subtitle">From bustling cities to tranquil beaches</p>
+      </div>
+      <div class="destinations-grid">
+        <article class="destination-card" data-region="asia" data-aos="fade-up" data-aos-delay="50">
+          <div class="dest-card-image">
+            <img src="https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bali, Indonesia">
+            <span class="dest-card-badge">12 Guides</span>
+          </div>
+          <div class="dest-card-content">
+            <h3>Bali, Indonesia</h3>
+            <p>Tropical paradise with stunning beaches, rice terraces, and spiritual temples.</p>
+            <div class="dest-card-meta">
+              <span>🏖️ Beach</span>
+              <span>🏛️ Culture</span>
+              <span>🧘 Wellness</span>
+            </div>
+            <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+          </div>
+        </article>
+        <article class="destination-card" data-region="asia" data-aos="fade-up" data-aos-delay="100">
+          <div class="dest-card-image">
+            <img src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bangkok, Thailand">
+            <span class="dest-card-badge">15 Guides</span>
+          </div>
+          <div class="dest-card-content">
+            <h3>Bangkok, Thailand</h3>
+            <p>Vibrant street life, ornate temples, and world-class street food scene.</p>
+            <div class="dest-card-meta">
+              <span>🏙️ Urban</span>
+              <span>🍜 Food</span>
+              <span>🛍️ Shopping</span>
+            </div>
+            <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+          </div>
+        </article>
+        <article class="destination-card" data-region="asia" data-aos="fade-up" data-aos-delay="150">
+          <div class="dest-card-image">
+            <img src="https://images.pexels.com/photos/3152124/pexels-photo-3152124.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Maldives">
+            <span class="dest-card-badge">8 Guides</span>
+          </div>
+          <div class="dest-card-content">
+            <h3>Maldives</h3>
+            <p>Luxury overwater villas, crystal-clear waters, and pristine coral reefs.</p>
+            <div class="dest-card-meta">
+              <span>🏝️ Islands</span>
+              <span>🤿 Diving</span>
+              <span>💎 Luxury</span>
+            </div>
+            <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Europe Destinations -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">🇪🇺 Europe</span>
+        <h2 class="section-title">European Escapes</h2>
+        <p class="section-subtitle">Rich history, stunning architecture, and diverse cultures</p>
+      </div>
+      <div class="destinations-grid">
+        <article class="destination-card" data-region="europe" data-aos="fade-up" data-aos-delay="50">
+          <div class="dest-card-image">
+            <img src="https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=800" alt="Paris, France">
+            <span class="dest-card-badge">20 Guides</span>
+          </div>
+          <div class="dest-card-content">
+            <h3>Paris, France</h3>
+            <p>The City of Light offers art, fashion, gastronomy, and timeless romance.</p>
+            <div class="dest-card-meta">
+              <span>🎨 Art</span>
+              <span>🥐 Cuisine</span>
+              <span>🏛️ History</span>
+            </div>
+            <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+          </div>
+        </article>
+        <article class="destination-card" data-region="europe" data-aos="fade-up" data-aos-delay="100">
+          <div class="dest-card-image">
+            <img src="https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Santorini, Greece">
+            <span class="dest-card-badge">10 Guides</span>
+          </div>
+          <div class="dest-card-content">
+            <h3>Santorini, Greece</h3>
+            <p>Iconic white-washed buildings, stunning sunsets, and Aegean Sea views.</p>
+            <div class="dest-card-meta">
+              <span>🏖️ Islands</span>
+              <span>🌅 Sunsets</span>
+              <span>💒 Romance</span>
+            </div>
+            <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+          </div>
+        </article>
+        <article class="destination-card" data-region="europe" data-aos="fade-up" data-aos-delay="150">
+          <div class="dest-card-image">
+            <img src="https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Barcelona, Spain">
+            <span class="dest-card-badge">14 Guides</span>
+          </div>
+          <div class="dest-card-content">
+            <h3>Barcelona, Spain</h3>
+            <p>Gaudí's masterpieces, Mediterranean beaches, and vibrant nightlife.</p>
+            <div class="dest-card-meta">
+              <span>🏗️ Architecture</span>
+              <span>🏖️ Beach</span>
+              <span>🎉 Nightlife</span>
+            </div>
+            <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Americas Destinations -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">🌎 Americas</span>
+        <h2 class="section-title">New World Wonders</h2>
+        <p class="section-subtitle">From ancient ruins to modern metropolises</p>
+      </div>
+      <div class="destinations-grid">
+        <article class="destination-card" data-region="americas" data-aos="fade-up" data-aos-delay="50">
+          <div class="dest-card-image">
+            <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=800" alt="New York City">
+            <span class="dest-card-badge">18 Guides</span>
+          </div>
+          <div class="dest-card-content">
+            <h3>New York City, USA</h3>
+            <p>The city that never sleeps offers endless entertainment and iconic landmarks.</p>
+            <div class="dest-card-meta">
+              <span>🏙️ Urban</span>
+              <span>🎭 Culture</span>
+              <span>🍕 Food</span>
+            </div>
+            <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+          </div>
+        </article>
+        <article class="destination-card" data-region="americas" data-aos="fade-up" data-aos-delay="100">
+          <div class="dest-card-image">
+            <img src="https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Machu Picchu, Peru">
+            <span class="dest-card-badge">6 Guides</span>
+          </div>
+          <div class="dest-card-content">
+            <h3>Machu Picchu, Peru</h3>
+            <p>Ancient Incan citadel set high in the Andes Mountains.</p>
+            <div class="dest-card-meta">
+              <span>🏔️ Mountains</span>
+              <span>🏛️ History</span>
+              <span>🥾 Hiking</span>
+            </div>
+            <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+          </div>
+        </article>
+        <article class="destination-card" data-region="americas" data-aos="fade-up" data-aos-delay="150">
+          <div class="dest-card-image">
+            <img src="https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Rio de Janeiro, Brazil">
+            <span class="dest-card-badge">11 Guides</span>
+          </div>
+          <div class="dest-card-content">
+            <h3>Rio de Janeiro, Brazil</h3>
+            <p>Stunning beaches, Christ the Redeemer, and legendary Carnival celebrations.</p>
+            <div class="dest-card-meta">
+              <span>🏖️ Beach</span>
+              <span>🎭 Culture</span>
+              <span>⚽ Sports</span>
+            </div>
+            <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Africa & Oceania -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="destinations-dual-region">
+        <div class="region-section" data-aos="fade-up">
+          <div class="section-header">
+            <span class="section-badge">🌍 Africa</span>
+            <h2 class="section-title">African Safari</h2>
+          </div>
+          <div class="destinations-grid">
+            <article class="destination-card" data-region="africa">
+              <div class="dest-card-image">
+                <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Serengeti, Tanzania">
+                <span class="dest-card-badge">7 Guides</span>
+              </div>
+              <div class="dest-card-content">
+                <h3>Serengeti, Tanzania</h3>
+                <p>Witness the great migration and Africa's incredible wildlife.</p>
+                <div class="dest-card-meta">
+                  <span>🦁 Safari</span>
+                  <span>🌿 Nature</span>
+                </div>
+                <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+              </div>
+            </article>
+            <article class="destination-card" data-region="africa">
+              <div class="dest-card-image">
+                <img src="https://images.pexels.com/photos/259447/pexels-photo-259447.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cape Town, South Africa">
+                <span class="dest-card-badge">9 Guides</span>
+              </div>
+              <div class="dest-card-content">
+                <h3>Cape Town, South Africa</h3>
+                <p>Table Mountain, stunning coastlines, and world-class wineries.</p>
+                <div class="dest-card-meta">
+                  <span>🏔️ Nature</span>
+                  <span>🍷 Wine</span>
+                </div>
+                <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="region-section" data-aos="fade-up" data-aos-delay="100">
+          <div class="section-header">
+            <span class="section-badge">🌏 Oceania</span>
+            <h2 class="section-title">Pacific Paradise</h2>
+          </div>
+          <div class="destinations-grid">
+            <article class="destination-card" data-region="oceania">
+              <div class="dest-card-image">
+                <img src="https://images.pexels.com/photos/995765/pexels-photo-995765.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sydney, Australia">
+                <span class="dest-card-badge">13 Guides</span>
+              </div>
+              <div class="dest-card-content">
+                <h3>Sydney, Australia</h3>
+                <p>Iconic Opera House, harbor views, and beautiful beaches.</p>
+                <div class="dest-card-meta">
+                  <span>🏙️ Urban</span>
+                  <span>🏖️ Beach</span>
+                </div>
+                <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+              </div>
+            </article>
+            <article class="destination-card" data-region="oceania">
+              <div class="dest-card-image">
+                <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Queenstown, New Zealand">
+                <span class="dest-card-badge">8 Guides</span>
+              </div>
+              <div class="dest-card-content">
+                <h3>Queenstown, New Zealand</h3>
+                <p>Adventure capital with stunning alpine scenery and outdoor activities.</p>
+                <div class="dest-card-meta">
+                  <span>🏔️ Adventure</span>
+                  <span>🎿 Sports</span>
+                </div>
+                <a href="blog.html" class="btn btn-outline btn-sm">Explore Guides</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <h2>Start Planning Your Adventure</h2>
+        <p>Get personalized travel tips and destination guides delivered to your inbox.</p>
+        <form class="newsletter-form-inline">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-brand">Wanderlust<span>Journal</span></a>
+          <p class="footer-description">Inspiring travelers to explore the world one destination at a time. Join our community of adventure seekers.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Pinterest">📌</a>
+            <a href="#" aria-label="YouTube">📺</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="destinations.html" class="footer-link">Destinations</a></li>
+            <li><a href="blog.html" class="footer-link">Travel Blog</a></li>
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html" class="footer-link">Travel Tips</a></li>
+            <li><a href="blog.html" class="footer-link">Food & Culture</a></li>
+            <li><a href="blog.html" class="footer-link">Photography</a></li>
+            <li><a href="blog.html" class="footer-link">Budget Travel</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="footer-newsletter-text">Get travel inspiration delivered weekly</p>
+          <form class="footer-newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Wanderlust Journal. All rights reserved. | Designed by TechStudio</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../../core/js/main.js"></script>
+</body>
+</html>

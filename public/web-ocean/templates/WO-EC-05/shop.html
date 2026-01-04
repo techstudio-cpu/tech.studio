@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shop Pawfect Supplies - Premium pet food, toys, grooming supplies, and accessories for dogs, cats, and small pets.">
+    <title>Shop | Pawfect Supplies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../core/css/base.css">
+    <link rel="stylesheet" href="../../core/css/components.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Pawfect<span>Supplies</span></a>
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="shop.html" class="navbar-link active">Shop</a></li>
+                <li><a href="care.html" class="navbar-link">Pet Care</a></li>
+                <li><a href="adoptions.html" class="navbar-link">Adoptions</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <div class="container">
+            <h1>Shop Pet Supplies</h1>
+            <p>Everything your furry friend needs for a happy, healthy life</p>
+            <div class="pet-type-filter">
+                <button class="pet-type-btn active" data-pet="all">All Pets</button>
+                <button class="pet-type-btn" data-pet="dogs">Dogs</button>
+                <button class="pet-type-btn" data-pet="cats">Cats</button>
+                <button class="pet-type-btn" data-pet="birds">Birds</button>
+                <button class="pet-type-btn" data-pet="small-pets">Small Pets</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Sidebar -->
+                <aside class="shop-sidebar">
+                    <div class="filter-section">
+                        <h3>Categories</h3>
+                        <ul class="filter-list">
+                            <li><a href="#" class="filter-link active" data-category="all">All Products</a></li>
+                            <li><a href="#" class="filter-link" data-category="food">Food & Treats</a></li>
+                            <li><a href="#" class="filter-link" data-category="toys">Toys & Games</a></li>
+                            <li><a href="#" class="filter-link" data-category="grooming">Grooming</a></li>
+                            <li><a href="#" class="filter-link" data-category="beds">Beds & Furniture</a></li>
+                            <li><a href="#" class="filter-link" data-category="health">Health & Wellness</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Brands</h3>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked> Premium Pet Foods
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox"> Natural Balance
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox"> Wellness
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox"> Royal Canin
+                        </label>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="shop-main">
+                    <div class="shop-controls">
+                        <div class="results-count">Showing 24 of 156 products</div>
+                        <div class="sort-options">
+                            <label for="sort-select">Sort by:</label>
+                            <select id="sort-select">
+                                <option value="featured">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Highest Rated</option>
+                                <option value="newest">Newest</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <!-- Product Cards -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="image-gallery">
+                                    <img src="https://images.pexels.com/photos/1257110/pexels-photo-1257110.jpeg"
+                                        alt="Premium Dog Food" class="gallery-image active">
+                                    <img src="https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg"
+                                        alt="Premium Dog Food Alternative" class="gallery-image">
+                                    <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg"
+                                        alt="Premium Dog Food Close-up" class="gallery-image">
+                                </div>
+                                <div class="product-badges">
+                                    <span class="badge-new">New</span>
+                                </div>
+                                <div class="gallery-indicators">
+                                    <span class="indicator active" data-slide="0"></span>
+                                    <span class="indicator" data-slide="1"></span>
+                                    <span class="indicator" data-slide="2"></span>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Premium Adult Dog Food</h3>
+                                <p>Grain-free formula with real chicken and vegetables for optimal nutrition and
+                                    digestive health.</p>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="reviews">(124 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="image-gallery">
+                                    <div class="gallery-image active">
+                                        <img src="https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg"
+                                            alt="Interactive Dog Toy">
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg"
+                                            alt="Dog Toy Detail">
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg"
+                                            alt="Dog Playing">
+                                    </div>
+                                </div>
+                                <div class="product-badges">
+                                    <span class="badge-sale">Sale</span>
+                                </div>
+                                <div class="gallery-indicators">
+                                    <div class="gallery-indicator active"></div>
+                                    <div class="gallery-indicator"></div>
+                                    <div class="gallery-indicator"></div>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Interactive Puzzle Toy</h3>
+                                <p>Keeps your dog mentally stimulated and entertained with challenging puzzle games.</p>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="reviews">(89 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="image-gallery">
+                                    <div class="gallery-image active">
+                                        <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg"
+                                            alt="Cat Scratching Post">
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg"
+                                            alt="Cat Scratching Post Detail">
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg"
+                                            alt="Cat Using Scratching Post">
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="https://images.pexels.com/photos/2071881/pexels-photo-2071881.jpeg"
+                                            alt="Scratching Post Material">
+                                    </div>
+                                </div>
+                                <div class="gallery-indicators">
+                                    <div class="gallery-indicator active"></div>
+                                    <div class="gallery-indicator"></div>
+                                    <div class="gallery-indicator"></div>
+                                    <div class="gallery-indicator"></div>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Premium Cat Scratching Post</h3>
+                                <p>Durable sisal rope with comfortable perch for natural scratching behavior.</p>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="reviews">(156 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more product cards as needed -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn prev-btn" disabled>Previous</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span class="pagination-dots">...</span>
+                        <button class="page-btn">7</button>
+                        <button class="page-btn next-btn">Next</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Pawfect Supplies</h3>
+                    <p>Premium pet supplies for happy, healthy pets.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="care.html">Pet Care</a></li>
+                        <li><a href="adoptions.html">Adoptions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pawfect Supplies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../core/js/main.js"></script>
+</body>
+
+</html>
