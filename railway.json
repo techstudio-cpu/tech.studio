@@ -1,0 +1,15 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "defaultService": "techstudio",
+  "services": {
+    "techstudio": {
+      "name": "tech.studio",
+      "buildCommand": "npm install && npm run build",
+      "startCommand": "npm run start",
+      "healthcheckPath": "/",
+      "envVars": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
