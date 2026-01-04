@@ -651,19 +651,17 @@ export default function WebOceanPage() {
                     <div className="template-image">
                       <img src={template.previewImage} alt={template.name} loading="lazy" />
                       <div className="template-overlay">
-                        {template.previewUrl && (
-                          <Link
-                            href={template.previewUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-secondary btn-small"
-                          >
-                            Live Preview
-                          </Link>
-                        )}
+                        <Link
+                          href={template.previewUrl || '#'}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-secondary btn-small"
+                        >
+                          Live Preview
+                        </Link>
                         <button 
                           className="btn btn-primary btn-small"
-                          onClick={() => setSelectedTemplate(template)}
+                          onClick={() => { console.log('View Details clicked for template:', template.name); setSelectedTemplate(template); }}
                         >
                           View Details
                         </button>
